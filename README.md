@@ -54,10 +54,13 @@ Get Wikimedia dumps here:
 - [Wikimedia downloads overview](https://dumps.wikimedia.org/)
 - [About Wikimedia dumps](https://meta.wikimedia.org/wiki/Data_dumps)
 
-To generate small test files, you may use the following command and edit the footer of the generated file afterwards to ensure valid XML.
+To generate small test files, you may use the following command and edit the footer of the generated file afterwards to ensure valid XML:
 
 `head -n10000 enwiki-pages-articles-multistream.xml > test.xml`
 
+To count the number of generated files, you may use the following command:
+
+`ls ./ | wc -l`
 
 
 ## Credits
