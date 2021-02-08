@@ -12,9 +12,7 @@ import java.util.TreeSet;
  * 
  * Prints categories and related number of pages in CSV format.
  * 
- * Set threshold using {@link #MIN_CATEGORY_SIZE}.
- * 
- * (Not integrated into main jar)
+ * Usage: {@link #printCategories(File, int)}.
  *
  * @author Adrian Wilke
  */
@@ -51,19 +49,22 @@ public class CategoryParser {
 
 	private static final boolean LIMIT_TO_FIRST_LINE = false;
 	private static final String LINE_START = "INSERT INTO `category` VALUES (";
-	private static final int MIN_CATEGORY_SIZE = 10000;
 
+	private int minCategorySize;
 	private SortedSet<Element> categories = new TreeSet<>();
 
 	/**
-	 * Main method to run.
+	 * Prints categories found in the given file.
 	 * 
-	 * @param args [0] enwiki-YYYYMMDD-category.sql like to be found in dumps
+	 * @param inFile          enwiki-YYYYMMDD-category.sql like to be found in dumps
+	 * @param minCategorySize Minimum size of categories to print
 	 */
-	public static void main(String[] args) throws IOException {
-		CategoryParser categoryParser = new CategoryParser().readFile(new File(args[0]));
+	public void printCategories(File inFile, int minCategorySize) throws IOException {
+		this.minCategorySize = minCategorySize;
+		readFile(inFile);
+
 		System.out.println("Number of Pages, \"Wikipedia category title\"");
-		for (Element element : categoryParser.categories) {
+		for (Element element : categories) {
 			System.out.println(element);
 		}
 	}
@@ -129,7 +130,7 @@ public class CategoryParser {
 				// `cat_subcats` int(11)
 				// `cat_files` int(11)
 				Element element = new Element(values[1], Integer.parseInt(values[2]));
-				if (element.pages >= MIN_CATEGORY_SIZE) {
+				if (element.pages >= minCategorySize) {
 					categories.add(new Element(values[1].replace('\'', '"'), Integer.parseInt(values[2])));
 				}
 			}

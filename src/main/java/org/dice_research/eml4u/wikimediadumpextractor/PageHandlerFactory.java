@@ -14,6 +14,18 @@ public class PageHandlerFactory {
 	private String category;
 	private File outDirectory;
 
+	public PageHandler create(String page, String title) {
+		return new PageHandler(page, title, category, outDirectory);
+	}
+
+	public String getCategory() {
+		return category;
+	}
+
+	public File getOutDirectory() {
+		return outDirectory;
+	}
+
 	public PageHandlerFactory setCategory(String category) {
 		this.category = category;
 		return this;
@@ -22,9 +34,5 @@ public class PageHandlerFactory {
 	public PageHandlerFactory setOutDirectory(File outDirectory) {
 		this.outDirectory = outDirectory;
 		return this;
-	}
-
-	public PageHandler create(String page, String title) {
-		return new PageHandler(page, title, category, outDirectory);
 	}
 }

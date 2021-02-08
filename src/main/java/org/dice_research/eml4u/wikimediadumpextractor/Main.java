@@ -1,6 +1,7 @@
 package org.dice_research.eml4u.wikimediadumpextractor;
 
 import java.io.File;
+import java.io.IOException;
 import java.util.concurrent.Executors;
 
 /**
@@ -12,63 +13,120 @@ import java.util.concurrent.Executors;
  */
 public class Main {
 
+	public static final int DEFAULT_THREADS = 3;
+	public static final int DEFAULT_MIN_CATEGORY_SIZE = 10000;
+	public static final String MODE_PAGES = "pages";
+	public static final String MODE_CATEGORIES = "categories";
+
 	/**
 	 * Main entry point.
 	 */
 	public static void main(String[] args) throws Exception {
 
-		long time = System.currentTimeMillis();
-		XmlParser xmlParser = new XmlParser();
-		PageHandlerFactory pageHandlerFactory = new PageHandlerFactory();
-		xmlParser.setPageHandlerFactory(pageHandlerFactory);
+		// Check if arguments were specified
 
-		File inFile = null;
-		File outDirectory = null;
-		String category = null;
-		int threads = 1;
-
-		if (args.length < 3) {
-			System.err.println(
-					"Please provide: <input XML file> <output directory> <category> <optional number of threads>");
+		if (args.length == 0) {
+			printHelp();
 			System.exit(1);
+		}
 
-		} else {
-			inFile = new File(args[0]);
+		// Mode pages
+
+		if (args[0].equals(MODE_PAGES)) {
+			long time = System.currentTimeMillis();
+
+			File inFile = new File(args[1]);
 			if (!inFile.canRead()) {
 				System.err.println("Can not read file: " + inFile.getAbsolutePath());
 				System.exit(1);
 			}
 
-			outDirectory = new File(args[1]);
+			File outDirectory = new File(args[2]);
 			if (outDirectory.exists() && !outDirectory.isDirectory()) {
 				System.err.println("Not a directory: " + outDirectory.getAbsolutePath());
 				System.exit(1);
 			} else if (!outDirectory.exists()) {
 				outDirectory.mkdirs();
 			}
-			pageHandlerFactory.setOutDirectory(outDirectory);
 
-			if (args[2].startsWith("Category:")) {
-				category = args[2];
+			String category = null;
+			if (args[3].startsWith("Category:")) {
+				category = args[3];
 			} else {
-				category = "Category:" + args[2];
+				category = "Category:" + args[3];
 			}
-			pageHandlerFactory.setCategory(category);
 
-			if (args.length > 3) {
-				threads = Integer.parseInt(args[3]);
+			int threads = DEFAULT_THREADS;
+			if (args.length > 4) {
+				threads = Integer.parseInt(args[4]);
 			}
-			xmlParser.setExecutorService(Executors.newFixedThreadPool(threads));
+
+			extractPages(inFile, outDirectory, category, threads);
+			System.out.println("Seconds:  " + (System.currentTimeMillis() - time) / 1000.0);
 		}
 
+		// Mode categories
+
+		else if (args[0].equals(MODE_CATEGORIES)) {
+
+			File inFile = new File(args[1]);
+			if (!inFile.canRead()) {
+				System.err.println("Can not read file: " + inFile.getAbsolutePath());
+				System.exit(1);
+			}
+
+			int minCategorySize = DEFAULT_MIN_CATEGORY_SIZE;
+			if (args.length > 2) {
+				minCategorySize = Integer.parseInt(args[2]);
+			}
+
+			printCategories(inFile, minCategorySize);
+		}
+
+		System.exit(0);
+	}
+
+	private static void printHelp() {
+		StringBuilder stringBuilder = new StringBuilder();
+		stringBuilder.append("Usage: java -jar WikimediaDumpExtractor.jar");
+
+		stringBuilder.append(System.lineSeparator());
+		stringBuilder.append(" ");
+		stringBuilder.append(MODE_PAGES);
+		stringBuilder.append(" <input XML file> <output directory> <category> [number of threads, default ");
+		stringBuilder.append(DEFAULT_THREADS);
+		stringBuilder.append("]");
+
+		stringBuilder.append(System.lineSeparator());
+		stringBuilder.append(" ");
+		stringBuilder.append(MODE_CATEGORIES);
+		stringBuilder.append(" <input SQL file> [minimum category size, default ");
+		stringBuilder.append(DEFAULT_MIN_CATEGORY_SIZE);
+		stringBuilder.append("]");
+
+		stringBuilder.append(System.lineSeparator());
+		stringBuilder.append("https://github.com/EML4U/WikimediaDumpExtractor");
+		System.err.println(stringBuilder.toString());
+	}
+
+	private static void extractPages(File inFile, File outDirectory, String category, int threads) throws Exception {
 		System.out.println("In:       " + inFile.getAbsolutePath());
 		System.out.println("Category: " + category);
 		System.out.println("Threads:  " + threads);
 
+		PageHandlerFactory pageHandlerFactory = new PageHandlerFactory();
+		pageHandlerFactory.setCategory(category);
+		pageHandlerFactory.setOutDirectory(outDirectory);
+
+		XmlParser xmlParser = new XmlParser();
+		xmlParser.setPageHandlerFactory(pageHandlerFactory);
+		xmlParser.setExecutorService(Executors.newFixedThreadPool(threads));
 		xmlParser.extract(inFile.getAbsolutePath());
 
 		System.out.println("Out:      " + outDirectory.getAbsolutePath());
-		System.out.println("Seconds:  " + (System.currentTimeMillis() - time) / 1000.0);
-		System.exit(0);
+	}
+
+	private static void printCategories(File inFile, int minCategorySize) throws IOException {
+		new CategoryParser().printCategories(inFile, minCategorySize);
 	}
 }

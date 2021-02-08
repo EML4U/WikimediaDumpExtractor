@@ -8,6 +8,7 @@ import java.io.IOException;
 import java.io.OutputStreamWriter;
 import java.io.StringReader;
 import java.nio.charset.StandardCharsets;
+import java.util.concurrent.Callable;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -16,7 +17,8 @@ import java.util.regex.Pattern;
  *
  * @author Adrian Wilke
  */
-public class PageHandler implements Runnable {
+public class PageHandler implements // Runnable,
+		Callable<String> {
 
 	private static final boolean DEV_NO_WRITING = false;
 	private static final boolean REPLACE = false;
@@ -34,10 +36,14 @@ public class PageHandler implements Runnable {
 	}
 
 	@Override
-	public void run() {
+	public String call() throws Exception {
+
+		String filename = getFilename(title);
+		StringBuilder stringBuilder;
+
 		if (isInCategory()) {
 			if (DEV_NO_WRITING) {
-				StringBuilder stringBuilder = new StringBuilder();
+				stringBuilder = new StringBuilder();
 				stringBuilder.append(title);
 				stringBuilder.append(System.lineSeparator());
 				stringBuilder.append(replace(page));
@@ -47,14 +53,25 @@ public class PageHandler implements Runnable {
 				stringBuilder.append(System.lineSeparator());
 				System.out.println(stringBuilder);
 			} else {
-				File outFile = new File(outDirectory, getFilename(title));
+				File outFile = new File(outDirectory, filename);
 				try {
 					writeFile(outFile, replace(page));
 				} catch (IOException e) {
 					System.err.println("Could not write file: " + outFile.getAbsolutePath());
 				}
 			}
+
+			stringBuilder = new StringBuilder();
+			stringBuilder.append(filename);
+			stringBuilder.append(System.lineSeparator());
+			stringBuilder.append(title);
+			stringBuilder.append(System.lineSeparator());
+			return stringBuilder.toString();
+
+		} else {
+			return null;
 		}
+
 	}
 
 	private boolean isInCategory() {
@@ -68,6 +85,7 @@ public class PageHandler implements Runnable {
 
 	private String replace(String string) {
 
+		// TODO No replacements in current version
 		if (!REPLACE) {
 			return string;
 		}
@@ -87,7 +105,7 @@ public class PageHandler implements Runnable {
 	}
 
 	private String getFilename(String title) {
-		return title.replaceAll("[^A-Za-z0-9 ]", "") + ".txt";
+		return title.replaceAll("[^A-Za-z0-9 -]+", " ").trim().replaceAll("[ ]+", "_") + ".txt";
 	}
 
 	private void writeFile(File file, String content) throws IOException {

@@ -1,7 +1,14 @@
 package org.dice_research.eml4u.wikimediadumpextractor;
 
+import java.io.File;
+import java.io.FileOutputStream;
 import java.io.IOException;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.SortedSet;
+import java.util.TreeSet;
 import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Future;
 
 import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.parsers.SAXParser;
@@ -27,6 +34,8 @@ public class XmlParser extends DefaultHandler {
 	private StringBuilder titleBuilder = new StringBuilder();
 	private boolean isText = false;
 	private boolean isTitle = false;
+
+	private List<Future<String>> parsedPages = new LinkedList<>();
 
 	public XmlParser setExecutorService(ExecutorService executorService) {
 		this.executorService = executorService;
@@ -66,11 +75,40 @@ public class XmlParser extends DefaultHandler {
 	public void endElement(String uri, String localName, String qName) throws SAXException {
 		if (qName.equals("text")) {
 			isText = false;
-			executorService.submit(pageHandlerFactory.create(pageBuilder.toString(), titleBuilder.toString()));
+
+			parsedPages.add(
+					executorService.submit(pageHandlerFactory.create(pageBuilder.toString(), titleBuilder.toString())));
+
 			pageBuilder = new StringBuilder();
 			titleBuilder = new StringBuilder();
 		} else if (qName.equals("title")) {
 			isTitle = false;
+		}
+	}
+
+	@Override
+	public void endDocument() throws SAXException {
+		try {
+			FileOutputStream fileOutputStream = new FileOutputStream(new File(
+					pageHandlerFactory.getOutDirectory().getParentFile(),
+					"Index_" + pageHandlerFactory.getCategory().replaceAll("[: ]", "_").replaceAll("[^A-Za-z0-9_]", "")
+							+ ".txt"),
+					true);
+
+			SortedSet<String> sortedParsedPages = new TreeSet<>();
+			for (Future<String> parsedPage : parsedPages) {
+				if (parsedPage.get() != null) {
+					sortedParsedPages.add(parsedPage.get());
+				}
+			}
+
+			for (String parsedPage : sortedParsedPages) {
+				fileOutputStream.write(parsedPage.getBytes());
+			}
+
+			fileOutputStream.close();
+		} catch (Exception e) {
+			throw new SAXException(e);
 		}
 	}
 }
