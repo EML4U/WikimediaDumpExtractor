@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.dice_research.eml4u</groupId>
 	<artifactId>MoveEqualFilenames</artifactId>
-	<version>1.0.0</version>
+	<version>1.0.1-SNAPSHOT</version>
 	<name>MoveEqualFilenames</name>
 
 	<properties>
