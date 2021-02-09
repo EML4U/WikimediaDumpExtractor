@@ -75,6 +75,7 @@ The available data is described here:
 
 - [Overview of Wikimedia downloads](https://dumps.wikimedia.org/)
 - [About Wikimedia dumps](https://meta.wikimedia.org/wiki/Data_dumps)
+- [Wikipedia database download](https://en.wikipedia.org/wiki/Wikipedia:Database_download)
 
 To generate small test files, you may use the following command and edit the footer of the generated file afterwards to ensure valid XML:
 
