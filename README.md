@@ -4,6 +4,8 @@ Extracts pages of a category from Wikimedia/Wikipedia database backup dumps.
 
 [Download the latest release](https://github.com/EML4U/WikimediaDumpExtractor/releases)
 
+[Processed data at FTP server](https://hobbitdata.informatik.uni-leipzig.de/EML4U/)
+
 
 ## How to run
 
