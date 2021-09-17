@@ -21,7 +21,6 @@ public class PageHandler implements // Runnable,
 		Callable<String> {
 
 	private static final boolean DEV_NO_WRITING = false;
-	private static final boolean REPLACE = false;
 
 	private String page;
 	private String title;
@@ -46,7 +45,7 @@ public class PageHandler implements // Runnable,
 				stringBuilder = new StringBuilder();
 				stringBuilder.append(title);
 				stringBuilder.append(System.lineSeparator());
-				stringBuilder.append(replace(page));
+				stringBuilder.append(page);
 				stringBuilder.append(System.lineSeparator());
 				stringBuilder.append(System.lineSeparator());
 				stringBuilder.append("----");
@@ -55,7 +54,7 @@ public class PageHandler implements // Runnable,
 			} else {
 				File outFile = new File(outDirectory, filename);
 				try {
-					writeFile(outFile, replace(page));
+					writeFile(outFile, page);
 				} catch (IOException e) {
 					System.err.println("Could not write file: " + outFile.getAbsolutePath());
 				}
@@ -81,27 +80,6 @@ public class PageHandler implements // Runnable,
 		Pattern pattern = Pattern.compile("\\[\\[" + category + "(\\]\\]|\\|)");
 		Matcher matcher = pattern.matcher(page);
 		return matcher.find();
-	}
-
-	private String replace(String string) {
-
-		// TODO No replacements in current version
-		if (!REPLACE) {
-			return string;
-		}
-
-		// Remove links, keep link titles
-		// Does not work properly, e.g. in page "Autism" section "Autism rights
-		// movement"
-		// string = string.replaceAll("\\[\\[(.*?)\\|", "");
-
-		// Remove links
-		string = string.replaceAll("\\[\\[", "").replaceAll("\\]\\]", "");
-
-		// Remove templates
-		string = string.replaceAll("\\{\\{(.*?)\\}\\}", "");
-
-		return string;
 	}
 
 	private String getFilename(String title) {
