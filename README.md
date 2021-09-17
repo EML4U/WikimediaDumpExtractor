@@ -35,6 +35,9 @@ java -DentityExpansionLimit=2147480000 -DtotalEntitySizeLimit=2147480000 -Djdk.x
 An extraction of 1 million pages from a 75G file using 3 threads takes 20 minutes.
 The dump file of 2021-09-17 is 85G (bz2 archive 20G, extract with `bzip2 -dk filename.bz2` to keep the archive file).
 
+Example data is given in [Anarchism.xml](examples/Anarchism.xml). The first 462 lines of the Wikipedia dump 20210901 have been extracted and `</mediawiki>` was added as last line.
+After running WikimediaDumpExtractor 1.1.0 and the category "Anarchism", the file [Anarchism.txt](examples/Anarchism.txt) was extracted.
+
 
 ### How to extract a category overview
  
