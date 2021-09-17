@@ -89,10 +89,20 @@ public class XmlParser extends DefaultHandler {
 	@Override
 	public void endDocument() throws SAXException {
 		try {
-			FileOutputStream fileOutputStream = new FileOutputStream(new File(
-					pageHandlerFactory.getOutDirectory().getParentFile(),
-					"Index_" + pageHandlerFactory.getCategory().replaceAll("[: ]", "_").replaceAll("[^A-Za-z0-9_]", "")
-							+ ".txt"),
+
+			// Create index
+
+			String descriptor = "";
+			if (pageHandlerFactory.getCategory() != null) {
+				descriptor = "_"
+						+ pageHandlerFactory.getCategory().replaceAll("[: ]", "_").replaceAll("[^A-Za-z0-9_]", "");
+			} else if (pageHandlerFactory.getSearch() != null) {
+				descriptor = "_"
+						+ pageHandlerFactory.getSearch().replaceAll("[: ]", "_").replaceAll("[^A-Za-z0-9_]", "");
+			}
+
+			FileOutputStream fileOutputStream = new FileOutputStream(
+					new File(pageHandlerFactory.getOutDirectory().getParentFile(), "Index" + descriptor + ".txt"),
 					true);
 
 			SortedSet<String> sortedParsedPages = new TreeSet<>();

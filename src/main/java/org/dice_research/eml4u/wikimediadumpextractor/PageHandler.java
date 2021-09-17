@@ -20,17 +20,17 @@ import java.util.regex.Pattern;
 public class PageHandler implements // Runnable,
 		Callable<String> {
 
-	private static final boolean DEV_NO_WRITING = false;
-
 	private String page;
 	private String title;
 	private String category;
+	private String search;
 	private File outDirectory;
 
-	public PageHandler(String page, String title, String category, File outDirectory) {
+	public PageHandler(String page, String title, String category, String search, File outDirectory) {
 		this.page = page;
 		this.title = title;
 		this.category = category;
+		this.search = search;
 		this.outDirectory = outDirectory;
 	}
 
@@ -40,24 +40,13 @@ public class PageHandler implements // Runnable,
 		String filename = getFilename(title);
 		StringBuilder stringBuilder;
 
-		if (isInCategory()) {
-			if (DEV_NO_WRITING) {
-				stringBuilder = new StringBuilder();
-				stringBuilder.append(title);
-				stringBuilder.append(System.lineSeparator());
-				stringBuilder.append(page);
-				stringBuilder.append(System.lineSeparator());
-				stringBuilder.append(System.lineSeparator());
-				stringBuilder.append("----");
-				stringBuilder.append(System.lineSeparator());
-				System.out.println(stringBuilder);
-			} else {
-				File outFile = new File(outDirectory, filename);
-				try {
-					writeFile(outFile, page);
-				} catch (IOException e) {
-					System.err.println("Could not write file: " + outFile.getAbsolutePath());
-				}
+		if (isInCategory() || containsSearchTerm()) {
+
+			File outFile = new File(outDirectory, filename);
+			try {
+				writeFile(outFile, page);
+			} catch (IOException e) {
+				System.err.println("Could not write file: " + outFile.getAbsolutePath());
 			}
 
 			stringBuilder = new StringBuilder();
@@ -74,10 +63,24 @@ public class PageHandler implements // Runnable,
 	}
 
 	private boolean isInCategory() {
+		if (this.category == null) {
+			return false;
+		}
+
 		// Escape ':' in categroy
 		String category = this.category.replace(":", "[:]");
 		// [[Category:XYZ]] or [[Category:XYZ|Xyz]]
 		Pattern pattern = Pattern.compile("\\[\\[" + category + "(\\]\\]|\\|)");
+		Matcher matcher = pattern.matcher(page);
+		return matcher.find();
+	}
+
+	private boolean containsSearchTerm() {
+		if (this.search == null) {
+			return false;
+		}
+
+		Pattern pattern = Pattern.compile(this.search, Pattern.CASE_INSENSITIVE);
 		Matcher matcher = pattern.matcher(page);
 		return matcher.find();
 	}

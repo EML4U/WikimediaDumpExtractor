@@ -16,6 +16,7 @@ public class Main {
 	public static final int DEFAULT_THREADS = 3;
 	public static final int DEFAULT_MIN_CATEGORY_SIZE = 10000;
 	public static final String MODE_PAGES = "pages";
+	public static final String MODE_SEARCH = "search";
 	public static final String MODE_CATEGORIES = "categories";
 
 	/**
@@ -32,7 +33,7 @@ public class Main {
 
 		// Mode pages
 
-		if (args[0].equals(MODE_PAGES)) {
+		if (args[0].equals(MODE_PAGES) || args[0].equals(MODE_SEARCH)) {
 			long time = System.currentTimeMillis();
 
 			File inFile = new File(args[1]);
@@ -50,10 +51,15 @@ public class Main {
 			}
 
 			String category = null;
-			if (args[3].startsWith("Category:")) {
-				category = args[3];
-			} else {
-				category = "Category:" + args[3];
+			String search = null;
+			if (args[0].equals(MODE_PAGES)) {
+				if (args[3].startsWith("Category:")) {
+					category = args[3];
+				} else {
+					category = "Category:" + args[3];
+				}
+			} else if (args[0].equals(MODE_SEARCH)) {
+				search = args[3];
 			}
 
 			int threads = DEFAULT_THREADS;
@@ -61,7 +67,7 @@ public class Main {
 				threads = Integer.parseInt(args[4]);
 			}
 
-			extractPages(inFile, outDirectory, category, threads);
+			extractPages(inFile, outDirectory, category, search, threads);
 			System.out.println("Seconds:  " + (System.currentTimeMillis() - time) / 1000.0);
 		}
 
@@ -93,7 +99,14 @@ public class Main {
 		stringBuilder.append(System.lineSeparator());
 		stringBuilder.append(" ");
 		stringBuilder.append(MODE_PAGES);
-		stringBuilder.append(" <input XML file> <output directory> <category> [number of threads, default ");
+		stringBuilder.append("      <input XML file> <output directory> <category>   [number of threads, default ");
+		stringBuilder.append(DEFAULT_THREADS);
+		stringBuilder.append("]");
+
+		stringBuilder.append(System.lineSeparator());
+		stringBuilder.append(" ");
+		stringBuilder.append(MODE_SEARCH);
+		stringBuilder.append("     <input XML file> <output directory> <searchterm> [number of threads, default ");
 		stringBuilder.append(DEFAULT_THREADS);
 		stringBuilder.append("]");
 
@@ -109,13 +122,16 @@ public class Main {
 		System.err.println(stringBuilder.toString());
 	}
 
-	private static void extractPages(File inFile, File outDirectory, String category, int threads) throws Exception {
+	private static void extractPages(File inFile, File outDirectory, String category, String search, int threads)
+			throws Exception {
 		System.out.println("In:       " + inFile.getAbsolutePath());
 		System.out.println("Category: " + category);
+		System.out.println("Search:   " + search);
 		System.out.println("Threads:  " + threads);
 
 		PageHandlerFactory pageHandlerFactory = new PageHandlerFactory();
 		pageHandlerFactory.setCategory(category);
+		pageHandlerFactory.setSearch(search);
 		pageHandlerFactory.setOutDirectory(outDirectory);
 
 		XmlParser xmlParser = new XmlParser();

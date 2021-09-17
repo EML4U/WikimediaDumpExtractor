@@ -1,11 +1,10 @@
 # WikimediaDumpExtractor
 
 - Extracts pages of a category from Wikimedia/Wikipedia database backup dumps.
-
 - [Download the latest release](https://github.com/EML4U/WikimediaDumpExtractor/releases)
 
 
-### How to extract texts
+### How to extract texts of a category
 
 ```Shell
 java -jar WikimediaDumpExtractor.jar pages <input XML file> <output directory> <category> [number of threads, default 3]
@@ -37,6 +36,16 @@ The dump file of 2021-09-17 is 85G (bz2 archive 20G, extract with `bzip2 -dk fil
 
 Example data is given in [Anarchism.xml](examples/Anarchism.xml). The first 462 lines of the Wikipedia dump 20210901 have been extracted and `</mediawiki>` was added as last line.
 After running WikimediaDumpExtractor 1.1.0 and the category "Anarchism", the file [Anarchism.txt](examples/Anarchism.txt) was extracted.
+
+
+### How to extract texts containing a search term
+
+Simply use the same commands and the mode `search`.
+The search is case insensitive, using the search term `tHe` will also find texts containing `thE`. 
+
+```Shell
+java -jar WikimediaDumpExtractor.jar search <input XML file> <output directory> <searchterm> [number of threads, default 3]
+```
 
 
 ### How to extract a category overview
@@ -100,10 +109,12 @@ For releases go into the _target_ directory and rename
 _WikimediaDumpExtractor-x.y.z-jar-with-dependencies.jar_
 to
 _WikimediaDumpExtractor-x.y.z.jar_.
+On new releases edit the change log.
 
 
 ## Changelog
 
+- 1.2.0 Search for terms
 - 1.1.0 Index of file names; extraction of SQL categories
 - 1.0.0 Extraction of pages
 
