@@ -28,7 +28,7 @@ To determine the number of kernels, use e.g. the `nproc` command.
 Additionally, set additional parameters like shown below ([source](https://stackoverflow.com/a/50982118)).
 
 ```Shell
-java -DentityExpansionLimit=2147480000 -DtotalEntitySizeLimit=2147480000 -Djdk.xml.totalEntitySizeLimit=2147480000 -jar WikimediaDumpExtractor.jar pages enwiki-pages-articles-multistream.xml /tmp/living-people/ "Living people" 3
+java -DentityExpansionLimit=0 -DtotalEntitySizeLimit=0 -Djdk.xml.totalEntitySizeLimit=0 -jar WikimediaDumpExtractor.jar pages enwiki-pages-articles-multistream.xml /tmp/living-people/ "Living people" 3
 ```
 
 An extraction of 1 million pages from a 75G file using 3 threads takes 20 minutes.
