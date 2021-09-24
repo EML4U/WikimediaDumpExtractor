@@ -17,17 +17,20 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 /**
- * Goes through files and extracts categories.
+ * Goes through files, extracts categories and counts them.
  *
  * @author Adrian Wilke
  */
-public class ExtractCategoriesFromText {
+public class CountCategoriesInTextfiles {
 
 	// Config: Set 0 to process all
 	public static final int MAX_FILES = 0;
 
+	// Config: Maximum string length of single categories
+	public static final int MAX_CATEGORY_LENGTH = 110;
+
 	// Config: Write file
-	public static final boolean WRITE_FILE = false;
+	public static final boolean WRITE_FILE = true;
 
 	private String regexCategory = "\\[\\[" + "Category:" + "(.*)?" + "\\]\\]";
 	private String regexCategoryTitle = "(.*)?" + "\\|";
@@ -51,7 +54,7 @@ public class ExtractCategoriesFromText {
 		}
 
 		// Get categories from files
-		ExtractCategoriesFromText instance = new ExtractCategoriesFromText();
+		CountCategoriesInTextfiles instance = new CountCategoriesInTextfiles();
 		Map<File, List<String>> filesToCategories = instance.getCategories(directory, MAX_FILES);
 
 		// Count categories
@@ -63,16 +66,16 @@ public class ExtractCategoriesFromText {
 		// Results to string
 		StringBuilder sb = new StringBuilder();
 		for (Entry<String, Integer> e : counted.entrySet()) {
-			sb.append(e.getKey());
-			sb.append(", ");
 			sb.append(e.getValue());
+			sb.append("; ");
+			sb.append(e.getKey());
 			sb.append(System.lineSeparator());
 		}
 
 		// Output
 		if (WRITE_FILE) {
 			File outFile = new File(directory.getParentFile(),
-					ExtractCategoriesFromText.class.getSimpleName() + ".csv");
+					CountCategoriesInTextfiles.class.getSimpleName() + ".csv");
 			Files.writeString(outFile.toPath(), sb.toString());
 			System.out.println(outFile);
 		} else {
@@ -128,7 +131,7 @@ public class ExtractCategoriesFromText {
 
 			// Extract categories
 			String text = Files.readString(file.toPath(), StandardCharsets.UTF_8);
-			List<String> categories = extractCategories(text);
+			List<String> categories = extractCategories(text, file);
 			filesToCategories.put(file, categories);
 		}
 		return filesToCategories;
@@ -137,7 +140,7 @@ public class ExtractCategoriesFromText {
 	/**
 	 * Extracts categories (e.g. "[[Category:Hey]])" from given string.
 	 */
-	private List<String> extractCategories(String string) {
+	private List<String> extractCategories(String string, File file) {
 		List<String> categories = new LinkedList<>();
 
 		// [[Category:Hey]]
@@ -148,10 +151,22 @@ public class ExtractCategoriesFromText {
 			// [[Category:Hey| ]]
 			Matcher matcherTitle = patternCategoryTitle.matcher(category);
 			if (matcherTitle.find()) {
-				categories.add(matcherTitle.group(1));
-			} else {
-				categories.add(category);
+				category = matcherTitle.group(1);
 			}
+
+			if (category.length() <= MAX_CATEGORY_LENGTH) {
+				categories.add(category);
+			} else {
+				// Long category names are typically WP internal notes
+				if (category.contains("Archive")) {
+					// An usual long category
+					System.err.println("Skipping: " + category + " | " + file.getName());
+				} else {
+					// To examine
+					System.out.println("Skipping: " + category + " | " + file.getName());
+				}
+			}
+
 		}
 		return categories;
 	}

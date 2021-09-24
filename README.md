@@ -74,11 +74,6 @@ Number of Pages, "Wikipedia category title"
 ```
 
 
-### How to move equal text files of two points of time
-
-Take a look into branch [equal-files](https://github.com/EML4U/WikimediaDumpExtractor/tree/equal-files).
-
-
 ## How to get data
 
 Get Wikimedia dumps here:
@@ -111,6 +106,11 @@ to
 _WikimediaDumpExtractor-x.y.z.jar_.
 On new releases edit the change log.
 
+
+## Additional components
+
+- Moving of files occurring in two directories [equal-files](https://github.com/EML4U/WikimediaDumpExtractor/tree/equal-files).
+- Go through text files, look for categories and count them [CountCategoriesInTextfiles.java](src/main/java/org/dice_research/eml4u/wikimediadumpextractor/io/CountCategoriesInTextfiles.java)
 
 ## Changelog
 
