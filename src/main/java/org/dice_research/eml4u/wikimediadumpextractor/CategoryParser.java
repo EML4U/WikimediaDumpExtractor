@@ -49,7 +49,7 @@ public class CategoryParser {
 
 		@Override
 		public String toString() {
-			return pages + "," + title;
+			return pages + ",\"" + title + '"';
 		}
 	}
 
@@ -158,6 +158,8 @@ public class CategoryParser {
 					values[5] = "";
 				}
 
+				// TODO Re-check handling of "'", maybe handle like in old format
+
 				if (values.length > 5 && !values[5].isEmpty()) {
 					System.err.println(
 							"Too many elements, skipping line/part " + lineNumber + " " + partNumber + " " + part);
@@ -172,7 +174,7 @@ public class CategoryParser {
 				// `cat_files` int(11)
 				Element element = new Element(values[1], Integer.parseInt(values[2]));
 				if (element.pages >= minCategorySize) {
-					categories.add(new Element(values[1].replace('\'', '"'), Integer.parseInt(values[2])));
+					categories.add(new Element(values[1].replace("\'", ""), Integer.parseInt(values[2])));
 				}
 			}
 			return true;
@@ -209,7 +211,7 @@ public class CategoryParser {
 				// `cl_sortkey` varchar(86) binary NOT NULL default '',
 				// `cl_timestamp` timestamp(14) NOT NULL,
 
-				String title = values[1].replace('\'', '"');
+				String title = values[1].replace("\'", "");
 				if (categoriesMap.containsKey(title)) {
 					categoriesMap.get(title).incrementPages();
 				} else {
