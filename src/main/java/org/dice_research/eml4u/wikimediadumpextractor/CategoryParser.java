@@ -180,9 +180,7 @@ public class CategoryParser {
 
 		// Older data variant
 		else if (mode == mode_categorylinks_sql && line.startsWith(LINE_START_OLD)) {
-			int partNumber = -1;
 			for (String part : line.split("\\),\\(")) {
-				partNumber++;
 
 				// Special case: First element
 				if (part.startsWith(LINE_START_OLD)) {
@@ -195,18 +193,14 @@ public class CategoryParser {
 
 				String[] values = part.split(",");
 
-				if (values.length == 6) {
-					values[1] = values[1] + values[2];
-					values[2] = values[3];
-					values[3] = values[4];
-					values[4] = values[5];
-					values[5] = "";
-				}
+				if (values.length > 4) {
+					// First value is integer, can be ignored
+					// Second value is 'title'
+					int indexBegin = part.indexOf('\'') + 1;
+					int indexEnd = part.substring(indexBegin).indexOf('\'');
 
-				if (values.length > 5 && !values[5].isEmpty()) {
-					System.err.println(
-							"Too many elements, skipping line/part " + lineNumber + " " + partNumber + " " + part);
-					continue;
+					values = new String[2];
+					values[1] = part.substring(indexBegin, indexBegin + indexEnd);
 				}
 
 				// SQL table category elements:
