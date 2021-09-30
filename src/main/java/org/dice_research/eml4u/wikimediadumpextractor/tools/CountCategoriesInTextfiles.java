@@ -1,4 +1,4 @@
-package org.dice_research.eml4u.wikimediadumpextractor.io;
+package org.dice_research.eml4u.wikimediadumpextractor.tools;
 
 import java.io.File;
 import java.io.IOException;
@@ -15,6 +15,8 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
+
+import org.dice_research.eml4u.wikimediadumpextractor.io.FileFilters;
 
 /**
  * Goes through files, extracts categories and counts them.
