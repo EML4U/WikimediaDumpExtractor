@@ -1,4 +1,4 @@
-package org.dice_research.eml4u.wikimediadumpextractor;
+package org.dice_research.eml4u.wikimediadumpextractor.xml;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -12,55 +12,94 @@ import java.util.concurrent.Callable;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import org.dice_research.eml4u.wikimediadumpextractor.content.Text;
+
 /**
- * Handles XML page elements. Created by {@link PageHandlerFactory}.
+ * Wikipedia XML page element. Created by {@link XmlParser}.
+ * 
+ * Instances will be called by {@link XmlExecutor} using {@link #call()} for
+ * parallel processing.
  *
  * @author Adrian Wilke
  */
-public class PageHandler implements // Runnable,
-		Callable<String> {
+public class Page implements Callable<Page> {
 
-	private String page;
+	private Integer id; // e.g. https://en.wikipedia.org/?curid=
+	private Text text;
 	private String title;
-	private String category;
-	private String search;
-	private File outDirectory;
 
-	public PageHandler(String page, String title, String category, String search, File outDirectory) {
-		this.page = page;
+	public Page(Integer id, String text, String title) {
+		this.id = id;
+		this.text = new Text(text);
 		this.title = title;
-		this.category = category;
-		this.search = search;
-		this.outDirectory = outDirectory;
+	}
+
+	public Page(String id, String text, String title) {
+		this(Integer.valueOf(id), text, title);
+	}
+
+	public String getTitle() {
+		return title;
+	}
+
+	public Integer getId() {
+		return id;
+	}
+
+	public Text getText() {
+		return text;
 	}
 
 	@Override
-	public String call() throws Exception {
+	public String toString() {
+		return title;
+	}
+
+	// ---------------------------------------------------------------------------
+	// TODO old code
+	// ---------------------------------------------------------------------------
+
+	/**
+	 * Called from {@link XmlExecutor} to process data in parallel.
+	 */
+	@Override
+	public Page call() throws Exception {
+
+		// Note: Use System.out.println(Thread.currentThread().getId()); to check, if
+		// different threads are used
 
 		String filename = getFilename(title);
-		StringBuilder stringBuilder;
 
 		if (isInCategory() || containsSearchTerm()) {
 
 			File outFile = new File(outDirectory, filename);
 			try {
-				writeFile(outFile, page);
+				writeFile(outFile, text.getText());
 			} catch (IOException e) {
 				System.err.println("Could not write file: " + outFile.getAbsolutePath());
 			}
 
-			stringBuilder = new StringBuilder();
-			stringBuilder.append(filename);
-			stringBuilder.append(System.lineSeparator());
-			stringBuilder.append(title);
-			stringBuilder.append(System.lineSeparator());
-			return stringBuilder.toString();
+			return this;
 
 		} else {
 			return null;
 		}
-
 	}
+
+	// ---------------------------------------------------------------------------
+	// TODO old code
+	// ---------------------------------------------------------------------------
+
+	public Page setVars(String category, String search, File outDirectory) {
+		this.category = category;
+		this.search = search;
+		this.outDirectory = outDirectory;
+		return this;
+	}
+
+	private String category;
+	private String search;
+	private File outDirectory;
 
 	private boolean isInCategory() {
 		if (this.category == null) {
@@ -71,7 +110,7 @@ public class PageHandler implements // Runnable,
 		String category = this.category.replace(":", "[:]");
 		// [[Category:XYZ]] or [[Category:XYZ|Xyz]]
 		Pattern pattern = Pattern.compile("\\[\\[" + category + "(\\]\\]|\\|)");
-		Matcher matcher = pattern.matcher(page);
+		Matcher matcher = pattern.matcher(text.getText());
 		return matcher.find();
 	}
 
@@ -81,7 +120,7 @@ public class PageHandler implements // Runnable,
 		}
 
 		Pattern pattern = Pattern.compile(this.search, Pattern.CASE_INSENSITIVE);
-		Matcher matcher = pattern.matcher(page);
+		Matcher matcher = pattern.matcher(text.getText());
 		return matcher.find();
 	}
 
@@ -103,5 +142,4 @@ public class PageHandler implements // Runnable,
 		bufferedWriter.close();
 		bufferedReader.close();
 	}
-
 }

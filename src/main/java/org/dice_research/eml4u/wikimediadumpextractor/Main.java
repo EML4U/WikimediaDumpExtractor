@@ -2,7 +2,8 @@ package org.dice_research.eml4u.wikimediadumpextractor;
 
 import java.io.File;
 import java.io.IOException;
-import java.util.concurrent.Executors;
+
+import org.dice_research.eml4u.wikimediadumpextractor.xml.XmlExecutor;
 
 /**
  * Wikimedia dump extractor.
@@ -124,22 +125,14 @@ public class Main {
 
 	private static void extractPages(File inFile, File outDirectory, String category, String search, int threads)
 			throws Exception {
+
 		System.out.println("In:       " + inFile.getAbsolutePath());
 		System.out.println("Category: " + category);
 		System.out.println("Search:   " + search);
-		System.out.println("Threads:  " + threads);
-
-		PageHandlerFactory pageHandlerFactory = new PageHandlerFactory();
-		pageHandlerFactory.setCategory(category);
-		pageHandlerFactory.setSearch(search);
-		pageHandlerFactory.setOutDirectory(outDirectory);
-
-		XmlParser xmlParser = new XmlParser();
-		xmlParser.setPageHandlerFactory(pageHandlerFactory);
-		xmlParser.setExecutorService(Executors.newFixedThreadPool(threads));
-		xmlParser.extract(inFile.getAbsolutePath());
-
+		System.out.println("Threads:  ignored");
 		System.out.println("Out:      " + outDirectory.getAbsolutePath());
+
+		XmlExecutor.getInstance().setVars(category, search, outDirectory).execute(inFile);
 	}
 
 	private static void printCategories(File inFile, int minCategorySize) throws IOException {
