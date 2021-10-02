@@ -55,7 +55,7 @@ public class XmlExecutor {
 
 		XmlParser xmlParser = new XmlParser();
 
-		takeCompleted(false);
+		takeCompleted(true);
 		try {
 
 			xmlParser.setMaxPages(0).extract(file, new PageHandlerImpl().setVars(category, search, outDirectory));
@@ -68,6 +68,8 @@ public class XmlExecutor {
 
 		while (forkJoinPool.hasQueuedSubmissions()) {
 			try {
+				
+
 				Thread.sleep(1);
 			} catch (InterruptedException e) {
 				throw new RuntimeException(e);
@@ -81,25 +83,6 @@ public class XmlExecutor {
 
 	public void submit(Page page) {
 		completionService.submit(page);
-	}
-
-	/**
-	 * Uses an estimate of the total number of tasks currently held in queues by
-	 * worker threads. If this number is larger than the number of used workers, the
-	 * tread pool is rated as full.
-	 */
-	public boolean isFullEstimation() {
-
-		// TODO
-		long y = forkJoinPool.getQueuedTaskCount();
-		boolean x = y > workers;
-		if (x) {
-			System.out.println(y + " forkJoinPool.getQueuedTaskCount()");
-		}
-		// System.out.println(forkJoinPool.getStealCount());
-		return x;
-
-		// return forkJoinPool.getQueuedTaskCount() > workers;
 	}
 
 	/**
@@ -117,7 +100,7 @@ public class XmlExecutor {
 							Future<Page> pageFuture = XmlExecutor.getInstance().completionService.take();
 							// Will return null if nothing found
 							if (pageFuture.get() != null) {
-								System.err.println(pageFuture.get());
+								// TODO
 							}
 						}
 					} catch (Exception e) {
