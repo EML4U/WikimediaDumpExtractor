@@ -7,6 +7,7 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.ForkJoinPool;
 import java.util.concurrent.Future;
 
+import org.dice_research.eml4u.wikimediadumpextractor.Cfg;
 import org.dice_research.eml4u.wikimediadumpextractor.xml.XmlParser.MaxPagesException;
 
 /**
@@ -18,10 +19,8 @@ import org.dice_research.eml4u.wikimediadumpextractor.xml.XmlParser.MaxPagesExce
  */
 public class XmlExecutor {
 
-	/**
-	 * Singleton, see
-	 * https://www.journaldev.com/1377/java-singleton-design-pattern-best-practices-examples#thread-safe-singleton
-	 */
+	// Singleton, see
+	// https://www.journaldev.com/1377/java-singleton-design-pattern-best-practices-examples#thread-safe-singleton
 	private static XmlExecutor instance;
 
 	private int workers;
@@ -58,7 +57,7 @@ public class XmlExecutor {
 		takeCompleted(true);
 		try {
 
-			xmlParser.setMaxPages(0).extract(file, new PageHandlerImpl().setVars(category, search, outDirectory));
+			xmlParser.setMaxPages(0).extract(file, new PageHandlerImpl());
 		} catch (MaxPagesException e) {
 			// Thrown if number of pages limited by user
 			System.out.println(e.getMessage());
@@ -68,7 +67,6 @@ public class XmlExecutor {
 
 		while (forkJoinPool.hasQueuedSubmissions()) {
 			try {
-				
 
 				Thread.sleep(1);
 			} catch (InterruptedException e) {
@@ -76,9 +74,9 @@ public class XmlExecutor {
 			}
 		}
 
-		System.out.println("Page handling: " + (1.0 * xmlParser.getDurationHandling() / (1000)));
-		System.out.println("Page parsing: " + (1.0 * xmlParser.getDurationParsing() / (1000)));
-		System.out.println("ParsedPages: " + xmlParser.getNumberOfParsedPages());
+		Cfg.INSTANCE.set(Cfg.INFO_XML_TIME_EXTRACT, xmlParser.getDurationHandling());
+		Cfg.INSTANCE.set(Cfg.INFO_XML_TIME_READ, xmlParser.getDurationParsing());
+		Cfg.INSTANCE.set(Cfg.INFO_XML_READ_PAGES, xmlParser.getNumberOfParsedPages());
 	}
 
 	public void submit(Page page) {
@@ -110,23 +108,6 @@ public class XmlExecutor {
 			}).start();
 		}
 	}
-
-	// ---------------------------------------------------------------------------
-	// TODO old code
-	// ---------------------------------------------------------------------------
-
-	public XmlExecutor setVars(String category, String search, File outDirectory) {
-		this.category = category;
-		this.search = search;
-		this.outDirectory = outDirectory;
-		return this;
-	}
-
-	private String category;
-	private String search;
-	private File outDirectory;
-
-	// ---------------------------------------------------------------------------
 
 // TODO from old parser endDoc, creates index file, could be integrated into takeCompleted()
 // see https://github.com/EML4U/WikimediaDumpExtractor/blob/aadb4ce8be00c4a0093423b04318585cbc440e12/src/main/java/org/dice_research/eml4u/wikimediadumpextractor/XmlParser.java#L90

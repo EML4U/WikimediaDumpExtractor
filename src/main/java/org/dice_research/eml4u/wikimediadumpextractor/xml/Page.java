@@ -12,6 +12,7 @@ import java.util.concurrent.Callable;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import org.dice_research.eml4u.wikimediadumpextractor.Cfg;
 import org.dice_research.eml4u.wikimediadumpextractor.content.Text;
 
 /**
@@ -72,7 +73,7 @@ public class Page implements Callable<Page> {
 
 		if (isInCategory() || containsSearchTerm()) {
 
-			File outFile = new File(outDirectory, filename);
+			File outFile = new File(Cfg.INSTANCE.getAsFile(Cfg.OUTPUT_DIR), filename);
 			try {
 				writeFile(outFile, text.getText());
 			} catch (IOException e) {
@@ -90,24 +91,15 @@ public class Page implements Callable<Page> {
 	// TODO old code
 	// ---------------------------------------------------------------------------
 
-	public Page setVars(String category, String search, File outDirectory) {
-		this.category = category;
-		this.search = search;
-		this.outDirectory = outDirectory;
-		return this;
-	}
-
-	private String category;
-	private String search;
-	private File outDirectory;
-
 	private boolean isInCategory() {
-		if (this.category == null) {
+		if (Cfg.INSTANCE.getAsString(Cfg.CATEGORIES) == null) {
 			return false;
 		}
 
+		// TODO "Category:" prefix has to be inserted
+
 		// Escape ':' in categroy
-		String category = this.category.replace(":", "[:]");
+		String category = Cfg.INSTANCE.getAsString(Cfg.CATEGORIES).replace(":", "[:]");
 		// [[Category:XYZ]] or [[Category:XYZ|Xyz]]
 		Pattern pattern = Pattern.compile("\\[\\[" + category + "(\\]\\]|\\|)");
 		Matcher matcher = pattern.matcher(text.getText());
@@ -115,11 +107,11 @@ public class Page implements Callable<Page> {
 	}
 
 	private boolean containsSearchTerm() {
-		if (this.search == null) {
+		if (Cfg.INSTANCE.getAsString(Cfg.SEARCH) == null) {
 			return false;
 		}
 
-		Pattern pattern = Pattern.compile(this.search, Pattern.CASE_INSENSITIVE);
+		Pattern pattern = Pattern.compile(Cfg.INSTANCE.getAsString(Cfg.SEARCH), Pattern.CASE_INSENSITIVE);
 		Matcher matcher = pattern.matcher(text.getText());
 		return matcher.find();
 	}
