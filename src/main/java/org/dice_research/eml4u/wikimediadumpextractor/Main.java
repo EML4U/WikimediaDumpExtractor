@@ -10,7 +10,7 @@ import org.dice_research.eml4u.wikimediadumpextractor.xml.XmlExecutor;
  * Wikimedia dump extractor.
  * 
  * Main entry point, parses arguments and starts execution.
- *
+ * 
  * @author Adrian Wilke
  */
 public class Main {
@@ -29,26 +29,30 @@ public class Main {
 			System.exit(1);
 		}
 
+		Cfg.INSTANCE.set(Cfg.BEGIN_TIME, System.currentTimeMillis());
+		String mode = args[0];
+
 		// Mode pages / search
 
-		if (args[0].equals(Cfg.MODE_PAGES) || args[0].equals(Cfg.MODE_SEARCH)) {
-			Cfg.INSTANCE.set(Cfg.BEGIN_TIME, System.currentTimeMillis());
+		if (mode.equals(Cfg.MODE_PAGES)) {
+
+			// IO
 			Cfg.INSTANCE.set(Cfg.INPUT_FILE, FileChecks.checkFileIn(args[1], 1));
 			Cfg.INSTANCE.set(Cfg.OUTPUT_DIR, FileChecks.checkDirectoryOut(args[2], 1));
 
-			// TODO: allow both
-			if (args[0].equals(Cfg.MODE_PAGES)) {
-				Cfg.INSTANCE.set(Cfg.MODE, Cfg.MODE_PAGES);
-				Cfg.INSTANCE.set(Cfg.CATEGORIES, args[3]);
-			} else if (args[0].equals(Cfg.MODE_SEARCH)) {
-				Cfg.INSTANCE.set(Cfg.MODE, Cfg.MODE_SEARCH);
-				Cfg.INSTANCE.set(Cfg.SEARCH, args[3]);
-			}
+			// Parse configuration
+			Cfg.INSTANCE.set(Cfg.CATEGORIES, args[3]);
+			cleanCategories();
+			Cfg.INSTANCE.set(Cfg.SEARCH, args[4]);
+			cleanSearchTerms();
 
+			// Print configuration overview
 			System.out.println(Cfg.INSTANCE);
 
+			// Execute
 			XmlExecutor.getInstance().execute(Cfg.INSTANCE.getAsFile(Cfg.INPUT_FILE));
 
+			// Print results
 			Cfg.INSTANCE.set(Cfg.INFO_END_TIME, System.currentTimeMillis());
 			Cfg.INSTANCE.set(Cfg.INFO_DURATION,
 					Cfg.INSTANCE.getAsLong(Cfg.INFO_END_TIME) - Cfg.INSTANCE.getAsLong(Cfg.BEGIN_TIME));
@@ -56,8 +60,9 @@ public class Main {
 		}
 
 		// Mode categories
+		// TODO re-check
 
-		else if (args[0].equals(Cfg.MODE_CATEGORIES)) {
+		else if (mode.equals(Cfg.MODE_CATEGORIES)) {
 			Cfg.INSTANCE.set(Cfg.MODE, Cfg.MODE_CATEGORIES);
 			Cfg.INSTANCE.set(Cfg.INPUT_FILE, FileChecks.checkFileIn(args[1], 1));
 
@@ -69,7 +74,59 @@ public class Main {
 			printCategories(Cfg.INSTANCE.getAsFile(Cfg.INPUT_FILE), minCategorySize);
 		}
 
+		else {
+			printHelp();
+		}
+
 		System.exit(0);
+	}
+
+	private static void cleanCategories() {
+		String catString = Cfg.INSTANCE.getAsString(Cfg.CATEGORIES);
+		if (catString != null && !catString.isBlank()) {
+			StringBuilder sb = new StringBuilder();
+			boolean first = true;
+			for (String cat : catString.split("\\|")) {
+				if (!cat.isBlank()) {
+					if (first) {
+						first = false;
+					} else {
+						sb.append("|");
+					}
+					if (!cat.startsWith("Category:")) {
+						sb.append("Category:").append(cat.trim());
+					} else {
+						sb.append(cat.trim());
+					}
+				}
+			}
+			Cfg.INSTANCE.set(Cfg.CATEGORIES, sb.toString());
+		} else {
+			// Blank to null
+			Cfg.INSTANCE.set(Cfg.CATEGORIES, null);
+		}
+	}
+
+	private static void cleanSearchTerms() {
+		String searchString = Cfg.INSTANCE.getAsString(Cfg.SEARCH);
+		if (searchString != null && !searchString.isBlank()) {
+			StringBuilder sb = new StringBuilder();
+			boolean first = true;
+			for (String term : searchString.split("\\|")) {
+				if (!term.isBlank()) {
+					if (first) {
+						first = false;
+					} else {
+						sb.append("|");
+					}
+					sb.append(term.trim());
+				}
+			}
+			Cfg.INSTANCE.set(Cfg.SEARCH, sb.toString());
+		} else {
+			// Blank to null
+			Cfg.INSTANCE.set(Cfg.SEARCH, null);
+		}
 	}
 
 	private static void printHelp() {
@@ -79,13 +136,9 @@ public class Main {
 		stringBuilder.append(System.lineSeparator());
 		stringBuilder.append(" ");
 		stringBuilder.append(Cfg.MODE_PAGES);
-		stringBuilder.append("      <input XML file> <output directory> <category>");
+		stringBuilder.append("      <input XML file> <output directory> <categories> <search terms>");
 
-		stringBuilder.append(System.lineSeparator());
-		stringBuilder.append(" ");
-		stringBuilder.append(Cfg.MODE_SEARCH);
-		stringBuilder.append("     <input XML file> <output directory> <searchterm>");
-
+		// TODO re-check
 		stringBuilder.append(System.lineSeparator());
 		stringBuilder.append(" ");
 		stringBuilder.append(Cfg.MODE_CATEGORIES);
@@ -94,8 +147,11 @@ public class Main {
 		stringBuilder.append("]");
 
 		stringBuilder.append(System.lineSeparator());
-		stringBuilder.append("https://github.com/EML4U/WikimediaDumpExtractor");
-		System.err.println(stringBuilder.toString());
+		stringBuilder
+				.append("The values <categories> and <search terms> can contain multiple entries separated by '|'");
+		stringBuilder.append(System.lineSeparator());
+		stringBuilder.append("Website: https://github.com/EML4U/WikimediaDumpExtractor");
+		System.out.println(stringBuilder.toString());
 	}
 
 	private static void printCategories(File inFile, int minCategorySize) throws IOException {

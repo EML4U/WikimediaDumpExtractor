@@ -96,10 +96,13 @@ public class XmlExecutor {
 					try {
 						while (true) {
 							Future<Page> pageFuture = XmlExecutor.getInstance().completionService.take();
+
 							// Will return null if nothing found
 							if (pageFuture.get() != null) {
-								// TODO
+								// TODO collect data for index
+//								System.out.println(pageFuture.get().getTitle());
 							}
+
 						}
 					} catch (Exception e) {
 						throw new RuntimeException(e);
