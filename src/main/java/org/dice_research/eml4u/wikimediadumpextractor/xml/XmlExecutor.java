@@ -1,6 +1,7 @@
 package org.dice_research.eml4u.wikimediadumpextractor.xml;
 
 import java.io.File;
+import java.io.IOException;
 import java.util.concurrent.CompletionService;
 import java.util.concurrent.ExecutorCompletionService;
 import java.util.concurrent.Executors;
@@ -27,6 +28,8 @@ public class XmlExecutor {
 	private ForkJoinPool forkJoinPool;
 	private CompletionService<Page> completionService;
 
+	private PageIndex pageIndex;
+
 	/**
 	 * Code based on {@link Executors#newWorkStealingPool(int)}. Processors obtained
 	 * based on {@link Executors#newWorkStealingPool()}.
@@ -40,6 +43,13 @@ public class XmlExecutor {
 
 		forkJoinPool = new ForkJoinPool(workers, ForkJoinPool.defaultForkJoinWorkerThreadFactory, null, true);
 		completionService = new ExecutorCompletionService<>(forkJoinPool);
+
+		try {
+			pageIndex = new PageIndex();
+			Cfg.INSTANCE.set(Cfg.INFO_XML_INDEX_BEGIN, pageIndex.getNumberOfPages());
+		} catch (IOException e) {
+			throw new RuntimeException(e);
+		}
 	}
 
 	public static synchronized XmlExecutor getInstance() {
@@ -49,50 +59,58 @@ public class XmlExecutor {
 		return instance;
 	}
 
-	// TODO
 	public void execute(File file) {
 
+		// New thread to monitor finished pages
+		monitor();
+
+		// Start parsing
 		XmlParser xmlParser = new XmlParser();
-
-		takeCompleted();
 		try {
-
 			xmlParser.setMaxPages(0).extract(file, new PageHandlerImpl());
 		} catch (MaxPagesException e) {
 			// Thrown if number of pages limited by user
 			System.out.println(e.getMessage());
 		} catch (Exception e) {
-			throw new RuntimeException(e);
+			System.err.print(e);
 		}
 
+		// Wait for pool
 		while (forkJoinPool.hasQueuedSubmissions()) {
 			try {
-
-				Thread.sleep(1);
+				Thread.sleep(100);
 			} catch (InterruptedException e) {
-				throw new RuntimeException(e);
+				System.err.print(e);
 			}
 		}
 
+		// Write index
+		try {
+			pageIndex.write();
+		} catch (IOException e) {
+			System.err.print(e);
+		}
+
+		// Update configuration
+		Cfg.INSTANCE.set(Cfg.INFO_XML_TIME_PARSE, xmlParser.getDurationParsing());
 		Cfg.INSTANCE.set(Cfg.INFO_XML_TIME_EXTRACT, xmlParser.getDurationHandling());
-		Cfg.INSTANCE.set(Cfg.INFO_XML_TIME_READ, xmlParser.getDurationParsing());
 		Cfg.INSTANCE.set(Cfg.INFO_XML_READ_PAGES, xmlParser.getNumberOfParsedPages());
+		Cfg.INSTANCE.set(Cfg.INFO_XML_INDEX_END, pageIndex.getNumberOfPages());
 	}
 
 	public void submit(Page page) {
 		completionService.submit(page);
 	}
 
+	public boolean isIndexed(int pageId) {
+		return pageIndex.isIndexed(pageId);
+	}
+
 	/**
 	 * Runs in endless loop and collects parsed pages, returned by
 	 * {@link Page#call()}.
-	 * 
-	 * TODO Could be used if results have to be collected.
-	 * 
-	 * TODO Construct to ensure call of every return value required. Currently
-	 * execution stops when program stops; some pages are not processed here.
 	 */
-	private void takeCompleted() {
+	private void monitor() {
 		new Thread(new Runnable() {
 			public void run() {
 				while (true) {
@@ -100,14 +118,16 @@ public class XmlExecutor {
 						Future<Page> pageFuture = XmlExecutor.getInstance().completionService.take();
 						Page page = pageFuture.get();
 						if (page != null) {
+
+							// File will not be written, if already in index
 							if (page.wasFilewritten()) {
-								System.out.println(page.getExtractedCategories() + " " + page.getExtractedSearchTerms()
-										+ " " + page.wasFilewritten());
-							} else {
-								System.err.println("Parsed but not written: " + page);
+								pageIndex.addPage(page);
 							}
 
-							// TODO collect data for index
+							// TODO overview of extracted data
+							// System.out.println(page.getExtractedCategories() + " " +
+							// page.getExtractedSearchTerms()
+							// + " " + page.wasFilewritten());
 						}
 
 					} catch (Exception e) {
@@ -118,6 +138,4 @@ public class XmlExecutor {
 		}).start();
 	}
 
-// TODO from old parser endDoc, creates index file, could be integrated into takeCompleted()
-// see https://github.com/EML4U/WikimediaDumpExtractor/blob/aadb4ce8be00c4a0093423b04318585cbc440e12/src/main/java/org/dice_research/eml4u/wikimediadumpextractor/XmlParser.java#L90
 }

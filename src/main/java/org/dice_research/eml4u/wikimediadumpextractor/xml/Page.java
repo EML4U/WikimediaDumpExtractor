@@ -2,14 +2,14 @@ package org.dice_research.eml4u.wikimediadumpextractor.xml;
 
 import java.io.File;
 import java.io.IOException;
+import java.nio.file.Files;
 import java.util.HashSet;
 import java.util.Set;
 import java.util.concurrent.Callable;
 
 import org.dice_research.eml4u.wikimediadumpextractor.Cfg;
 import org.dice_research.eml4u.wikimediadumpextractor.content.Text;
-import org.dice_research.eml4u.wikimediadumpextractor.io.FileUtils;
-import org.dice_research.eml4u.wikimediadumpextractor.utils.Strings;
+import org.dice_research.eml4u.wikimediadumpextractor.utils.CfgUtils;
 
 /**
  * Wikipedia XML page element. Created by {@link XmlParser}.
@@ -20,6 +20,8 @@ import org.dice_research.eml4u.wikimediadumpextractor.utils.Strings;
  * @author Adrian Wilke
  */
 public class Page implements Callable<Page> {
+
+	private static File outputDirectory = null;
 
 	private Integer id; // e.g. https://en.wikipedia.org/?curid=
 	private Text text;
@@ -33,6 +35,10 @@ public class Page implements Callable<Page> {
 		this.id = id;
 		this.text = new Text(text);
 		this.title = title;
+
+		if (outputDirectory == null) {
+			outputDirectory = CfgUtils.getOutputDirectoryTexts();
+		}
 	}
 
 	public Page(String id, String text, String title) {
@@ -64,28 +70,15 @@ public class Page implements Callable<Page> {
 		}
 	}
 
-	public String getFilenameId() {
+	public String getFilename() {
 		// https://www.mediawiki.org/wiki/Manual:Short_URL
 		// https://github.com/wikimedia/mediawiki
-		return title.replaceAll("[^A-Za-z0-9 -]+", " ").trim().replaceAll("[ ]+", "_");
+		return title.replaceAll("[^A-Za-z0-9 -]+", " ").trim().replaceAll("[ ]+", "_") + ".txt";
 	}
 
 	@Override
 	public String toString() {
 		return title;
-	}
-
-	private File getOutputDirectory() {
-		String subDir = Cfg.INSTANCE.getAsFile(Cfg.INPUT_FILE).getName();
-		int lastDotIndex = subDir.lastIndexOf(".");
-		if (lastDotIndex > 0) {
-			subDir = subDir.substring(0, lastDotIndex);
-		}
-
-		File directory = new File(Cfg.INSTANCE.getAsFile(Cfg.OUTPUT_DIR), subDir);
-		directory.mkdirs();
-
-		return directory;
 	}
 
 	/**
@@ -97,14 +90,20 @@ public class Page implements Callable<Page> {
 		// Note: Use System.out.println(Thread.currentThread().getId()); to check, if
 		// different threads are used
 
+		// Extract categories and search terms
 		if (!getExtractedCategories().isEmpty() || !getExtractedSearchTerms().isEmpty()) {
-			File outFile = new File(getOutputDirectory(), getFilenameId() + ".txt");
-			try {
-				FileUtils.stringToFile(outFile, getText());
-				fileWritten = true;
-			} catch (IOException e) {
-				System.err.println("Could not write file: " + outFile.getAbsolutePath());
+
+			// Only write if page not in index
+			if (!XmlExecutor.getInstance().isIndexed(getId())) {
+				File outFile = new File(outputDirectory, getFilename());
+				try {
+					Files.write(outFile.toPath(), getText().getBytes());
+					fileWritten = true;
+				} catch (IOException e) {
+					System.err.println("Could not write file: " + outFile.getAbsolutePath());
+				}
 			}
+
 			return this;
 		} else {
 			return null;
@@ -131,7 +130,7 @@ public class Page implements Callable<Page> {
 
 	private void extractCategories() {
 		if (!Cfg.INSTANCE.getAsString(Cfg.CATEGORIES).isBlank()) {
-			extractedCategories = text.search(Strings.getCategories(), false, false);
+			extractedCategories = text.search(CfgUtils.getCategories(), false, false);
 		} else {
 			extractedCategories = new HashSet<>();
 		}
@@ -139,7 +138,7 @@ public class Page implements Callable<Page> {
 
 	private void extractSearchTerms() {
 		if (!Cfg.INSTANCE.getAsString(Cfg.SEARCH).isBlank()) {
-			extractedSearchTerms = text.search(Strings.getSearchTerms(), true, true);
+			extractedSearchTerms = text.search(CfgUtils.getSearchTerms(), true, true);
 		} else {
 			extractedSearchTerms = new HashSet<>();
 		}

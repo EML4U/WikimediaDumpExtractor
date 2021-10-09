@@ -33,9 +33,11 @@ public enum Cfg {
 	public static final String INFO_END_TIME = "end";
 	public static final String INFO_DURATION = "duration";
 
-	public static final String INFO_XML_TIME_READ = "time-read";
+	public static final String INFO_XML_TIME_PARSE = "time-parse";
 	public static final String INFO_XML_TIME_EXTRACT = "time-extract";
 	public static final String INFO_XML_READ_PAGES = "pages";
+	public static final String INFO_XML_INDEX_BEGIN = "index-begin";
+	public static final String INFO_XML_INDEX_END = "index-end";
 
 	private Map<String, Object> map = new HashMap<>();
 
@@ -73,8 +75,10 @@ public enum Cfg {
 		map.put(BEGIN_TIME, "Begin time");
 		map.put(INFO_END_TIME, "End time");
 		map.put(INFO_DURATION, "Duration (sec)");
-		map.put(INFO_XML_TIME_EXTRACT, "Extracting XML");
-		map.put(INFO_XML_TIME_READ, "Reading XML");
+		map.put(INFO_XML_TIME_PARSE, "Reading XML (sec)");
+		map.put(INFO_XML_TIME_EXTRACT, "Extracting XML (sec)");
+		map.put(INFO_XML_INDEX_BEGIN, "Index size before");
+		map.put(INFO_XML_INDEX_END, "Index size");
 		map.put(INFO_XML_READ_PAGES, "XML pages read");
 
 		int maxLength = getMaxValueLength(map);
@@ -133,7 +137,7 @@ public enum Cfg {
 		if (key.equals(Cfg.BEGIN_TIME) || key.equals(Cfg.INFO_END_TIME)) {
 			return new java.text.SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date((Long) value));
 		} else if (key.equals(Cfg.INFO_DURATION) || key.equals(Cfg.INFO_XML_TIME_EXTRACT)
-				|| key.equals(Cfg.INFO_XML_TIME_READ)) {
+				|| key.equals(Cfg.INFO_XML_TIME_PARSE)) {
 			return String.valueOf((1.0 * Long.parseLong(value.toString())) / 1000);
 		} else {
 			return value.toString();

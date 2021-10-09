@@ -6,7 +6,7 @@ import java.util.HashSet;
 
 import org.dice_research.eml4u.wikimediadumpextractor.Cfg;
 import org.dice_research.eml4u.wikimediadumpextractor.content.Text;
-import org.dice_research.eml4u.wikimediadumpextractor.utils.Strings;
+import org.dice_research.eml4u.wikimediadumpextractor.utils.CfgUtils;
 
 public class TextTest {
 
@@ -33,7 +33,7 @@ public class TextTest {
 		System.out.println("----------------------------------------");
 
 		Cfg.INSTANCE.set(Cfg.SEARCH, "the|AnD");
-		System.out.println(text.search(Strings.getSearchTerms(), true, true));
+		System.out.println(text.search(CfgUtils.getSearchTerms(), true, true));
 
 		System.out.println(text.search(new HashSet<>(Arrays.asList(new String[] { "the", "AnD" })), true, true));
 	}
