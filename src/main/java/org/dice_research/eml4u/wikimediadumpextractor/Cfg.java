@@ -22,7 +22,6 @@ public enum Cfg {
 
 	public static final String MODE = "mode";
 	public static final String MODE_PAGES = "pages";
-//	public static final String MODE_SEARCH = "search";
 	public static final String MODE_CATEGORIES = "categories";
 
 	public static final String BEGIN_TIME = "begin";

@@ -54,7 +54,7 @@ public class XmlExecutor {
 
 		XmlParser xmlParser = new XmlParser();
 
-		takeCompleted(true);
+		takeCompleted();
 		try {
 
 			xmlParser.setMaxPages(0).extract(file, new PageHandlerImpl());
@@ -84,32 +84,38 @@ public class XmlExecutor {
 	}
 
 	/**
+	 * Runs in endless loop and collects parsed pages, returned by
+	 * {@link Page#call()}.
+	 * 
 	 * TODO Could be used if results have to be collected.
 	 * 
 	 * TODO Construct to ensure call of every return value required. Currently
 	 * execution stops when program stops; some pages are not processed here.
 	 */
-	private void takeCompleted(boolean run) {
-		if (run) {
-			new Thread(new Runnable() {
-				public void run() {
+	private void takeCompleted() {
+		new Thread(new Runnable() {
+			public void run() {
+				while (true) {
 					try {
-						while (true) {
-							Future<Page> pageFuture = XmlExecutor.getInstance().completionService.take();
-
-							// Will return null if nothing found
-							if (pageFuture.get() != null) {
-								// TODO collect data for index
-//								System.out.println(pageFuture.get().getTitle());
+						Future<Page> pageFuture = XmlExecutor.getInstance().completionService.take();
+						Page page = pageFuture.get();
+						if (page != null) {
+							if (page.wasFilewritten()) {
+								System.out.println(page.getExtractedCategories() + " " + page.getExtractedSearchTerms()
+										+ " " + page.wasFilewritten());
+							} else {
+								System.err.println("Parsed but not written: " + page);
 							}
 
+							// TODO collect data for index
 						}
+
 					} catch (Exception e) {
-						throw new RuntimeException(e);
+						System.err.println(e);
 					}
 				}
-			}).start();
-		}
+			}
+		}).start();
 	}
 
 // TODO from old parser endDoc, creates index file, could be integrated into takeCompleted()

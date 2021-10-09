@@ -2,19 +2,26 @@ package org.dice_research.eml4u.wikimediadumpextractor;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.regex.Pattern;
 
 import org.dice_research.eml4u.wikimediadumpextractor.io.FileChecks;
+import org.dice_research.eml4u.wikimediadumpextractor.xml.Page;
 import org.dice_research.eml4u.wikimediadumpextractor.xml.XmlExecutor;
+import org.dice_research.eml4u.wikimediadumpextractor.xml.XmlParser;
 
 /**
  * Wikimedia dump extractor.
  * 
  * Main entry point, parses arguments and starts execution.
  * 
+ * XML file parsing is controlled by {@link XmlExecutor}, XML files are parsed
+ * by {@link XmlParser} and single pages processed in parallel in {@link Page}.
+ * 
  * @author Adrian Wilke
  */
 public class Main {
 
+	public static final String SEPARATOR = "|";
 	public static final int DEFAULT_MIN_CATEGORY_SIZE = 10000;
 
 	/**
@@ -86,12 +93,12 @@ public class Main {
 		if (catString != null && !catString.isBlank()) {
 			StringBuilder sb = new StringBuilder();
 			boolean first = true;
-			for (String cat : catString.split("\\|")) {
+			for (String cat : catString.split(Pattern.quote(SEPARATOR))) {
 				if (!cat.isBlank()) {
 					if (first) {
 						first = false;
 					} else {
-						sb.append("|");
+						sb.append(SEPARATOR);
 					}
 					if (!cat.startsWith("Category:")) {
 						sb.append("Category:").append(cat.trim());
@@ -112,12 +119,12 @@ public class Main {
 		if (searchString != null && !searchString.isBlank()) {
 			StringBuilder sb = new StringBuilder();
 			boolean first = true;
-			for (String term : searchString.split("\\|")) {
+			for (String term : searchString.split(Pattern.quote(SEPARATOR))) {
 				if (!term.isBlank()) {
 					if (first) {
 						first = false;
 					} else {
-						sb.append("|");
+						sb.append(SEPARATOR);
 					}
 					sb.append(term.trim());
 				}

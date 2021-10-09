@@ -1,19 +1,15 @@
 package org.dice_research.eml4u.wikimediadumpextractor.xml;
 
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
 import java.io.File;
-import java.io.FileOutputStream;
 import java.io.IOException;
-import java.io.OutputStreamWriter;
-import java.io.StringReader;
-import java.nio.charset.StandardCharsets;
+import java.util.HashSet;
+import java.util.Set;
 import java.util.concurrent.Callable;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 import org.dice_research.eml4u.wikimediadumpextractor.Cfg;
 import org.dice_research.eml4u.wikimediadumpextractor.content.Text;
+import org.dice_research.eml4u.wikimediadumpextractor.io.FileUtils;
+import org.dice_research.eml4u.wikimediadumpextractor.utils.Strings;
 
 /**
  * Wikipedia XML page element. Created by {@link XmlParser}.
@@ -28,6 +24,10 @@ public class Page implements Callable<Page> {
 	private Integer id; // e.g. https://en.wikipedia.org/?curid=
 	private Text text;
 	private String title;
+
+	private Set<String> extractedCategories = null;
+	private Set<String> extractedSearchTerms = null;
+	private boolean fileWritten = false;
 
 	public Page(Integer id, String text, String title) {
 		this.id = id;
@@ -47,8 +47,27 @@ public class Page implements Callable<Page> {
 		return id;
 	}
 
-	public Text getText() {
-		return text;
+	public String getText() {
+		return text.toString();
+	}
+
+	/**
+	 * Returns true if text is available and is no redirect.
+	 */
+	public boolean hasContent() {
+		if (text == null) {
+			return false;
+		} else if (text.isRedirect()) {
+			return false;
+		} else {
+			return true;
+		}
+	}
+
+	public String getFilenameId() {
+		// https://www.mediawiki.org/wiki/Manual:Short_URL
+		// https://github.com/wikimedia/mediawiki
+		return title.replaceAll("[^A-Za-z0-9 -]+", " ").trim().replaceAll("[ ]+", "_");
 	}
 
 	@Override
@@ -56,9 +75,18 @@ public class Page implements Callable<Page> {
 		return title;
 	}
 
-	// ---------------------------------------------------------------------------
-	// TODO old code
-	// ---------------------------------------------------------------------------
+	private File getOutputDirectory() {
+		String subDir = Cfg.INSTANCE.getAsFile(Cfg.INPUT_FILE).getName();
+		int lastDotIndex = subDir.lastIndexOf(".");
+		if (lastDotIndex > 0) {
+			subDir = subDir.substring(0, lastDotIndex);
+		}
+
+		File directory = new File(Cfg.INSTANCE.getAsFile(Cfg.OUTPUT_DIR), subDir);
+		directory.mkdirs();
+
+		return directory;
+	}
 
 	/**
 	 * Called from {@link XmlExecutor} to process data in parallel.
@@ -69,69 +97,51 @@ public class Page implements Callable<Page> {
 		// Note: Use System.out.println(Thread.currentThread().getId()); to check, if
 		// different threads are used
 
-		String filename = getFilename(title);
-
-		if (isInCategory() || containsSearchTerm()) {
-
-			File outFile = new File(Cfg.INSTANCE.getAsFile(Cfg.OUTPUT_DIR), filename);
+		if (!getExtractedCategories().isEmpty() || !getExtractedSearchTerms().isEmpty()) {
+			File outFile = new File(getOutputDirectory(), getFilenameId() + ".txt");
 			try {
-				writeFile(outFile, text.getText());
+				FileUtils.stringToFile(outFile, getText());
+				fileWritten = true;
 			} catch (IOException e) {
 				System.err.println("Could not write file: " + outFile.getAbsolutePath());
 			}
-
 			return this;
-
 		} else {
 			return null;
 		}
 	}
 
-	// ---------------------------------------------------------------------------
-	// TODO old code
-	// ---------------------------------------------------------------------------
-
-	private boolean isInCategory() {
-		if (Cfg.INSTANCE.getAsString(Cfg.CATEGORIES) == null) {
-			return false;
-		}
-
-		// TODO "Category:" prefix has to be inserted
-
-		// Escape ':' in categroy
-		String category = Cfg.INSTANCE.getAsString(Cfg.CATEGORIES).replace(":", "[:]");
-		// [[Category:XYZ]] or [[Category:XYZ|Xyz]]
-		Pattern pattern = Pattern.compile("\\[\\[" + category + "(\\]\\]|\\|)");
-		Matcher matcher = pattern.matcher(text.getText());
-		return matcher.find();
+	public boolean wasFilewritten() {
+		return fileWritten;
 	}
 
-	private boolean containsSearchTerm() {
-		if (Cfg.INSTANCE.getAsString(Cfg.SEARCH) == null) {
-			return false;
+	public Set<String> getExtractedCategories() {
+		if (extractedCategories == null) {
+			extractCategories();
 		}
-
-		Pattern pattern = Pattern.compile(Cfg.INSTANCE.getAsString(Cfg.SEARCH), Pattern.CASE_INSENSITIVE);
-		Matcher matcher = pattern.matcher(text.getText());
-		return matcher.find();
+		return extractedCategories;
 	}
 
-	private String getFilename(String title) {
-		return title.replaceAll("[^A-Za-z0-9 -]+", " ").trim().replaceAll("[ ]+", "_") + ".txt";
+	public Set<String> getExtractedSearchTerms() {
+		if (extractedSearchTerms == null) {
+			extractSearchTerms();
+		}
+		return extractedSearchTerms;
 	}
 
-	private void writeFile(File file, String content) throws IOException {
-		StringReader stringReader = new StringReader(content);
-		BufferedReader bufferedReader = new BufferedReader(stringReader);
-		FileOutputStream fileOutputStream = new FileOutputStream(file);
-		OutputStreamWriter outputStreamWriter = new OutputStreamWriter(fileOutputStream, StandardCharsets.UTF_8);
-		BufferedWriter bufferedWriter = new BufferedWriter(outputStreamWriter);
-		String line;
-		while ((line = bufferedReader.readLine()) != null) {
-			bufferedWriter.write(line);
-			bufferedWriter.write(System.getProperty("line.separator"));
+	private void extractCategories() {
+		if (!Cfg.INSTANCE.getAsString(Cfg.CATEGORIES).isBlank()) {
+			extractedCategories = text.search(Strings.getCategories(), false, false);
+		} else {
+			extractedCategories = new HashSet<>();
 		}
-		bufferedWriter.close();
-		bufferedReader.close();
+	}
+
+	private void extractSearchTerms() {
+		if (!Cfg.INSTANCE.getAsString(Cfg.SEARCH).isBlank()) {
+			extractedSearchTerms = text.search(Strings.getSearchTerms(), true, true);
+		} else {
+			extractedSearchTerms = new HashSet<>();
+		}
 	}
 }
