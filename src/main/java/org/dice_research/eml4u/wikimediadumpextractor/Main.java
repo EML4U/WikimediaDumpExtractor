@@ -41,7 +41,7 @@ public class Main {
 
 		// Mode pages / search
 
-		if (mode.equals(Cfg.MODE_PAGES)) {
+		if (mode.equals(Cfg.MODE_PAGES) && args.length > 4) {
 
 			// IO
 			Cfg.INSTANCE.set(Cfg.INPUT_FILE, FileChecks.checkFileIn(args[1], 1));
@@ -67,7 +67,7 @@ public class Main {
 		}
 
 		// Mode categories
-		// TODO re-check
+		// TODO re-check; add aggs length
 
 		else if (mode.equals(Cfg.MODE_CATEGORIES)) {
 			Cfg.INSTANCE.set(Cfg.MODE, Cfg.MODE_CATEGORIES);

@@ -78,11 +78,12 @@ Number of Pages, "Wikipedia category title"
 
 Get Wikimedia dumps here:
 
-- [Current dumps of the Wikipedia (english)](https://dumps.wikimedia.org/enwiki/)
-- [Archived dumps of the Wikipedia](https://dumps.wikimedia.org/archive/)
-- [Wikipedia dumps at archive.org](https://archive.org/search.php?query=subject%3A%22enwiki%22+AND+subject%3A%22data+dumps%22+AND+collection%3A%22wikimediadownloads%22&sort=-publicdate) and [old dumps](https://archive.org/details/wikipediadumps)
-
-The available data is described here:
+- dumps.wikimedia.org
+    - [Current dumps of the Wikipedia (english)](https://dumps.wikimedia.org/enwiki/) (now)
+    - [Archived dumps of the Wikipedia](https://dumps.wikimedia.org/archive/) (2001-2010)
+- archive.org
+    - [Collection wikimediadownloads + enwiki + data dumps](https://archive.org/search.php?query=subject%3A%22enwiki%22+AND+subject%3A%22data+dumps%22+AND+collection%3A%22wikimediadownloads%22&sort=-publicdate) (2012 - now)
+    - [Collection wikipediadumps](https://archive.org/details/wikipediadumps) (2010 - 2011)
 
 - [Overview of Wikimedia downloads](https://dumps.wikimedia.org/)
 - [About Wikimedia dumps](https://meta.wikimedia.org/wiki/Data_dumps)

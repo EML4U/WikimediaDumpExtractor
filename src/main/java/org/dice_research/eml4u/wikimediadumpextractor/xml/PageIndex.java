@@ -41,7 +41,11 @@ public class PageIndex {
 	private Map<Integer, MetaPage> index = new HashMap<>();
 
 	public PageIndex() throws IOException {
-		this.file = new File(CfgUtils.getOutputDirectoryJob(), FILENEAME);
+		this(FILENEAME);
+	}
+
+	public PageIndex(String filename) throws IOException {
+		this.file = new File(CfgUtils.getOutputDirectoryJob(), filename);
 		file.getParentFile().mkdirs();
 		if (file.exists()) {
 			read();
