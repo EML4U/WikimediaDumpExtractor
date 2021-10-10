@@ -14,7 +14,7 @@ import org.dice_research.eml4u.wikimediadumpextractor.utils.CfgUtils;
  *
  * @author Adrian Wilke
  */
-public class PageIndex {
+public class Index {
 
 	public class MetaPage {
 
@@ -40,11 +40,11 @@ public class PageIndex {
 	private File file;
 	private Map<Integer, MetaPage> index = new HashMap<>();
 
-	public PageIndex() throws IOException {
+	public Index() throws IOException {
 		this(FILENEAME);
 	}
 
-	public PageIndex(String filename) throws IOException {
+	public Index(String filename) throws IOException {
 		this.file = new File(CfgUtils.getOutputDirectoryJob(), filename);
 		file.getParentFile().mkdirs();
 		if (file.exists()) {

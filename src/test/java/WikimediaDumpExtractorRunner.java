@@ -12,6 +12,9 @@ import org.dice_research.eml4u.wikimediadumpextractor.Main;
  */
 public class WikimediaDumpExtractorRunner {
 
+	/**
+	 * Note: Does not work with white spaces
+	 */
 	public static void main(String[] args) throws Exception {
 		if (args.length > 0) {
 			String[] lines = Files.readString(new File(args[0]).toPath()).split(System.lineSeparator());

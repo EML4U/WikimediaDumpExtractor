@@ -10,6 +10,7 @@ import java.util.concurrent.Callable;
 import org.dice_research.eml4u.wikimediadumpextractor.Cfg;
 import org.dice_research.eml4u.wikimediadumpextractor.content.Text;
 import org.dice_research.eml4u.wikimediadumpextractor.utils.CfgUtils;
+import org.dice_research.eml4u.wikimediadumpextractor.utils.RegEx;
 
 /**
  * Wikipedia XML page element. Created by {@link XmlParser}.
@@ -73,7 +74,7 @@ public class Page implements Callable<Page> {
 	public String getFilename() {
 		// https://www.mediawiki.org/wiki/Manual:Short_URL
 		// https://github.com/wikimedia/mediawiki
-		return title.replaceAll("[^A-Za-z0-9 -]+", " ").trim().replaceAll("[ ]+", "_") + ".txt";
+		return RegEx.getFilenameString(title) + "." + id + ".txt";
 	}
 
 	@Override

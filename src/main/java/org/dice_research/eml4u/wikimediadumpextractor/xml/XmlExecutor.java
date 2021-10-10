@@ -12,7 +12,7 @@ import java.util.concurrent.ForkJoinPool;
 import java.util.concurrent.Future;
 
 import org.dice_research.eml4u.wikimediadumpextractor.Cfg;
-import org.dice_research.eml4u.wikimediadumpextractor.utils.CfgUtils;
+import org.dice_research.eml4u.wikimediadumpextractor.utils.RegEx;
 import org.dice_research.eml4u.wikimediadumpextractor.xml.XmlParser.MaxPagesException;
 
 /**
@@ -25,7 +25,7 @@ import org.dice_research.eml4u.wikimediadumpextractor.xml.XmlParser.MaxPagesExce
 public class XmlExecutor {
 
 	// 0 to parse all
-	public static final Integer MAX_PAGES = 100;
+	public static final Integer MAX_PAGES = 0;
 
 	// Singleton, see
 	// https://www.journaldev.com/1377/java-singleton-design-pattern-best-practices-examples#thread-safe-singleton
@@ -35,7 +35,9 @@ public class XmlExecutor {
 	private ForkJoinPool forkJoinPool;
 	private CompletionService<Page> completionService;
 
-	private PageIndex pageIndex;
+	private Index pageIndex;
+	Map<String, Index> categoryIndexes = new HashMap<>();
+	Map<String, Index> searchIndexes = new HashMap<>();
 
 	/**
 	 * Code based on {@link Executors#newWorkStealingPool(int)}. Processors obtained
@@ -52,7 +54,7 @@ public class XmlExecutor {
 		completionService = new ExecutorCompletionService<>(forkJoinPool);
 
 		try {
-			pageIndex = new PageIndex();
+			pageIndex = new Index();
 			Cfg.INSTANCE.set(Cfg.INFO_XML_INDEX_BEGIN, pageIndex.getNumberOfPages());
 		} catch (IOException e) {
 			throw new RuntimeException(e);
@@ -74,12 +76,16 @@ public class XmlExecutor {
 		// Start parsing
 		XmlParser xmlParser = new XmlParser();
 		try {
+			// Display a warning, this is typically a development setting
+			if (MAX_PAGES > 0) {
+				System.err.println("Limited to pages: " + MAX_PAGES);
+			}
 			xmlParser.setMaxPages(MAX_PAGES).extract(file, new PageHandlerImpl());
 		} catch (MaxPagesException e) {
 			// Thrown if number of pages limited by user
 			System.out.println(e.getMessage());
 		} catch (Exception e) {
-			System.err.print(e);
+			System.err.print("Error on extraction: " + e);
 		}
 
 		// Wait for pool
@@ -87,20 +93,21 @@ public class XmlExecutor {
 			try {
 				Thread.sleep(100);
 			} catch (InterruptedException e) {
-				System.err.print(e);
+				System.err.print("Error on waiting: " + e);
 			}
 		}
 
 		// Write index
 		try {
 			pageIndex.write();
-			// TODO
-//			for (Entry<String, SearchIndex> entry : searchIndexes.entrySet()) {
-//				entry.getValue().write();
-//				System.out.println(entry.getKey() +" "+ entry.getValue().getNumberOfPages());
-//			}
+			for (Entry<String, Index> entry : searchIndexes.entrySet()) {
+				entry.getValue().write();
+			}
+			for (Entry<String, Index> entry : categoryIndexes.entrySet()) {
+				entry.getValue().write();
+			}
 		} catch (IOException e) {
-			System.err.print(e);
+			System.err.print("Error on indexing: " + e);
 		}
 
 		// Update configuration
@@ -119,9 +126,6 @@ public class XmlExecutor {
 		return pageIndex.isIndexed(pageId);
 	}
 
-	// TODO
-//	Map<String, SearchIndex> searchIndexes = new HashMap<>();
-
 	/**
 	 * Runs in endless loop and collects parsed pages, returned by
 	 * {@link Page#call()}.
@@ -133,6 +137,8 @@ public class XmlExecutor {
 					try {
 						Future<Page> pageFuture = XmlExecutor.getInstance().completionService.take();
 						Page page = pageFuture.get();
+
+						// Page is null, if nothing was extracted
 						if (page != null) {
 
 							// File will not be written, if already in index
@@ -140,30 +146,28 @@ public class XmlExecutor {
 								pageIndex.addPage(page);
 							}
 
-//							// TODO
-//							if (page.hasContent()) {
-//								for (String term : CfgUtils.getSearchTerms()) {
-//									term=term.toLowerCase();
-//									if (!searchIndexes.containsKey(term)) {
-//										searchIndexes.put(term,
-//												new SearchIndex("searchindex-" + term + ".txt"));
-//									}
-//									searchIndexes.get(term).addPage(page);
-//								}
-//							}
+							for (String term : page.getExtractedSearchTerms()) {
+								term = term.toLowerCase();
+								if (!searchIndexes.containsKey(term)) {
+									searchIndexes.put(term,
+											new Index("searchindex-" + RegEx.getFilenameString(term) + ".txt"));
+								}
+								searchIndexes.get(term).addPage(page);
+							}
 
-							// TODO overview of extracted data
-							// System.out.println(page.getExtractedCategories() + " " +
-							// page.getExtractedSearchTerms()
-							// + " " + page.wasFilewritten());
+							for (String cat : page.getExtractedCategories()) {
+								if (!categoryIndexes.containsKey(cat)) {
+									categoryIndexes.put(cat,
+											new Index("categoryindex-" + RegEx.getFilenameString(cat) + ".txt"));
+								}
+								categoryIndexes.get(cat).addPage(page);
+							}
 						}
-
 					} catch (Exception e) {
-						System.err.println("Monitor: " + e);
+						System.err.println("Error on monitoring: " + e);
 					}
 				}
 			}
 		}).start();
 	}
-
 }

@@ -116,6 +116,7 @@ public class Main {
 
 	private static void cleanSearchTerms() {
 		String searchString = Cfg.INSTANCE.getAsString(Cfg.SEARCH);
+
 		if (searchString != null && !searchString.isBlank()) {
 			StringBuilder sb = new StringBuilder();
 			boolean first = true;
