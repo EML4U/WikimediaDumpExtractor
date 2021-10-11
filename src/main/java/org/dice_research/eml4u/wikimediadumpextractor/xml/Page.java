@@ -88,8 +88,8 @@ public class Page implements Callable<Page> {
 	@Override
 	public Page call() throws Exception {
 
-		// Note: Use System.out.println(Thread.currentThread().getId()); to check, if
-		// different threads are used
+		// TODO Just a note: to check, if different threads are used, use
+		// System.out.println(Thread.currentThread().getId());
 
 		// Extract categories and search terms
 		if (!getExtractedCategories().isEmpty() || !getExtractedSearchTerms().isEmpty()) {

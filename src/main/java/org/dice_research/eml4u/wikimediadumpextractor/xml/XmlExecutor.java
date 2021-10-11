@@ -12,8 +12,10 @@ import java.util.concurrent.ForkJoinPool;
 import java.util.concurrent.Future;
 
 import org.dice_research.eml4u.wikimediadumpextractor.Cfg;
+import org.dice_research.eml4u.wikimediadumpextractor.utils.Strings;
 import org.dice_research.eml4u.wikimediadumpextractor.utils.RegEx;
 import org.dice_research.eml4u.wikimediadumpextractor.xml.XmlParser.MaxPagesException;
+import org.xml.sax.SAXParseException;
 
 /**
  * Uses all available processors except one to provide an executor service.
@@ -84,8 +86,13 @@ public class XmlExecutor {
 		} catch (MaxPagesException e) {
 			// Thrown if number of pages limited by user
 			System.out.println(e.getMessage());
+		} catch (SAXParseException e) {
+			System.err.println("Error on parsing: " + Strings.stackTraceToString(e));
+			System.err.println(
+					"Plase use: java -DentityExpansionLimit=0 -DtotalEntitySizeLimit=0 -Djdk.xml.totalEntitySizeLimit=0 -jar ...");
+			System.err.println("");
 		} catch (Exception e) {
-			System.err.print("Error on extraction: " + e);
+			System.err.println("Error on extraction: " + Strings.stackTraceToString(e));
 		}
 
 		// Wait for pool
@@ -93,7 +100,7 @@ public class XmlExecutor {
 			try {
 				Thread.sleep(100);
 			} catch (InterruptedException e) {
-				System.err.print("Error on waiting: " + e);
+				System.err.println("Error on waiting: " + Strings.stackTraceToString(e));
 			}
 		}
 
@@ -107,7 +114,7 @@ public class XmlExecutor {
 				entry.getValue().write();
 			}
 		} catch (IOException e) {
-			System.err.print("Error on indexing: " + e);
+			System.err.println("Error on indexing: " + Strings.stackTraceToString(e));
 		}
 
 		// Update configuration
@@ -164,7 +171,7 @@ public class XmlExecutor {
 							}
 						}
 					} catch (Exception e) {
-						System.err.println("Error on monitoring: " + e);
+						System.err.println("Error on monitoring: " + Strings.stackTraceToString(e));
 					}
 				}
 			}

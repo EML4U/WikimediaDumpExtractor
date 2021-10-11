@@ -2,9 +2,12 @@ package org.dice_research.eml4u.wikimediadumpextractor;
 
 import java.io.File;
 import java.io.IOException;
+import java.nio.file.Files;
 import java.util.regex.Pattern;
 
 import org.dice_research.eml4u.wikimediadumpextractor.io.FileChecks;
+import org.dice_research.eml4u.wikimediadumpextractor.utils.CfgUtils;
+import org.dice_research.eml4u.wikimediadumpextractor.utils.Strings;
 import org.dice_research.eml4u.wikimediadumpextractor.xml.Page;
 import org.dice_research.eml4u.wikimediadumpextractor.xml.XmlExecutor;
 import org.dice_research.eml4u.wikimediadumpextractor.xml.XmlParser;
@@ -27,7 +30,7 @@ public class Main {
 	/**
 	 * Main entry point.
 	 */
-	public static void main(String[] args) throws Exception {
+	public static void main(String[] args) {
 
 		// Check if arguments were specified
 
@@ -57,13 +60,24 @@ public class Main {
 			System.out.println(Cfg.INSTANCE);
 
 			// Execute
-			XmlExecutor.getInstance().execute(Cfg.INSTANCE.getAsFile(Cfg.INPUT_FILE));
+			try {
+				XmlExecutor.getInstance().execute(Cfg.INSTANCE.getAsFile(Cfg.INPUT_FILE));
+			} catch (Exception e) {
+				System.err.println("Error: " + Strings.stackTraceToString(e));
+			}
 
 			// Print results
 			Cfg.INSTANCE.set(Cfg.INFO_END_TIME, System.currentTimeMillis());
 			Cfg.INSTANCE.set(Cfg.INFO_DURATION,
 					Cfg.INSTANCE.getAsLong(Cfg.INFO_END_TIME) - Cfg.INSTANCE.getAsLong(Cfg.BEGIN_TIME));
 			System.out.println(Cfg.INSTANCE);
+			try {
+				Files.write(new File(CfgUtils.getOutputDirectoryJob(),
+						Strings.getReadableTimpestamp(Cfg.INSTANCE.getAsLong(Cfg.BEGIN_TIME)) + ".txt").toPath(),
+						Cfg.INSTANCE.toString().getBytes());
+			} catch (IOException e) {
+				System.err.println("Error writing job overview: " + Strings.stackTraceToString(e));
+			}
 		}
 
 		// Mode categories
@@ -109,8 +123,8 @@ public class Main {
 			}
 			Cfg.INSTANCE.set(Cfg.CATEGORIES, sb.toString());
 		} else {
-			// Blank to null
-			Cfg.INSTANCE.set(Cfg.CATEGORIES, null);
+			// null to blank
+			Cfg.INSTANCE.set(Cfg.CATEGORIES, "");
 		}
 	}
 
@@ -132,8 +146,8 @@ public class Main {
 			}
 			Cfg.INSTANCE.set(Cfg.SEARCH, sb.toString());
 		} else {
-			// Blank to null
-			Cfg.INSTANCE.set(Cfg.SEARCH, null);
+			// null to blank
+			Cfg.INSTANCE.set(Cfg.SEARCH, "");
 		}
 	}
 
@@ -162,7 +176,11 @@ public class Main {
 		System.out.println(stringBuilder.toString());
 	}
 
-	private static void printCategories(File inFile, int minCategorySize) throws IOException {
-		new CategoryParser().printCategories(inFile, minCategorySize);
+	private static void printCategories(File inFile, int minCategorySize) {
+		try {
+			new CategoryParser().printCategories(inFile, minCategorySize);
+		} catch (Exception e) {
+			System.err.println("Error: " + Strings.stackTraceToString(e));
+		}
 	}
 }

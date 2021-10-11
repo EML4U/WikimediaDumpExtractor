@@ -1,12 +1,13 @@
 package org.dice_research.eml4u.wikimediadumpextractor;
 
 import java.io.File;
-import java.util.Date;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Map.Entry;
 import java.util.TreeMap;
+
+import org.dice_research.eml4u.wikimediadumpextractor.utils.Strings;
 
 /**
  * Configuration singleton.
@@ -135,7 +136,7 @@ public enum Cfg {
 
 	private String formatValue(String key, Object value) {
 		if (key.equals(Cfg.BEGIN_TIME) || key.equals(Cfg.INFO_END_TIME)) {
-			return new java.text.SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date((Long) value));
+			return Strings.getReadableTimpestamp((Long) value);
 		} else if (key.equals(Cfg.INFO_DURATION) || key.equals(Cfg.INFO_XML_TIME_EXTRACT)
 				|| key.equals(Cfg.INFO_XML_TIME_PARSE)) {
 			return String.valueOf((1.0 * Long.parseLong(value.toString())) / 1000);
