@@ -1,0 +1,606 @@
+{{Infobox Writer
+| name        = Ayn Rand
+| image       = Ayn_Rand1.jpg
+| imagesize   = 300px
+| caption     = 
+| birth_date  = {{birth date|1905|2|2|}}
+| birth_place = [[St. Petersburg]], [[Russia]]
+| death_date  = {{death date and age|1982|3|6|1905|2|2}}
+| death_place = [[New York City]], [[United States|U.S.A.]]
+| occupation  = [[novelist]], [[philosopher]], [[playwright]], [[screenwriter]] 
+| magnum_opus = ''[[Atlas Shrugged]]''
+| influences  = [[Aristotle]], [[John Locke]], [[Thomas Aquinas]], [[Friedrich Nietzsche]], [[Victor Hugo]],  [[Henryk Sienkiewicz]],  [[Fyodor Dostoyevsky]], [[Ludwig von Mises]], [[Isabel Paterson]]
+| influenced  = [[James Clavell]], [[Henry Hazlitt]], [[John Hospers]], [[Harry Binswanger]], [[Nathaniel Branden]], [[Barbara Branden]], [[Allan Gotthelf]], [[Leonard Peikoff]], [[George Reisman]], [[John Ridpath]], [[Tara Smith (philosopher)|Tara Smith]], [[Alan Greenspan]], [[Terry Goodkind]], [[Anton LaVey]]}}
+'''Ayn Rand''' ({{IPAEng|ˈaɪn ˈrænd}}, {{OldStyleDate|February 2|1905|January 20}} &ndash; [[March 6]], [[1982]]), born '''Alisa Zinov'yevna Rosenbaum''' ({{lang-ru|Алиса Зиновьевна Розенбаум}}), was a [[Russia]]n-born [[United States|American]] [[novelist]] and [[philosopher]].<ref>One source notes: "Perhaps because she so eschewed academic philosophy, and because her works are rightly considered to be works of literature, Objectivist philosophy is regularly omitted from academic philosophy. Yet throughout literary academia, Ayn Rand is considered a philosopher. Her works merit consideration as works of philosophy in their own right." (Jenny Heyl, 1995, as cited in {{cite book|title=Feminist Interpretations of Ayn Rand|editor=Mimi R Gladstein, Chris Matthew Sciabarra(eds)|id=ISBN 0-271-01831-3|publisher=Penn State Press|year=1999}}, [http://books.google.com/books?vid=ISBN0271018313&id=bei61AcYlT0C&pg=PA17&lpg=PA17&sig=FxQ177GbCkq1rn4hiipdSIjjGeE p. 17])</ref> She is widely known for her best-selling novels ''[[The Fountainhead]]'' and ''[[Atlas Shrugged]]'', and for developing a philosophical system she called [[Objectivism (Ayn Rand)|Objectivism]].
+
+She was an uncompromising advocate of rational [[individualism]] and [[laissez-faire]] [[capitalism]], and vociferously opposed [[socialism]], [[altruism]], and other contemporary philosophical trends. Her influential and often controversial ideas have attracted both enthusiastic admirers and scathing denunciation.
+
+==Introduction==
+{{Objectivism}}
+Rand's writing (both fiction and non-fiction) emphasizes the philosophic concepts of [[objective reality]] in [[metaphysics]], [[reason]] in [[epistemology]], and [[rational egoism]] in ethics. In [[politics]] she was a proponent of [[laissez-faire]] capitalism and a staunch defender of [[individual rights]], believing that the sole function of a proper government is protection of individual rights (including [[property right]]s).  
+
+She believed that individuals must choose their values and actions solely by reason, and that "Man — every man — is an end in himself, not the means to the ends of others." According to Rand, the individual "must exist for his own sake, neither sacrificing himself to others nor sacrificing others to himself. The pursuit of his own rational self-interest and of his own happiness is the highest moral purpose of his life."<ref>{{cite book | title = The Voice of Reason | first = Ayn | last = Rand | publisher = Dutton Plume (1989)}} "Introducing Objectivism" p. ''3''. This article originally appeared in the ''Los Angeles Times'' on June 17, 1962.</ref>
+
+Rand decried the initiation of force and fraud, and held that government action should consist only in protecting citizens from criminal aggression (via the police) and foreign aggression (via the military) and in maintaining a system of courts to decide guilt or innocence for objectively defined crimes and to resolve disputes. Her politics are generally described as [[minarchism|minarchist]] and [[libertarian]], though she did not use the first term and disavowed any connection to the second.<ref> {{cite web|url=http://www.aynrand.org/site/PageServer?pagename=education_campus_libertarians|title="Ayn Rand's Q&A on Libertarians."|accessdate=2006-03-22}} at the [[Ayn Rand Institute]]. Rand stated in 1980, "I've read nothing by a Libertarian...that wasn't my ideas badly mishandled — i.e., had the teeth pulled out of them — with no credit given."</ref>
+
+Rand, a self-described hero-worshiper, stated in her book ''[[The Romantic Manifesto]]'' that the goal of her writing was "the projection of an ideal man." In reference to her philosophy, [[Objectivism (Ayn Rand)|Objectivism]], she said: "My philosophy, in essence, is the concept of man as a heroic being, with his own happiness as the moral purpose of his life, with productive achievement as his noblest activity, and reason as his only absolute." (Appendix to ''[[Atlas Shrugged]]'')
+
+==Early life==
+===Childhood and education===
+Rand was born in [[Saint Petersburg]], [[Russia]], and was the eldest of three daughters (Alisa, Natasha, and Nora)<ref>{{cite web|url=http://www.asenseoflife.com/synopsis.html|title=''A Sense of Life''|accessdate=2006-03-22}} website of the documentary film about Rand's life.</ref> of Zinovy Zacharovich Rosenbaum and Anna Borisovna Rosenbaum, [[agnostic]] and largely non-observant ethnic [[Jew]]s.  Her father was a [[chemist]] and a successful pharmaceutical entrepreneur who earned the privilege of living outside the [[Jewish Pale of Settlement|Pale]].<ref>{{cite web|url=http://www.nyu.edu/projects/sciabarra/rad/PubRadReviews/fc1.html|title="Ayn Rand: The Russian Radical - Published Reviews."|accessdate=2006-03-23}}</ref> From an early age, Alisa displayed an interest in literature and film. 
+
+Her mother taught her French and subscribed to a magazine featuring stories for boys, where Rand found her first childhood hero: Cyrus Paltons, an Indian army officer in a [[Rudyard Kipling]]-style story by [[Maurice Champagne]], called "The Mysterious Valley".<ref name="Chronology">{{cite web|title="Ayn Rand Chronology"|url=http://www.objectivistcenter.org/ct-1671-AynRandChronology.aspx|accessdate=2007-06-21}}</ref> Throughout her youth, she read the novels of [[Sir Walter Scott]], [[Alexandre Dumas, père]] and other Romantic writers, and expressed an interest in the [[Romanticism|Romantic movement]] as a whole. She discovered [[Victor Hugo]] at the age of thirteen, and later called him the "greatest novelist in world literature."<ref>{{cite book | title = Ninety-Three | first = Victor | last = Hugo | publisher = NBI Press (1968)}} Translated by Lowell Bair, with an introduction by Ayn Rand; pp. ''vii, xv''.</ref> Rand wrote the ideal educational curriculum would be "[[Aristotle]] in philosophy, [[Ludwig von Mises|von Mises]] in economics, [[Montessori]] in education, [[Victor Hugo|Hugo]] in literature."<ref>Long, Roderick: {{cite web|url=http://www.mises.org/fullstory.aspx?Id=1738|title="Ayn Rand's Contribution to the Cause of Freedom"|date=[[2006-03-24]]}}</ref> 
+
+[[Image:Twelvecollegia.jpg|thumb|300px|left|Ayn Rand studied history and philosophy at [[Saint Petersburg State University|St. Petersburg University]] .]]Rand was twelve at the time of the [[Russian revolution of 1917]], and her family life was disrupted by the rise of the [[Bolshevik]] party. Her father's pharmacy was confiscated by the Soviets, and the family fled to [[Crimea]] to recover financially. When Crimea fell to the Bolsheviks in 1921, Rand burned her diary, which contained vitriolic anti-Soviet writings.<ref name="Chronology"/> Rand then returned to St. Petersburg to attend the [[Saint Petersburg State University|University of Petrograd]],<ref>{{cite web|url=http://www.iep.utm.edu/r/rand.htm|title="Ayn Rand"|date=[[2006-03-22]]}} at the Internet Encyclopedia of Philosophy</ref> where she studied history and philosophy.<ref>[http://www.nyu.edu/projects/sciabarra/essays/randt2.htm Chris Matthew Sciabarra, "The Rand Transcript", ''The Journal of Ayn Rand Studies'' vol. 1, iss. 1 (1999): 1-26]</ref> Here she discovered the literary works of [[Edmond Rostand]], [[Friedrich Schiller]], and [[Fyodor Dostoevsky]]. She admired Rostand for his richly romantic imagination and Schiller for his grand, heroic scale. She admired Dostoevsky for his sense of drama and his intense moral judgments, but was deeply against his philosophy and his sense of life.<ref> Roger Donway, {{cite web|url=http://www.objectivistcenter.org/ct-104-Dostoevsky_Nietzsche_Ayn_Rands_Moral_Triad.aspx|title="Dostoevsky, Nietzsche, and Ayn Rand's Moral Triad."|accessdate=2006-03-23}} Donway writes that Rand's objectivism "brought full circle the three-way argument that Chernyshevsky and Pisarev; the Underground Man and Nietzsche; and Dostoevsky the Christian philosopher conducted in Russia after 1860."</ref> She completed a three-year program in the department of Social Pedagogy that included history, philology and law, and received Certificate of Graduation (Diploma No. 1552) on [[13 October]] [[1924]].<ref>Sciabarra, Chris Matthew. {{cite web|title="The Rand Transcript."|url=http://www.nyu.edu/projects/sciabarra/essays/randt2.htm|
+accessdate=2006-03-23}}</ref> She also encountered the philosophical ideas of [[Nietzsche]], and loved his exaltation of the heroic and independent individual who embraced egoism and rejected altruism in ''[[Thus Spake Zarathustra]],'' but later rejected other aspects of his philosophy when she discovered more of his writings.
+
+Rand continued to write short stories and screenplays. She entered the State Institute for Cinema Arts in 1924 to study screenwriting; in late 1925, however, she was granted a [[Visa (document)|visa]] to visit American relatives.
+
+===Immigration and marriage===
+In February 1926, she arrived in the [[United States]] at the age of 21, entering by ship through [[New York City]], which would ultimately become her home. She was profoundly moved by the [[Buildings and architecture of New York City|city's skyline]], later describing it in one of her novels, ''The Fountainhead'': "I would give the greatest sunset in the world for one sight of New York's skyline, the sky over New York and the will of man made visible. What other religion do we need? I feel that if a war came to threaten this, I would throw myself into space, over the city, and protect these buildings with my body."<ref>Miller, Eric {{cite web|url=http://www.newcolonist.com/aynrand.html|title="City of Life: Ayn Rand's New York."|date=[[2006-03-23]]}}</ref>
+
+After a brief stay with her relatives in [[Chicago]], she resolved never to return to the [[Soviet Union]], and set out for [[Hollywood]] to become a [[screenwriter]]. Already using ''Rand'' as a [[Cyrillic]] [[contraction (grammar)|contraction]]<ref name="name-ari"/> of her surname, she then adopted the name ''Ayn'', of disputed origin.<ref name="name-ari">Possibly the contraction of the the last three letters of her surname in handwritten Cyrillic which strongly resemble the three Roman letters a.y.n.
+ARI Biographical researcher Drs.  Gotthelf and Berliner note that while still in Russia, Anna used the name "Rand", which is a Cyrillic contraction of Rosenbaum. They also note a hypothesis about a Finnish origin of Ayn.
+{{cite web|url=http://www.aynrand.org/site/PageServer?pagename=about_ayn_rand_faq_index2#ar_q3b|title="What is the origin of "Rand"?"|accessdate=2006-03-28}}
+</ref> <!-- 
+  This was in the talk-archive (#2), citing this article's early history (Aug 12 2005):
+     A possibly more correct theory for her last name is that it has the same source as her first name, 
+     from a favorite Finnish-Estonian, female, liberated author Aino Kallas and her typewriter (Sperry-Rand). Ayn is the Anglicized version of the Finnish, 
+     additionally mythologic, Kalevala name Aino (the one and only) and Ayn is thus pronounced Ein (eye + n). 
+  Then this (archive 6 I think): 
+     She changed her name to protect her family still living in the Soviet Union from reprisals; she also saw it as a way to break with her past 
+     and start a new life in the US. She did not consider this an act of bowing to "societal pressure," as she stated that "morality ends where a gun begins" 
+     and that "one doesn't stop the juggernaut by throwing oneself in front of it." I don't know why Branden changed his name from Blumenthal; 
+     if there's a citation that he did it in deference to "societal pressure," than it belongs. Until then, I'm deleting it. LaszloWalrus 01:43, 25 March 2006 (UTC)
+-->
+
+Initially, Rand struggled in [[Cinema of the United States|Hollywood]] and took odd jobs to pay her basic living expenses. A chance face-to-face meeting with famed director [[Cecil B. DeMille]] led to a job as an [[extra (drama)|extra]] in his film ''[[The King of Kings]],'' and subsequent work as a script reader.<ref>{{cite web|url=http://www.aynrand.org/site/PageServer?pagename=about_ayn_rand_aynrand_biography|title="Ayn Rand Biography"|accessdate=2006-03-23}} at AynRand.org </ref> She also worked as the head of the costume department at [[RKO]] Studios.<ref name="Leiendecker"> Leiendecker, Harold. {{cite web|url=http://www.eckerd.edu/aspec/writers/atlas_shrugged.htm|title="Atlas Shrugged."|accessdate=2006-03-30}}</ref> While working on the film, she intentionally bumped into an aspiring young actor, [[Frank O'Connor (actor)|Frank O'Connor]], who caught her eye. The two married on [[April 15]], [[1929]], and remained married for fifty years, until O'Connor's death in 1979 at the age of 82. In 1931, Rand became a [[Naturalization|naturalized American citizen]]; she was fiercely proud of the United States, and in later years said to the graduating class at [[United States Military Academy|West Point]], "I can say - not as a patriotic bromide, but with full knowledge of the necessary metaphysical, epistemological, ethical, political and aesthetic roots - that the United States of America is the greatest, the noblest and, in its original founding principles, the only moral country in the history of the world."<ref> Rand, Ayn. {{cite web|title="Philosophy: Who Needs It?"|url=http://gos.sbc.edu/r/rand.html|accessdate=2006-03-31}} Address to the Graduating Class Of The United States Military Academy at West Point, New York - March 6, 1974. </ref>
+
+==Fiction==
+Rand viewed herself equally as a novelist and a philosopher, as she said "(I am) both, and for the same reason."{{Fact|date=December 2007}}  Rand's supporters note that she is part of a long tradition of authors who wrote philosophically rich fiction - including [[Dante]], [[John Milton]], [[Fyodor Dostoevsky]] and [[Albert Camus]], and that philosophers such as [[Jean-Paul Sartre]] presented their philosophies in both fictional and non-fictional forms.
+
+In an article about Rand that appeared in [[The Economist]] in 1991, it is stated that "Rand’s novels sell some 300,000 copies a year, exhorting readers to think big about themselves, build big and earn big. New editions of all her books carry postcards for readers who might be inclined to learn more about Objectivism, the author’s credo, a blending of free markets, reason and individualism."<ref>''Still Spouting," The Economist, November 25, 1999</ref>
+
+===Early works===
+Her first literary success came with the sale of her screenplay ''Red Pawn'' in 1932 to [[Universal Studios]]: "[[Josef Von Sternberg|Von Sternberg]] later considered it for [[Marlene Dietrich|Dietrich]], but Russian scenarios were out of favour and the project was dropped."<ref name="Turner">Turner, Jenny. {{cite web|title="As Astonishing as Elvis"|url=http://www.lrb.co.uk/v27/n23/turn03_.html|date=[[2006-03-24]]}} Review of Jeff Briting's biography, ''Ayn Rand''.</ref> Rand then wrote the play ''[[The Night of January 16th]]'' in 1934, which was produced on [[Broadway theater|Broadway]]. The play was a [[courtroom drama]] in which a [[jury]] chosen from the audience decided the verdict, leading to one of two possible endings.<ref> "A Sense of Life" homepage. </ref>
+
+Rand then published the novel, ''[[We the Living]]'' in 1936. "Rand described ''We the Living'' as the most autobiographical of her novels, its theme being the brutality of life under communist rule in Russia."<ref> {{cite web|url=http://www.iep.utm.edu/r/rand.htm|title="Ayn Rand"|date=2006-03023}} at the Internet Encyclopedia of Philosophy.</ref> Its harsh anti-communist tone met with mixed reviews in the U.S., where the period of [[The Great Depression]] was sometimes known as "[[The Red Decade]]" in reference to the high-water mark of sympathy for socialist ideals. Stephen Cox, at [[The Objectivist Center]], observed that ''We the Living'' "was published at the height of Russian socialism's popularity among leaders of American opinion. It failed to attract an audience."<ref name="Cox">Cox, Stephen. {{cite web|title="Anthem: An appreciation."|url=http://www.theatlassociety.org/cox_anthem_appreciation.asp|accessdate=2006-03-24}}</ref>
+
+Frank O'Connor and Ayn Rand spent the summer of 1937 in [[Stony Creek, Connecticut]], while Frank worked in [[summer stock theatre]],<ref name="Cox"/> and Ayn planned the novella ''[[Anthem (novella)|Anthem]],'' a [[dystopian]] vision of a futuristic society where collectivism has triumphed. ''Anthem'' did not find a publisher in the United States and was first published in [[England]] in 1938.
+
+===''The Fountainhead''===
+{{Main|The Fountainhead}}
+
+Rand's first major professional success came with her best-selling novel ''[[The Fountainhead]]'' (1943), which she wrote over a period of seven years. The novel was rejected by twelve publishers. It was finally accepted by the [[Bobbs-Merrill Company]] publishing house, thanks mainly to a member of the editorial board, Archibald Ogden, who praised the book in the highest terms ("If this is not the book for you, then I am not the editor for you.") and finally prevailed.<ref name="Cato"> [[Cato Institute]], {{cite web|url=http://www.cato.org/special/threewomen/fountainhead.html|title="''The Fountainhead''"|accessdate=2006-03-30}}</ref> Eventually, ''The Fountainhead'' was a worldwide success, bringing Rand fame and financial security. In 1949 it was made into a [[The Fountainhead (film)|major motion picture]] by [[Warner Brothers]] with [[Gary Cooper]] and [[Patricia Neal]]; Rand wrote the screenplay. In the sixty years since it was published, Rand's novel has sold six million copies, and continues to sell about 100,000 copies per year.<ref name="Cato"/>
+
+Following the success of ''The Fountainhead'', Rand wrote screenplays for two movies, ''[[Love Letters (1945 film)|Love Letters]]'' and ''You Came Along''.
+
+===''Atlas Shrugged''===
+{{Main|Atlas Shrugged}}
+[[Image:2005-12-22 - United States - New York - City of New York - Atlas Building - Black and White.jpg|right|200px|thumb|"[[Atlas (mythology)|Atlas]]," the largest sculptural work at [[Rockefeller Center]] in [[New York City]], by Lee Lawrie and Rene Chambellan, in the [[Art Deco]] style. (1936)]]Rand's [[magnum opus]], ''[[Atlas Shrugged]],'' was published in 1957. Due to the success of ''The Fountainhead,'' the initial printing was 100,000 copies,<ref>[[Whittaker Chambers|Chambers, Whittaker]]. {{cite web|title="Big Sister is Watching You."|url=http://www.nationalreview.com/flashback/flashback200501050715.asp|accessdate=2006-03-24}} Reprint of contemporary review of ''Atlas Shrugged'' from ''[[National Review]].''</ref> and the book went on to become an international bestseller. Although the frequent claim<ref>{{cite web|title=Atlas Shrugged review at Amazon.com|url=http://www.amazon.com/gp/product/0452011876/ref=dp_proddesc_2/002-9125768-7844058?%5Fencoding=UTF8&n=283155&v=glance|accessdate=2006-03-24}}</ref> that ''Atlas Shrugged'' became the "second most influential book in America, after [[The Bible]],"<ref>{{cite web|url=http://www.google.com/search?hl=en&lr=&q=%22Atlas+Shrugged%22+most+popular+Library+of+Congress&btnG=Search|title=Google.com search|accessdate=2006-03-24}} showing this widespread claim.</ref> may be an exaggeration of the findings of a 1991 survey, Atlas Shrugged has been cited in numerous interviews as the book that most influenced the subject.<ref>{{cite web|url=http://www.noblesoul.com/orc/books/rand/atlas/faq.html#Q6.4|title=Rand FAQ at Noble Soul|accessdate=2006-03-25}} Provides detail about the actual survey and findings.</ref><ref>Salmonson, Jessica Amanda. {{cite web|url=http://www.violetbooks.com/aynrand.html|title="'Ayn Rand, More Popular than God!' Objectivists Allege!"|accessdate=2006-03-24}} Although the author appears to have a strong dislike of Rand and her supporters, her conclusions about the "Book of the Month Club" survey appear to be supported.</ref>
+
+''Atlas Shrugged'' is often seen as Rand's most extensive statement of Objectivism in any of her works of fiction. In its appendix, she offered this summary:
+:"My philosophy, in essence, is the concept of man as a heroic being, with his own happiness as the moral purpose of his life, with productive achievement as his noblest activity, and reason as his only absolute."
+
+The theme of ''Atlas Shrugged'' is "The role of man's mind in society." Rand upheld the industrialist as one of the most admirable members of any society and fiercely opposed the popular resentment accorded to industrialists. This led her to envision a novel wherein the industrialists of America go on [[strike action|strike]] and retreat to a mountainous hideaway, where they build an independent free economy with gold currency. The American economy and its society in general, deprived of its most productive members, slowly start to collapse. The government responds by increasing the already stifling controls on industry. 
+
+The novel, which includes elements of mystery and science fiction, deals with other diverse issues as wide-ranging as sex, music, medicine, politics, philosophy, industry, and human ability.
+
+==Philosophy==
+{{Main|Objectivism (Ayn Rand)}}
+
+===Objectivism: Ayn Rand's philosophical system===
+
+Rand's philosophical system, [[Objectivism (Ayn Rand)|Objectivism]], encompasses positions on [[metaphysics]], [[epistemology]], [[ethics]], [[politics]] and [[aesthetics]]. While there have been "[[Objectivity (philosophy)|objectivist]]" theories in the past, Rand's [[Objectivism (Ayn Rand)|Objectivism]] uses the term in a new way: it treats knowledge and values as neither subjective, nor ''intrinsic in existence'' (the traditional meaning of "objective") but rather as ''the factual identification,'' by Man's mind, of what exists.
+
+===Philosophical influences=== 
+Rand was greatly influenced by [[Aristotle]], found early inspiration in [[Nietzsche]], and was vociferously opposed to some of the views of [[Kant]]. She also claimed intellectual kinship with [[John Locke]], who conceptualized the ideas that individuals "own themselves," have a right to the products of their own labor, and have [[natural rights]] to life, liberty, and property,<ref> {{cite web|url=http://www.mondopolitico.com/ideologies/atlantis/whatisobjectivism.htm|title="What is objectivism?"|accessdate=2006-04-10}}. Refers to a Leonard Peikoff lecture describing the connection between Rand and [[John Locke]]'s [[Two Treatises of Government]] (1689).</ref> and more generally with the philosophies of the [[Age of Enlightenment]] and the [[Age of Reason]]. She occasionally reported her approval of specific philosophical positions, including some of [[Baruch Spinoza]] and [[St. Thomas Aquinas]]. She also respected the 20th-century American rationalist [[Brand Blanshard]], who, like Rand, believed that "there has been no period in the past two thousand years when [both reason and rationality] have undergone a bombardment so varied, so competent, so massive and sustained as in the last half-century."<ref> Branden, Nathaniel. {{cite web|url=http://www.nathanielbranden.com/catalog/articles_essays/review_of_reason.html|title="Review of ''Reason and Analysis''"|accessdate=2006-04-10}} A review of Blanshard's book, originally published in ''The Objectivist Newsletter'', February 1963.</ref>
+
+====Aristotle====
+Rand's greatest influence was [[Aristotle]], especially ''[[Organon]]'' ("Logic"); she considered Aristotle the greatest philosopher.<ref>Long, Roderick T. {{cite web|title="Ayn Rand's contribution to the cause of freedom."|url=http://www.mises.org/fullstory.aspx?Id=1738|date=[[2006-03-23]]}}: "Rand always firmly insisted that Aristotle was the greatest and that Thomas Aquinas was the second greatest—her own atheism notwithstanding."</ref> In particular, her philosophy reflects an Aristotelian [[epistemology]] and [[metaphysics]] &ndash; both Aristotle and Rand argued that "there exists an objective reality that is independent of mind and that is capable of being known."<ref name="Sternberg"> Sternberg, Elaine. {{cite web|title="Why Ayn Rand Matters: Metaphysics, Morals, and Liberty.|url=http://www.dailyspeculations.com/Ayn%20Rand/Ayn-Rand-posts.html|accessdate=2006-04-02}}</ref> Although Rand was ultimately critical of Aristotle's ethics, others have noted her egoistic ethics "is of the ''[[eudaemonia|eudemonistic]]'' type, close to Aristotle's own...a system of guidelines required by human beings to live their lives successfully, to flourish, to survive as 'man qua man.'"<ref name="Machan"> Machan, Tibor. {{cite web|url=http://www.freemarketnews.com/Analysis/117/3475/2006-01-18.asp?nid=3475&wid=117|title="Cooper on Rand & Aristotle."|accessdate=2006-04-02}}</ref> Younkins argued "that her philosophy diverges from Aristotle’s by considering [[essences]] as epistemological and contextual instead of as metaphysical. She envisions Aristotle as a philosophical intuitivist who declared the existence of essences within concretes."<ref name="Younkins"> Younkins, Edward W. {{cite web|title="Aristotle: Ayn Rand's Acknowledged Teacher"|url=http://rebirthofreason.com/Articles/Younkins/Aristotle_Ayn_Rands_Acknowledged_Teacher.shtml|accessdate=2006-04-03}}</ref>.
+
+====Nietzsche====
+In her early life, Rand admired the work of [[Friedrich Nietzsche]], and did share "Nietzsche's reverence for human potential and his loathing of Christianity and the philosophy of Immanuel Kant,"<ref name="Hicks"> Hicks, Stephen. {{cite web|url=http://www.objectivistcenter.org/ct-184-Big_Game_Small_Gun.aspx|title="Big Game, Small Gun?"|accessdate=2006-03-30}} A review of Ronald E. Merrill's ''The Ideas of Ayn Rand''.</ref> but eventually became critical, seeing his philosophy as emphasizing emotion over reason and subjective interpretation of reality over actual reality.<ref name="Hicks"/> There is debate about the extent of the relationship between Rand's views and Nietzsche's, and over what seemed to be an evolution of Rand's view of Nietzsche. [[Allan Gotthelf]], in ''On Ayn Rand'', describes the first edition of ''We the Living'' as very sympathetic to Nietzschean ideas. Bjorn Faulkner and Karen Andre, characters from ''The Night of January 16th'', exemplify certain aspects of Nietzsche's views. Ronald Merrill, author of ''The Ideas of Ayn Rand'' identified a passage in ''We the Living'' that Rand had omitted from the 1959 reprint: "In it, the heroine entertains (though finally rejects) sentiments explicitly attributed to Nietzsche about the justice of sacrificing the weak for the strong."<ref name="McLemee"> McLemee, Scott. {{cite web|title="The Heirs of Ayn Rand."|url=http://www.mclemee.com/id39.html|accessdate=2006-04-03}} originally in ''Lingua Franca'', September 1999. </ref> Rand herself denied a close intellectual relationship with Nietzsche and characterized changes in later editions of ''We the Living'' as stylistic and grammatical.
+
+The destruction of Gail Wynand in ''[[The Fountainhead]]'' is an example of her later view, a rejection of Nietzsche, that the great cannot succeed by sacrificing the masses: "her [1934] journals suggest a rejection of traditional false-alternative ethics. Her [[May 15]] entry, for example, identifies the error of Nietzscheans such as Gail Wynand: in trying to achieve power, they use the masses, but at the cost of their ideals and standards, and thus become 'a slave to those masses.' The independent man, therefore, will not make his success dependent upon the masses."<ref name="Hicks"/> Although Rand disagreed with many of Nietzsche's ideas, the introduction to the 25th anniversary edition of ''[[The Fountainhead]]'' concludes with Nietzsche's statement, "The noble soul has reverence for itself."
+
+====Kant====
+{{see also|Critique of Pure Reason}}
+[[Image:Kant 2.jpg|thumb|right|200px|Her interpretation of Kant's views on metaphysics, epistemology, and ethics led Rand to consider him a "monster."]]
+Rand was deeply opposed to the philosophy of [[Immanuel Kant]]. Their divergence is greatest in [[metaphysics]] and [[epistemology]], particularly with regard to Kant's analytic-synthetic dichotomy, rather than the [[ethics]] of Kant's well known [[categorical imperative]] (her critique of Kant's ethics is directly rooted in Kant's metaphysics and epistemology). Rand and Kant had significantly different theories of concepts, identity, and consciousness: In [[Objectivist epistemology]], reason is the highest virtue, and reason and logic can be used to attain a contextual knowledge of objective reality. Kant believed that we cannot have certain knowledge about the true nature of reality ("things-in themselves"), but only of the manner in which we perceive reality. For example, we can know for certain that we are unable to conceive of an object which is not extended - i.e., does not occupy physical space - but it does not follow that no object that is not extended can exist. Rand believed that if an object has an effect upon the senses, then that effect provides evidence about the nature of the object itself. In Rand's view, Kant's dichotomy severed rationality and reason from the real world.  In Rand's words, {{cquote|I have mentioned in many articles that Kant is the chief destroyer of the modern world... You will find that on every fundamental issue, Kant's philosophy is the exact opposite of Objectivism.<ref name="Hsieh"> Hsieh, Diana. {{cite web|title="David Kelley versus Ayn Rand on Kant."|url=http://www.dianahsieh.com/blog/2006/02/david-kelley-versus-ayn-rand-on-kant.html|accessdate=2006-03-30}}</ref>}}
+In the final issue of ''The Objectivist,'' she further wrote, {{cquote|Suppose you met a twisted, tormented young man and... discovered that he was brought up by a man-hating monster who worked systematically to paralyze his mind, destroy his self-confidence, obliterate his capacity for enjoyment and undercut his every attempt to escape... Western civilization is in that young man's position. The monster is Immanuel Kant."<ref name="Hsieh"> Hsieh, Diana. {{cite web|title="David Kelley versus Ayn Rand on Kant."|url=http://www.dianahsieh.com/blog/2006/02/david-kelley-versus-ayn-rand-on-kant.html|accessdate=2006-03-30}}</ref>}}
+
+==Objectivist movement==
+{{Main|Objectivist movement}}
+In 1950 Rand moved to 120 East 34th Street<ref> Branden, Nathaniel. {{cite web|title="Devers Branden and Ayn Rand."|url=http://rous.redbarn.org/objectivism/writing/NathanielBranden/DeversAndAyn.html|accessdate=2006-04-06}}</ref> in [[New York City]], and formed a group (jokingly designated "[[The Ayn Rand Collective|The Collective]]") which included future [[Federal Reserve]] chairman Alan Greenspan, a young psychology student named Nathan Blumenthal (later [[Nathaniel Branden]]) and his wife [[Barbara Branden|Barbara]], and [[Leonard Peikoff]], all of whom had been profoundly influenced by ''The Fountainhead.''  According to Branden, "I wrote Miss Rand a letter in 1949... [and] I was invited to her home for a personal meeting in March, 1950, a month before I turned twenty."<ref>{{cite web|url=http://www.nathanielbranden.com/catalog/rand.php#|title=Nathaniel Branden discusses his relationship with Rand.|date=[[2006-03-23]]}}</ref>  Rand launched the [[Objectivist philosophy|Objectivist]] movement with this group to promote her philosophy.
+
+The group originally started out as informal gathering of friends who met with Rand on weekends at her apartment to discuss philosophy; later the Collective would proceed to play a larger, more formal role, helping edit ''[[Atlas Shrugged]]'' and promoting Rand's philosophy through the [[Nathaniel Branden Institute]] (NBI), established by him for that purpose. Many Collective members gave lectures at the NBI and in cities across the United States, while others wrote articles for its sister newsletter, ''[[The Objectivist]].''
+
+Throughout the 1960s and 1970s, Rand developed and promoted her Objectivist philosophy through both her fiction and non-fiction works, and by giving talks at several east-coast universities, largely through the NBI: "''[[The Objectivist Newsletter]],'' later expanded and renamed simply ''The Objectivist,'' contained essays by Rand, Branden, and other associates... that analyzed current political events and applied the principles of Objectivism to everyday life."<ref name="JVL"/> Rand later published some of these in book form.
+
+After several years, Rand's close relationship with the much younger Branden turned into a romantic affair, with the consent of their spouses. It lasted until Branden (having separated from Barbara) entered into an affair with the young actress [[Patrecia Scott]], whom he later married. The Brandens hid the affair from Rand, and when she found out, she abruptly ended her relationship with both Brandens and with the NBI, which closed. She published a letter in ''The Objectivist'' repudiating Branden for dishonesty and "irrational behavior"<ref name="thimc">Rand, Ayn.  To whom it may concern.  ''The Objectivist,'' v. 7, no. 5, pp. 1-8, New York 1968.</ref>, never disclosing their affair. Both Brandens remain ''[[persona non grata|personae non gratae]]'' to the mainline Objectivist movement, particularly the group that formed the [[Ayn Rand Institute]].
+
+==Political and social views==
+Rand held that the only moral social system is ''[[laissez-faire]]'' [[capitalism]]. Her political views were strongly [[individualist]] and hence [[anti-statist]] and [[anti-Communist]]. She exalted what she saw as the heroic [[American values]] of [[rational egoism]] and [[individualism]]. As a champion of rationality, Rand also had a strong opposition to [[mysticism]] and [[religion]], which she believed helped foster a crippling culture acting against individual human happiness and success. Rand detested many prominent [[liberalism|liberal]] and [[American conservatism|conservative]] politicians of her time, including prominent anti-Communists, such as [[Harry S. Truman]], [[Ronald Reagan]], [[Hubert Humphrey]], and [[Joseph McCarthy]]. She opposed US involvement in [[World War I]], [[World War II]]<ref name="WWII"> {{cite web|title="Ayn Rand on WWII"|url=http://ariwatch.com/AynRandOnWWII.htm|accessdate=2006-04-07}} Excerpts from Rand's writing, cited at the ARI Watch website.</ref> and the [[Korean War]], although she also strongly denounced [[pacifism]]: "When a nation resorts to war, it has some purpose, rightly or wrongly, something to fight for – and the only justifiable purpose is self-defense."<ref name="honoringvirtue"> {{cite web|url=http://ariwatch.com/HonoringVirtue.htm|title="Honoring Virtue"|accessdate=2006-04-06}} at the ARI website.</ref>
+She opposed U.S. involvement in the [[Vietnam War]], "If you want to see the ultimate, suicidal extreme of altruism, on an international scale, observe the war in Vietnam – a war in which American soldiers are dying for no purpose whatever,"<ref name="honoringvirtue"/> but also felt that unilateral American withdrawal would be a mistake of [[appeasement]] that would embolden communists and the Soviet Union.<ref name="WWII"/> She said also that she considered the anti-Communist [[John Birch Society]] "futile, because they are not for capitalism but merely against communism."<ref>http://www.ellensplace.net/ar_pboy.html</ref>
+
+Rand supported [[Israel]] during the 1973 [[Yom Kippur War|Arab-Israeli War]], which she saw as an attack on a government that supported individual rights: "The Arabs are one of the least developed cultures. They are typically nomads. Their culture is primitive, and they resent Israel because it's the sole beachhead of modern science and civilization on their continent. When you have civilized men fighting savages, you support the civilized men, no matter who they are."<ref>Ayn Rand Ford Hall Forum lecture, 1974, text published on the website of [[The Ayn Rand Institute]] [http://www.aynrand.org/site/PageServer?pagename=media_america_at_war_israeli_arab_conflict]</ref>
+
+Rand is considered one of the three founding mothers (along with [[Rose Wilder Lane]] and [[Isabel Paterson]]) of modern American [[libertarianism]], although she rejected Libertarianism and the [[Libertarian movement]]. [http://www.fee.org/publications/the-freeman/article.asp?aid=3345] 
+. 
+===Economics===
+She expressed qualified enthusiasm for the economic thought of [[Ludwig von Mises]] and [[Henry Hazlitt]]. The [[Ludwig von Mises Institute]] says that "it was largely as a result of Ayn's efforts that the work of von Mises began to reach its potential audience."<ref>Long, Roderick T. {{cite web|url=http://www.mises.org/fullstory.aspx?Id=1738|title="Ayn Rand's Contributions to the Cause of Freedom."|accessdate=2006-03-26}} Long also cites Barbara Branden's ''The Passion of Ayn Rand'' as the source for this claim.</ref> Later Objectivists, such as [[Richard Salsman]], have claimed that Rand's economic theories are implicitly more supportive of the doctrines of [[Jean-Baptiste Say]], though Rand herself was likely not acquainted with his work.
+
+===Gender, sex, and race===
+{{seealso|Objectivism, Ayn Rand, and homosexuality}}
+Rand's views on [[gender role]]s have created some controversy. While her books championed men and women as intellectual equals (for example, Dagny Taggart – the protagonist of ''Atlas Shrugged'' – was a hands-on railroad executive), she thought that the differences in the physiology of men and women led to fundamental psychological differences that were the source of gender roles.  Rand denied endorsing any kind of power difference between men and women, stating that metaphysical dominance in sexual relations refers to the man's role as the prime mover in sex and the necessity of male arousal for sex to occur.<ref name="Ayn Rand Answers">Rand, Ayn. Ayn Rand Answers: The Best of Her Q and A, (2006) ISBN 0451216652  </ref> According to Rand, "For a woman ''qua'' woman, the essence of femininity is hero-worship &ndash; the desire to look up to man." (1968)
+
+Rand's theory of sex is implied by her broader ethical and psychological theories. Far from being a debasing animal instinct, she believed that sex is the highest celebration of our greatest values. Sex is a physical response to intellectual and spiritual values &ndash; a mechanism for giving concrete expression to values that could otherwise only be experienced in the abstract. In ''Atlas Shrugged'', one of the heroes says "Tell me what a man finds sexually attractive and I will tell you his entire philosophy of life. Show me the woman he sleeps with and I will tell you his valuation of himself."<ref name="AtlasShruggedSex">Rand, Ayn. Atlas Shrugged, p453</ref>
+
+In a [[Playboy]] magazine interview, Rand stated that women are not psychologically suited to be President and strongly opposed the modern [[feminist]] movement, despite supporting some of its goals.<ref name="new left">Rand, Ayn. The New Left: The Anti-Industrial Revolution, (1993) ISBN 0-452-01125-6</ref> Feminist author [[Susan Brownmiller]] called Rand "a traitor to her own sex," while others, including [[Camille Paglia]] and the contributors to 1999's ''Feminist Interpretations of Ayn Rand,'' have noted Rand's "fiercely independent &ndash; and unapologetically sexual" heroines who are unbound by "tradition's chains... [and] who had sex because they wanted to."<ref name="McLemee"/>
+
+In ''Atlas Shrugged,'' Rand has one of her villains, Lillian Rearden, observe that the "band on the wrist of [Dagny's] naked arm gave her the most feminine of all aspects: the look of being chained."  Lillian says, "I am humbly aware that the wife of a great man has to be contented with reflected glory—don't you think so, Miss Taggart?" "No," said Dagny, "I don't."<ref>Rand, Ayn. ''Atlas Shrugged'', Random House (1957), pp. 136-137.</ref> This novel, along with ''Night of January 16th'' (1968) and ''The Fountainhead'' (1943), features sex scenes with stylized erotic combat that some claim borders on [[rape]]. Rand said that if what ''The Fountainhead'' depicted was rape it was "rape by engraved invitation."<ref>Branden, Barbara. ''The Passion of Ayn Rand'', Doubleday (1986) ISBN 0385191715, p. 134.</ref> In a review of a biography of Rand, writer Jenny Turner opined, <blockquote>"the sex in Rand’s novels is extraordinarily violent and fetishistic. In ''The Fountainhead,'' the first coupling of the heroes, heralded by whips and rock drills and horseback riding and cracks in marble, is ‘an act of scorn ... not as love, but as defilement’ &ndash; in other words, a rape. (‘The act of a master taking shameful, contemptuous possession of her was the kind of rapture she had wanted.’ In ''Atlas Shrugged,'' erotic tension is cleverly increased by having one heroine bound into a plot with lots of spectacularly cruel and handsome men.)<ref name="Turner"/></blockquote>
+
+Another source of controversy is Rand's view of [[homosexuality]]. According to remarks at the [[Ford Hall Forum]] at [[Northeastern University (Boston, Massachusetts)|Northeastern University]] in 1971, Rand's personal view was that homosexuality is "immoral" and "disgusting."<ref name="Ford"> Ford Hall forum remarks, cited in {{cite web|url=http://www.noblesoul.com/orc/bio/biofaq.html#Q5.2.6|title="Ayn Rand Biographical FAQ: Ayn Rand and Homosexuality"|accessdate=2006-03-24}}</ref> Specifically, she stated that "there is a psychological immorality at the root of homosexuality" because "it involves psychological flaws, corruptions, errors, or unfortunate premises."<ref>{{cite web|url=http://www.noblesoul.com/orc/bio/biofaq-notes.html#n5.2.6-1|title=Notes, The Ayn Rand Biographical FAQ|accessdate=2006-03-24}}</ref> A number of noted current and former Objectivists have been highly critical of Rand for her views on homosexuality.<ref>Varnell, Paul. {{cite web|title="Ayn Rand and Homosexuality"|url=http://www.indegayforum.org/authors/varnell/varnell118.html|accessdate=2007-10-06}} at the Indegay Forum, originally published in the Chicago Free Press Dec. 3, 2003. </ref> Others, such as Kurt Keefner, have argued that "Rand’s views were in line with the views at the time of the general public and the psychiatric community," though he asserts that "she never provided the slightest argument for her position, [...] because she regarded the matter as self-evident, like the woman president issue"<ref> Keefner, Kurt. {{cite web|url=http://www.nyu.edu/projects/sciabarra/essays/homo/atlasphere.htm|title="Sciabarra on Ayn Rand and Homosexuality"|date=[[2006-03-24]]}} A review of
+Chris Matthew Sciabarra’s ''Ayn Rand, Homosexuality, and Human Liberation ''(2003, Leap Publishing)</ref> although in her article "About a Woman President" Rand said that that issue was ''not'' self-evident.  
+
+In the same appearance, Rand noted, "I do not believe that the government has the right to prohibit [[homosexual behavior]]. It is the privilege of any individual to use his sex life in whichever way he wants it."<ref name="Ford"/>
+
+Rand defended the right of businesses to discriminate on the basis of [[sexual orientation]], [[race]], or any other criteria. Rand argued that no one's rights are violated by a private individual's or organization's refusal to deal with him, even if the reason is irrational. 
+
+Rand opposed ethnic and racial prejudice on moral grounds, in essays like "Racism" and "Global Balkanization," while still arguing for the right of individuals and businesses to act on such prejudice without government intervention. She wrote, "[[Racism]] is the lowest, most crudely primitive form of [[collectivism]]... [the notion] that a man is to be judged, not by his own character and actions, but by the characters and actions of a collective of ancestors,"<ref> Rand, Ayn. "Racism," in ''Return of the Primitive: The Anti-Industrial Revolution'' ISBN 0-452-01184-1, p. 179, at {{cite web|url=http://www.aynrand.org/site/PageServer?pagename=media_topic_racism_and_diversity|title=The Ayn Rand Institute|accessdate=2006-03-31}}</ref> but also opposed governmental remedies for this problem: "Private racism is not a legal, but a moral issue &ndash; and can be fought only by private means, such as economic [[boycott]] or social ostracism."<ref> "Racism," in ''Return of the Primitive: The Anti-Industrial Revolution'', p. 182 </ref>
+
+===HUAC testimony===
+In 1947, during the [[Second Red Scare]], Rand testified as a "friendly witness" before the [[House Committee on Un-American Activities]].([http://www.aynrand.org/site/News2?page=NewsArticle&id=6125 transcript here]) Her testimony regarded the disparity between her personal experiences in the [[Soviet Union]] and the fanciful portrayal of it in the 1943 film ''[[Song of Russia]]''. Rand argued that the film grossly misrepresented the socioeconomic conditions in the Soviet Union and portrayed life in the USSR as being much better than it actually was. Furthermore, she believed that even if a temporary alliance with the USSR was necessary to defeat the Nazis, the case for this should not have been made by portraying what she believed were falsely positive images of Soviet life: 
+
+<blockquote>"If we had good reason, if that is what you believe, all right, then why not tell the truth? Say it is a dictatorship, but we want to be associated with it. Say it is worthwhile being associated with the devil, as Churchill said, in order to defeat another evil which is Hitler. There might be some good argument made for that. But why pretend that Russia was not what it was?"<ref name="HUAC">Rand's HUAC testimony, cited at {{cite web|url=http://www.noblesoul.com/orc/texts/huac.html|title=The Objectivism Reference Center|accessdate=2006-04-07}}</ref></blockquote> 
+
+After the hearings, when Rand was asked about her feelings on the effectiveness of their investigations, she described the process as "futile".<ref name="HUAC"/>
+
+===Charity===
+Rand supported, in principle, the right to give charity but opposed the notion that it was a moral duty, and she did not consider it a major virtue.<ref>http://www.aynrand.org/site/PageServer?pagename=faq_index#obj_q7</ref> She opposed all charity and social programs by the government.  According to Cathy Young, her characterization of charity in her fiction was chiefly negative.<ref>http://www.reason.com/news/show/36527.html</ref>
+
+==Later years==
+===Visiting lecturer===
+Rand was a visiting lecturer at several universities, beginning in 1960 when she talked at [[Yale University]], [[Princeton University]] and [[Columbia University]]. In subsequent years, she went on to lecture at [[University of Wisconsin–Madison|University of Wisconsin]], [[Johns Hopkins University]], [[Harvard University]] and [[Mit|MIT]].<ref>Ayn Rand's Bibliography {{cite web|title="Ayn Rand's Bibliography"|url=http://festivals.iloveindia.com/teachers-day/famous-teachers/ayn-rand.html|accessdate=2006-10-22}}</ref> She received an honorary doctorate from [[Lewis & Clark College]] in 1963.<ref>{{cite web|title="Timeline of Ayn Rand's Life and Career"|url=http://www.aynrand.org/site/PageServer?pagename=about_ayn_rand_aynrand_timeline|accessdate=2007-04-24}}</ref> 
+
+For many years, she gave an annual lecture at the [http://www.fordhallforum.org/ Ford Hall Forum], answering questions from the audience afterward.
+
+===Declining health and death===
+[[Image:Ayn Rand Marker.jpg|thumb|right|250px|Grave marker of [[Frank O'Connor (actor)|Frank O'Connor]] and Ayn Rand.]]In 1973, she was briefly reunited with her youngest sister, Nora, who still lived in the Soviet Union.<ref name="JVL">Daligga, Catherine. {{cite web|url=http://www.jewishvirtuallibrary.org/jsource/biography/Rand.html|title="Ayn Rand" Biography at the Jewish Virtual Library|accessdate=2006-03-24}}</ref> Although Rand had written 1,200 letters to her family in the Soviet Union, and had attempted to bring them to the United States, she had ceased contacting them in 1937 after reading a notice in the post office that letters from Americans might imperil Russians at risk from [[Josef Stalin|Stalinist]] repression. Rand received a letter from Nora in 1973 and invited her and her husband to America; but her sister's views had changed, and to Rand's disappointment Nora voluntarily returned to the USSR.<ref> {{cite web|url=http://www.aynrand.org/site/News2?id=7581|title="Ayn Rand's Sister: Eleanora Drobyshev 1910-1999"|accessdate=2006-04-05}}</ref>
+
+Rand underwent surgery for [[lung cancer]] in 1974, and conflicts continued in the wake of the break with Branden and the subsequent collapse of the NBI. Many of her closest "Collective" friends began to part ways, and during the late 1970s her activities within the formal Objectivist movement began to decline; a situation which increased after the death of her husband on [[November 9]], [[1979]].<ref> ARI, {{cite web|title="Timeline of Ayn Rand's Life and Career."|url=http://www.aynrand.org/site/PageServer?pagename=about_ayn_rand_aynrand_timeline|accessdate=2006-04-06}}</ref> One of her final projects was work on a television adaptation of ''Atlas Shrugged.'' She had also planned to write another novel, ''To Lorne Dieterling,'' but did not get far in her notes.<ref>{{cite book | title = Journals of Ayn Rand | first = Ayn | last = Rand | publisher = Dutton (1997)}} Edited by David Harriman. p.''697''.</ref>
+
+Rand died of [[heart failure]] on [[March 6]], [[1982]] at her 34th Street home in [[New York City]],<ref> Saxon, Wolfgang. {{cite web|url=http://topics.nytimes.com/top/reference/timestopics/people/s/wolfgang_saxon/index.html?offset=80&s=oldest&inline=nyt-per|title="Ayn Rand, 'Fountainhead' Author, Dies."|accessdate=2006-04-06}} ''The New York Times,'' March 7, 1982.</ref> years after having successfully battled cancer, and was interred in the [[Kensico Cemetery]], [[Valhalla, New York]]. [[David Kelley]] read [[Rudyard Kipling|Kipling's]] poem "[[If—]]" at her graveside.<ref name="JVL"/><ref>http://www.objectivistcenter.org/cth-42-1579-Navigator_December_2004.aspx</ref>
+Rand's funeral was attended by some of her prominent followers, including [[Alan Greenspan]]. A six-foot floral arrangement in the shape of a dollar sign was placed near her casket.<ref name="Leiendecker"/>
+
+==Legacy==
+[[Image:Ayn Rand quote, American Adventure, Epcot Center, Walt Disney World.jpg.jpg|thumb|right|A quote from Rand, featured in an American Adventure exhibit in the [[Epcot Centre]], [[Walt Disney World]].]]
+Rand's books continue to be widely sold and read, with more than 22 million copies sold (as of 2005), and 500,000 more being sold each year.<ref>Cato: Ayn Rand at 100, {{cite web|title="Cato: Ayn Rand at 100"|url=http://www.cato.org/pub_display.php?pub_id=3661|accessdate=2006-04-23}}</ref> Rand and Objectivism are less well known outside [[North America]], although there are pockets of interest in [[Europe]], [[Australia]], and [[New Zealand]]. Her novels are reported to be popular in [[India]]<ref>The Atlas Society, {{cite web|title="Celebrity Ayn Rand Fans"|url=http://www.atlassociety.org/rand_fans.asp|accessdate=2006-03-24}}</ref> and [[Turkey]] (where filmmaker [[Sinan Çetin]] publishes her works) and to be gaining an increasingly wider audience in [[Africa]]. She also enjoyed some popularity in Israel, through the early work of Moshe Kroy. Generally, Rand's work has had little effect on academic philosophy; her followers have been largely drawn from other professions. The Anthem Foundation for Objectivist Scholarship offers resources to study Objectivism at [[University of Texas at Austin|The University of Texas at Austin]], Ashland University in Ohio, and the University of Pittsburgh. At the University of Pittsburgh, professors James Lennox and [[Allan Gotthelf]] head the research. Both scholars are renowned for their illuminations of Aristotle's writings. [[Duke University]]'s professor Gary Hull is a member of the Ayn Rand Institute and has lectured courses incorporating Objectivist literature and discussion. Professor [[Allan Gotthelf]] also points to certain modern trends in academic philosophy which make philosophers more receptive to Objectivist ideas. Chief among them are the notions of essence and concept as epistemological developments in virtue theory ethics, and current projects in normative philosophies of science and logic. Following Rand's death, continued conflict within the Objectivist movement led to establishment of independent organizations claiming to be her intellectual heirs.
+
+===Ayn Rand Institute===
+{{main|Ayn Rand Institute}}
+
+In 1985, [[Leonard Peikoff]], a surviving member of "[[The Ayn Rand Collective|The Collective]]" and Ayn Rand's designated heir, established "The [[Ayn Rand Institute]]: The Center for the Advancement of Objectivism" (ARI). The Institute has since registered the name "Ayn Rand." The Ayn Rand Institute "works to introduce young people to Ayn Rand's novels, to support scholarship and research based on her ideas, and to promote the principles of reason, rational self-interest, individual rights and laissez-faire capitalism to the widest possible audience."
+
+===The Objectivist Center and The Atlas Society===
+{{main|The Objectivist Center|The Atlas Society}}
+
+Another schism in the movement occurred in 1989, when Objectivist [[David Kelley]] wrote "A Question of Sanction," in which he defended his choice to speak to non-Objectivist [[Libertarianism|libertarian]] groups: "It was a response to an article by [[Peter Schwartz]] in The Intellectual Activist, demanding that those who speak to libertarians be ostracized from the movement...[I] observed that Objectivism is not a closed system of belief; and that we might actually learn something by talking to people we disagree with." Kelley's description of the reasons behind the break is disputed by the Ayn Rand Institute.<ref>Kelley, David. {{cite web|url=http://www.objectivistcenter.org/showcontent.aspx?ct=39&h=51|title="Introduction to 'The Contested Legacy of Ayn Rand'"|accessdate=2006-03-24}}</ref> Peikoff, in an article for ''[[The Intellectual Activist]]'' called "Fact and Value" argued that Objectivism is, indeed, a closed system, and that truth and moral goodness are directly related.<ref name="factandvalue">Peikoff, Leonard. {{cite web|url=http://www.aynrand.org/site/PageServer?pagename=objectivism_f-v|title="Fact and Value."|accessdate=2006-03-24}}</ref> Peikoff expelled Kelley from his movement, whereupon Kelley founded The Institute for Objectivist Studies (now known as "[[The Objectivist Center]]"). It has since created a division called [[The Atlas Society]], which has its own web site that is focused on attracting Ayn Rand fiction readers, and downplays her role as a philosopher. This division is used for most public outreach efforts, with The Objectivist Center itself used principally for more academic ventures. The Atlas Society/Objectivist Center also publishes ''The New Individualist'' (formerly ''Navigator''), the first magazine in the U.S. to feature one of the [[Mohammad cartoons]] on the cover.
+
+===Popular interest and influence===
+[[Image:Fountainhead cafe.jpg|thumb|The Fountainhead Cafe, a coffee shop in [[New York City]] inspired by Objectivism. The sign reads "Eat Objectively, Live Rich".]]
+The column "Book Notes" of ''[[The New York Times]]'', reported in 1991 that in a survey by the [[Library of Congress]] and the [[Book-of-the-Month Club]], when asked what the most influential book in their lives was, Rand's ''Atlas Shrugged'' was the second most popular choice, after the [[Bible]].<ref>{{cite web|url=http://query.nytimes.com/gst/fullpage.html?sec=health&res=9D0CE7D61339F933A15752C1A967958260|title= Book Notes|author=Fein, Esther B|date=November 20, 1991|publisher=The New York Times}}</ref> Readers polled in 1998 and 1999 by Modern Library placed four of her books on the 100 Best Novels list ([[Atlas Shrugged]], [[The Fountainhead]], [[Anthem (novella)|Anthem]], and [[We the Living]] were in first, second, seventh, and eighth place, respectively) and one on the 100 Best Nonfiction list ([[The Virtue of Selfishness]], in first place), with books about Rand and her philosophy in third and sixth place.<ref>{{cite web|url=http://www.randomhouse.com/modernlibrary/100best.html|title="The Modern Library: 100 Best"|date=[[2007-11-02]]}}</ref>
+
+Numerous prominent individuals have acknowledged that Rand greatly influenced their lives, including: [[Harry Binswanger]], [[Nathaniel Branden]], [[Barbara Branden]], [[Sinan Çetin]], [[Roy A. Childs]], [[James Clavell]], [[Edward Cline]], [[Chris Cox]], [[Mark Cuban]], [[Paul DePodesta]], [[Steve Ditko]], [[Terry Goodkind]], [[Allan Gotthelf]], [[Alan Greenspan]], [[Hugh Hefner]], Erika Holzer, [[John Hospers]], [[Angelina Jolie]], [[David Kelley]], [[Billie Jean King]], [[Anton LaVey]], [[Rush Limbaugh]], [[Frank Miller (comics)|Frank Miller]], [[Ron Paul]], Michael Paxton, [[Neil Peart]], [[Leonard Peikoff]], [[Ronald Reagan]], [[George Reisman]], [[John Ridpath]], [[Robert Ringer]], [[Tracey Ross]], [[Kay Nolte Smith]], [[Tara Smith (philosopher)|Tara Smith]], [[John Stossel]], [[Linda & Morris Tannehill]], [[Margaret Thatcher]], [[Clarence Thomas]], [[Vince Vaughn]], [[Jimmy Wales]], and many others.<ref>{{cite journal|title=The New Individualist|issue=Jan/Feb|year=2006}}</ref>  
+
+Rand's philosophy of [[Objectivism (Ayn Rand)|Objectivism]] continues to influence workers in the [http://www.aristos.org arts], business, and [http://www.objectivescience.com science].   "[http://www.theatlasphere.com The Atlasphere]," an online community devoted to admirers of Rand, maintains a [[blog]] citing Rand's influence on popular or newsworthy figures who cite the influence of Rand's works on their lives,<ref>{{cite web|title="The Atlasphere Metablog Celebrity Ayn Rand Fans Archive"|url=http://www.theatlasphere.com/metablog/cat/celebrity-rand-fans/|accessdate=2006-03-24}}</ref> while "Randex" updates a list of recent media references to Rand or her work.<ref>{{cite web|title="Media References to Ayn Rand "|url=http://randex.org/|accessdate=2006-04-14}}</ref>
+
+[[BioShock]], a video game released in the summer of 2007, is built around a story influenced by Ayn Rand's philosophy and ''Atlas Shrugged''.
+
+She appears on a 33 cent U.S. postage stamp, which debuted [[22 April]] [[1999]], in New York City.
+
+===Rand's work and academic philosophy===
+Rand's work has been mostly ignored by the academic philosophers of the English-speaking world. Few leading research universities consider Rand or Objectivism to be an important philosophical specialty or research area. Many adherents and practitioners of [[continental philosophy]] criticize her celebration of self-interest, so there has similarly been little focus on her work in this movement. However, since her death, there has been an increase in academic structures open to study of Ayn Rand's work. Those include: 
+:*Fellowships for the study of Ayn Rand's ideas at academic institutions such as the University of Texas at Austin,<ref>{{cite web|url=http://www.utexas.edu/opa/news/01newsreleases/nr_200110/nr_fellowship011016.html|title=''UT Texas Press Release''|accessdate=2006-04-14}}</ref> Ashland University in Ohio, Cambridge University, and the University of Pittsburgh.<ref>{{cite web|url=http://www.umc.pitt.edu/media/pcc040223/briefly_noted.html|title=''Pitt Chronicle: Briefly Noted—New Pitt Fellowship for Study of Objectivism''|accessdate=2007-10-03}}</ref>  Courses of the Ayn Rand Institute's [http://www.aynrand.org/site/PageServer?pagename=education_academic_oac_faq Objectivist Academic Center] are accredited, so students can obtain university credits for studying Objectivism.<ref>{{cite web
+|url=http://www.aynrand.org/site/PageServer?pagename=education_academic_oac_faq#ugrad
+|title=''The Ayn Rand Institute - Frequently Asked Questions''
+|accessdate=2007-01-11}}</ref>
+:*The Ayn Rand Society, founded in 1987, is affiliated with the [[American Philosophical Association]], and has been active in sponsoring seminars.<ref>{{cite web|url=http://www.aynrandsociety.org/|title=''Ayn Rand Society''|accessdate=2007-10-03}}</ref>
+:*The ''Journal of Ayn Rand Studies ''(JARS). It is a scholarly, peer reviewed journal dedicated to the study of Ayn Rand - principally her philosophic work. It is published twice yearly. JARS is nonpartisan and accepts articles that are favorable to or critical of Rand's positions.  The stated editorial position is to remain unaligned with any advocacy group, institution or person. "While we publish essays by Objectivists and those influenced by Rand, we are especially interested in publishing scholars who work in traditions outside of Objectivism--including those who are critical of Rand's thought. We promote and encourage scholarly give-and-take among diverse elements of the academy." <ref>{{cite web|url=http://www.aynrandstudies.com/jars/reviews.asp|title=''Journal of Ayn Rand Studies''|accessdate=2006-03-28}}</ref> 
+
+In a 1999 interview in the ''Chronicle of Higher Education,'' Rand scholar Chris Matthew Sciabarra said, "I know they laugh at Rand," while also noting a growing interest in her work in the academic community.<ref>Sharlet, Jeff. {{cite web|url=http://chronicle.com/colloquy/99/rand/background.htm|title="Ayn Rand Has Finally Caught the Attention of Scholars"|accessdate=2006-03-28}}</ref>
+
+In 2006, [[Cambridge University Press]] published a volume on Rand's ethical theory written by ARI-affiliated scholar [[Tara Smith (philosopher)|Tara Smith]], a philosophy professor at the [[University of Texas at Austin]]. The book is titled ''Ayn Rand's Normative Ethics: The Virtuous Egoist.'' Notre Dame Philosophical Reviews recently published a review of Smith's book by Helen Cullyer of the University of Pittsburgh. The review ends with the following:
+<blockquote>"It should be stressed in conclusion that whether one is a fan or a detractor of Ayn Rand, the issues raised by this book are manifold and provocative. This book should force a debate of renewed vigor about what we mean by egoism, whether and how the egoism/altruism dichotomy should be applied within eudaimonistic ethical theories, and what our ethical theories imply about our political outlook. Smith provides us with a version of egoism that will need to be argued against by those who find it distasteful or misguided, rather than simply dismissed."<ref>http://ndpr.nd.edu/review.cfm?id=8123</ref></blockquote>
+
+A recent conference at the University of Pittsburgh, "Concept and Objectivity: Knowledge, Science, and Values," featured presentations by Objectivists Onkar Ghate, Allan Gotthelf, James Lennox, and Darryl Wright alongside influential non-Objectivist academics such as A.P. Martinich and Peter Railton.<ref>http://www.pitt.edu/~hpsdept/news/news/ConceptsObjConf2006.pdf</ref>
+
+===Student activism===
+One of the reasons for the prominence of Ayn Rand and Objectivism in the news and popular culture relative to other philosophical theories<ref>{{cite web|title="UK Guardian: A growing concern  "|url= http://education.guardian.co.uk/higher/worldwide/story/0,9959,615157,00.html| /=2006-06-14}}</ref><ref>{{cite web|title="USA Today: Scandals lead execs to 'Atlas Shrugged'  "|url= http://www.usatoday.com/money/companies/management/2002-09-23-ayn-rand_x.htm| /=2006-06-14}}</ref><ref>{{cite web|title="202 stories with 'Ayn Rand' in Google News  "|url= http://news.google.com/news?q=ayn+rand&hl=en&lr=&ie=UTF-8&scoring=d| /=2006-06-14}}</ref> may be related to the dozens of student groups dedicated to promoting and studying the philosophy of Objectivism<ref>{{cite web|title="Ayn Rand Institute Campus Clubs"|url= http://www.aynrand.org/site/PageServer?pagename=education_campus_findclubs| /=2006-06-14}}</ref><ref>{{cite web|title="TOC Ayn Rand Clubs"|url=http://www.objectivistcenter.org/cth-15-1448-Local_Clubs.aspx|accessdate=2006-06-14}}</ref><ref>{{cite web|title="Meetup.com Ayn Rand Groups"|url= http://aynrand.meetup.com/about/|accessdate=2006-06-14}}</ref> spread across the U.S., Australia, Canada, Israel, the Netherlands, New Zealand, and Norway.<ref>{{cite web|title="UK Guardian: A growing concern"|url= http://education.guardian.co.uk/higher/worldwide/story/0,9959,615157,00.html|accessdate=2006-06-14}}</ref>  These clubs often present controversial speakers on topics such as abortion, religion, and foreign policy, often allying with controversial conservative (and sometimes liberal) organizations to organize their events. For example the NYU Objectivism Club hosted a joint panel<ref>{{cite web|title="NYU Panel Commentary"|url= http://nyu.objectivismonline.net/content/view/16/9/|accessdate=2006-06-14}}</ref> on the [[Jyllands-Posten Muhammad cartoons|Muhammad cartoons]] that received nationwide coverage for NYU's censorship of the cartoons.<ref>{{cite web|title="Inside Higher Education"|url=http://www.insidehighered.com/news/2006/03/30/cartoon |accessdate=2006-06-14}}</ref>  There are several dozen speakers sponsored by the Ayn Rand Institute<ref>{{cite web|title="Ayn Rand Institute Speaker List"|url=http://www.aynrand.org/site/PageServer?pagename=media_speakers_writers |accessdate=2006-06-14}}</ref> and other organizations, who give nationwide tours each year speaking about Objectivism.  
+
+The [[Ayn Rand Institute]] has spent more than $5M on educational programs advancing Objectivism, including scholarships and clubs. These clubs often obtain educational materials and speakers from the ARI. The [http://www.objectivistclubs.org/ Objectivist Club Association] and [http://www.objectivismonline.net/ ObjectivismOnline] provide free hosting and organizational resources for Ayn Rand clubs. There are also several conferences organized by various organizations, such as the [http://www.objectivistconferences.com/ Objectivist Conferences], which are attended by several hundred "new intellectuals" each summer for two weeks and feature dozens of philosophy courses and presentations of new publications and research.
+
+==Criticism==
+===Philosophical criticism===
+A notable exception to the general lack of attention paid to Rand in philosophy is the essay "On the Randian Argument" by [[Harvard University]] philosopher [[Robert Nozick]], which appears in his collection, ''Socratic Puzzles.'' Nozick is sympathetic to Rand's political conclusions, but he does not think her arguments justify them. In particular, his essay criticizes her foundational argument in ethics — laid out most explicitly in her book ''The Virtue of Selfishness'' — which claims that one's own life is, for each individual, the only ultimate value because it makes all other values possible. Nozick says that to make this argument sound Rand still needs to explain why someone could not rationally prefer dying and having no values. Thus, he argues, her attempt to defend the morality of selfishness is essentially an instance of [[begging the question]] and her solution to [[David Hume]]'s famous [[is-ought problem]] is unsatisfactory.
+
+===Literary criticism===
+Rand's novels, when they were first published, "received almost unanimously terrible reviews"<ref name="Turner" /> and were derided by some critics as long and melodramatic.<ref>Chapman, Steve{{cite web|url=http://washingtontimes.com/commentary/20050201-094832-2692r.htm|title=''The evolution of Ayn Rand''|accessdate=2006-04-09}} ''The Washington Times,'' February 2, 2005.</ref>  Many of these, including her ''magnum opus,'' ''Atlas Shrugged,'' became bestsellers due largely to word of mouth.<ref name="Turner" /> Scholars of English and American [[literature]] have largely ignored her work, although Rand has received some positive reviews from the literary establishment. For example, Lorine Pruette, a ''[[New York Times]]'' reviewer, wrote that Rand "has written a hymn in praise of the individual," stating that "you will not be able to read this masterful book without thinking through some of the basic concepts of our times."<ref>Berliner, Michael S., ''Letters of Ayn Rand'' (New York: Plume, 1995), pp. 74.</ref> Also, in the Literary Encyclopedia John Lewis of Ashland University calls her works "the most intellectually challenging fiction of her generation."<ref>Lewis, John, {{cite web|url=http://www.litencyc.com/php/speople.php?rec=true&UID=3705|title=Literary Encyclopedia:Ayn Rand|accessdate=2007-26-11}}, October 20, 2001.</ref>
+
+The most famous review of ''Atlas Shrugged'' was written by the conservative author [[Whittaker Chambers]] and appeared in ''[[National Review]]'' in 1957. It was unrelentingly scathing. Chambers called the book "sophomoric"; and "remarkably silly," and said it "can be called a novel only by devaluing the term." The tone of the book was described as "shrillness without reprieve". Chambers accused Rand, a refugee from [[totalitarianism]], as supporting the same godless system as the Soviets, stating that "From almost any page of Atlas Shrugged, a voice can be heard, from painful necessity, commanding: ' To the gas chambers-- go!'" <ref>{{Harvard reference | Surname=Chambers | Given=Whittaker | Authorlink=Whittaker Chambers | Title=Big Sister is Watching You| Journal=National Review| Year=1957 | Page=594-596 | URL=http://www.orthodoxytoday.org/articles2/ChambersAynRand.shtml}}</ref> ''The Intellectual Activist'' published a reply, arguing that Chambers did not actually read the book, as he misspells the names of several major characters and uses no quotations from the novel in his critique.<ref>http://www.capmag.com/article.asp?id=4081</ref> Mimi Gladstein called Rand's characters flat and uninteresting, and her heroes implausibly wealthy, intelligent, physically attractive and free of doubt while arrayed against antagonists who are weak, pathetic, full of uncertainty, and lacking in imagination and talent.<ref>{{cite book | title = Feminist Interpretations of Ayn Rand | first = Mimi R. | last = Gladstein |coauthor = Chris Matthew Sciabarra | publisher = Pennsylvania State University Press | year = 1999 | id = ISBN 0-271-01831-3 }} p. 140</ref>
+
+Rand herself replied to these literary criticisms (in advance of many of them) with her 1963 essay "The Goal of My Writing," and in essays collected in ''[[The Romantic Manifesto|The Romantic Manifesto: A Philosophy of Literature]]'' (2nd rev. ed. 1975), in which she states the goal of her fiction is to project her vision of an ideal man: not man as he is, but man as he might and ought to be.
+
+===Cult criticism===
+[[Murray Rothbard]] (who helped define modern [[libertarianism]] and [[anarcho-capitalism]] and wrote the Rand parody [[Mozart Was a Red]])<ref>Rothbard, Murray. {{cite web|title="The sociology of the Ayn Rand cult."|url=http://www.lewrockwell.com/rothbard/rothbard23.html|accessdate=2006-03-31}}</ref>, Jeff Walker (author of ''The Ayn Rand Cult'')<ref>Walker, Jeff (1999). ''The Ayn Rand Cult''. Chicago: Open Court. ISBN 0-8126-9390-6</ref>, and [[Michael Shermer]] (founder of [[The Skeptics Society]])<ref>Shermer, Michael. {{cite web|title="The Unlikeliest Cult in History"|url=http://www.2think.org/02_2_she.shtml|accessdate=2006-03-30}} Originally published in ''Skeptic'' vol. 2, no. 2, 1993, pp. 74-81.</ref>, have accused Objectivism of being a cult, claiming typical cult traits,including slavish adherence to unprovable doctrine and extreme adulation of the founder.
+
+The Biographical FAQ of the Objectivism Reference Center website discusses these allegations and refers to a letter in which Rand replies to a fan who wrote her offering cult-like allegiance by declaring "A blind follower is precisely what my philosophy condemns and what I reject. Objectivism is not a mystic cult".<ref>Rand, Ayn ''Letters'', p. 592 Letter dated [[December 10]], [[1961]], Plume (1997), ISBN 0-452-27404-4, as cited in {{cite web|title="Ayn Rand Biographical FAQ: Did Rand organize a cult?"|url=http://www.noblesoul.com/orc/bio/biofaq.html#Q3.3|accessdate=2006-06-25}}</ref>
+
+==Bibliography==
+===Fiction===
+* ''[[Night of January 16th]]'' (1934) ISBN 0-452-26486-3
+* ''[[We the Living]]'' (1936) ISBN 0-451-18784-9
+* ''[[Anthem (novel)|Anthem]]'' (1938) ISBN 0-451-19113-7
+* ''[[The Fountainhead]]'' (1943) ISBN 0-451-19115-3
+* ''[[Atlas Shrugged]]'' (1957) ISBN 0-451-19114-5
+
+===Nonfiction===
+* ''[[For the New Intellectual]]'' (1961)
+* ''[[The Virtue of Selfishness]]'' (with [[Nathaniel Branden]]) (1964)
+* ''[[Capitalism: The Unknown Ideal]]'' (with [[Nathaniel Branden]], [[Alan Greenspan]], and [[Robert Hessen]]) (1966)
+* ''[[Introduction to Objectivist Epistemology]]'' (1967)
+* ''[[The Romantic Manifesto]]'' (1969)
+* ''[[Return of the Primitive: The Anti-Industrial Revolution|The New Left: The Anti-Industrial Revolution]]'' (1971)
+* ''[[Philosophy: Who Needs It]]'' posthumously edited by Leonard Peikoff (1982)
+
+===Posthumous works===
+* ''[[The Early Ayn Rand]]'' (edited and with commentary by [[Leonard Peikoff]]) (1984)
+* ''[[The Voice of Reason|The Voice of Reason: Essays in Objectivist Thought]]'' (edited by [[Leonard Peikoff]]; additional essays by [[Leonard Peikoff]] and [[Peter Schwartz]]) (1989)
+* ''[[Introduction to Objectivist Epistemology]]'' second edition (edited by [[Harry Binswanger]]; additional material by [[Leonard Peikoff]]) (1990)
+* ''Letters of Ayn Rand'' (edited by Michael S. Berliner) (1995)
+* ''Journals of Ayn Rand'' (edited by David Harriman) (1997)
+* ''Ayn Rand's Marginalia: Her Critical Comments on the Writings of over Twenty Authors'' (edited by Robert Mayhew) (1998)
+* ''[[The Ayn Rand Column|The Ayn Rand Column: Written for the Los Angeles Times]]'' (edited by [[Peter Schwartz]]) (1998)
+* ''Russian Writings on Hollywood'' (edited by Michael S. Berliner) (1999)
+* ''[[Return of the Primitive: The Anti-Industrial Revolution]]'' (expanded edition of ''The New Left''; edited and with additional essays by [[Peter Schwartz]]) (1999)
+* ''[[The Art of Fiction]]'' (edited by Tore Boeckmann) (2000)
+* ''The Art of Nonfiction'' (edited by Robert Mayhew) (2001)
+* ''The Objectivism Research CD-ROM'' (collection of most of Rand's works in CD-ROM format) (2001)
+* ''Three Plays'' (2005)
+* ''Ayn Rand Answers'' (edited by Robert Mayhew) (2005)
+
+===Film adaptations===
+Without Rand's knowledge or permission, ''[[We the Living]]'' was made into a pair of films, ''Noi vivi'' and ''Addio, Kira'' in 1942 by Scalara Films, [[Rome]]. They were nearly censored by the [[Italy|Italian]] government under [[Benito Mussolini]], but they were permitted because the novel upon which they were based was anti-Soviet. The films were successful, and the public easily realized that they were as much against Fascism as Communism. These films were re-edited into a new version which was approved by Rand and re-released as ''We the Living'' in 1986.
+
+''[[The Fountainhead (film)|The Fountainhead]]'' [http://www.imdb.com/title/tt0041386/] was a [[Hollywood]] film (1949, Warner Bros.) starring [[Gary Cooper]], for which Rand wrote the screen-play. Rand initially insisted that [[Frank Lloyd Wright]] design the architectural models used in the film, but relented when his fee was too high.<ref> Skousen, after [[Barbara Branden]] ''The Passion of Ayn Rand'' ISBN 0-385-19171-5 </ref>
+
+A [[Atlas Shrugged (film)|film adaptation of ''Atlas Shrugged'']] is in pre-production as of late 2007, with production possibly starting in 2008,<ref> {{cite web|url=http://www.imdb.com/title/tt0480239/|title=Atlas Shrugged, at the IMDB|accessdate=2006-03-31}}</ref> although that may be affected by the [[2007 Writers Guild of America strike|writer's strike]].  In September 2007, Lions Gate Films reported that it had hired [[Vadim Perelman]] to revise [[Randall Wallace]]'s script and to direct the film, with screen star [[Angelina Jolie]] cast in the rôle of Dagny Taggart.<ref> {{cite web|url=http://www.variety.com/article/VR1117971319.html|title=Vadim Perelman to direct 'Atlas'|accessdate=2007-10-02}}</ref>
+
+''[[The Passion of Ayn Rand]]'' [http://www.imdb.com/title/tt0140447/], an independent film about her life, was made in 1999, starring [[Helen Mirren]], [[Eric Stoltz]], and [[Peter Fonda]].  The film was based on the book by [[Barbara Branden]], one of her former associates, and won several awards for Helen Mirren, including the Emmy and the Golden Globe.
+
+===Screenplays===
+In addition to the screenplay of ''The Fountainhead'', Rand also collaborated on screenplays of ''You Came Along''  and ''[[Love Letters (1945 film)]]'' both filmed in 1945.
+
+==References==
+<div class="references-small" style="-moz-column-count:2; column-count:2;">
+<references />
+</div>
+
+==Further reading==
+<div class="references-small">
+* {{cite book
+ | last = Baker | first = James T.
+ | title = Ayn Rand
+ | publisher = Twayne
+ | location = Boston
+ | year = 1987
+ | id = ISBN 0-8057-7497-1
+ }}
+* {{cite book
+ | last = Branden | first = Barbara
+ | authorlink = Barbara Branden
+ | title = The Passion of Ayn Rand
+ | publisher = Doubleday & Company
+ | location = Garden City, New York
+ | year = 1986
+ | id = ISBN 0-385-19171-5
+ }}
+* {{cite book
+ | last = Branden | first = Nathaniel
+ | authorlink = Nathaniel Branden
+ | title = My Years with Ayn Rand
+ | publisher = Jossey Bass
+ | location = San Francisco
+ | year = 1998
+ | id = ISBN 0-7879-4513-7
+ }}
+* {{cite book
+ | last = Branden | first = Nathaniel
+ | authorlink = Nathaniel Branden
+ | coauthors = [[Barbara Branden]]
+ | title = Who Is Ayn Rand?
+ | publisher = Random House
+ | location = New York
+ | year = 1962
+ }}
+* {{cite book
+ | last = Britting | first = Jeff
+ | authorlink = Jeff Britting
+ | title = Ayn Rand
+ | publisher = Overlook Duckworth
+ | location = New York
+ | year = 2005
+ | id = ISBN 1-58567-406-0
+ }}
+* {{cite book
+ | last = Gladstein | first = Mimi Reisel
+ | title = The New Ayn Rand Companion
+ | publisher = Greenwood Press
+ | location = Westport, Connecticut
+ | year = 1999
+ | id = ISBN 0-313-30321-5
+ }}
+* {{cite book
+ | last = Gladstein | first = Mimi Reisel
+ | coauthors = [[Chris Matthew Sciabarra]] (editors)
+ | title = Feminist Interpretations of Ayn Rand
+ | publisher = The Pennsylvania State University Press
+ | location = University Park, Pennsylvania
+ | year = 1999
+ | id = ISBN 0-271-01830-5
+ }}
+* {{cite book
+ | first =  Stephen | last = Hicks
+ | authorlink = Stephen Hicks
+ | title = Ayn Rand and Contemporary Business Ethics<ref>http://papers.ssrn.com/sol3/papers.cfm?abstract_id=782343</ref>
+ | year = 2003
+ }}
+* {{cite book
+ | last = Mayhew | first = Robert
+ | title = Ayn Rand and Song of Russia
+ | publisher = Rowman & Littlefield
+ | location = Lanham, Maryland
+ | year = 2004
+ | id = ISBN 0-8108-5276-4
+ }}
+* {{cite book
+ | last = Mayhew | first = Robert
+ | title = Essays on Ayn Rand's Anthem
+ | publisher = Rowman & Littlefield
+ | location = Lanham, Maryland
+ | year = 2005
+ | id = ISBN 0-7391-1031-4
+ }}
+* {{cite book
+ | last = Mayhew | first = Robert
+ | title = Essays on Ayn Rand's We the Living
+ | publisher = Rowman & Littlefield
+ | location = Lanham, Maryland
+ | year = 2004
+ | id = ISBN 0-7391-0698-8
+ }}
+* {{cite book
+ | last = Paxton | first = Michael
+ | title = Ayn Rand: A Sense of Life (The Companion Book)
+ | publisher = Gibbs Smith
+ | location = Layton, Utah
+ | year = 1998
+ | id = ISBN 0-87905-845-5
+ }}
+* {{cite journal
+ | last = Peikoff | first = Leonard
+ | authorlink = Leonard Peikoff
+ | title = My Thirty Years with Ayn Rand: An Intellectual Memoir
+ | journal = The Objectivist Forum
+ | volume = 8
+ | issue = 3
+ | year = 1987
+ | pages = 1–16
+ }}
+* {{cite book
+ | last = Peikoff | first = Leonard
+ | authorlink = Leonard Peikoff
+ | title = Objectivism: The Philosophy of Ayn Rand
+ | publisher = Plume
+ | year = 1991
+ | id = ISBN 0-452-01101-9
+ }}
+* {{cite book
+ | last = Rothbard | first = Murray N.
+ | authorlink = Murray N. Rothbard
+ | title = The Sociology of the Ayn Rand Cult
+ | url = http://www.lewrockwell.com/rothbard/rothbard23.html
+ | publisher = Liberty
+ | location = Port Townsend, Washington
+ | year = 1987
+ }}
+* {{cite book
+ | last = Sures | first = Mary Ann
+ | coauthors = Charles Sures
+ | title = Facets of Ayn Rand
+ | publisher = Ayn Rand Institute Press
+ | location = Los Angeles
+ | year = 2001
+ | id = ISBN 0-9625336-5-3
+ }}
+* {{cite book
+ | last = Sciabarra | first = Chris Matthew
+ | authorlink = Chris Matthew Sciabarra
+ | title = Ayn Rand: The Russian Radical
+ | location = University Park, Pennsylvania
+ | publisher = The Pennsylvania State University Press
+ | year = 1995
+ | id = ISBN 0-271-01440-7
+ }}
+* {{cite journal
+ | last = Sciabarra | first = Chris Matthew
+ | authorlink = Chris Matthew Sciabarra
+ | title = The Rand Transcript
+ | url = http://www.nyu.edu/projects/sciabarra/essays/randt2.htm
+ | journal = The Journal of Ayn Rand Studies
+ | volume = 1
+ | issue = 1
+ | year = 1999
+ | pages = 1–26
+ }}
+* {{cite journal
+ | last = Shermer | first = Michael
+ | authorlink = Michael Shermer
+ | url = http://www.2think.org/02_2_she.shtml
+ | title = The Unlikeliest Cult In History
+ | journal = Skeptic
+ | volume = 2
+ | issue = 2
+ | year = 1993
+ | pages = 74–81
+ }}
+* {{cite book
+ | last = Valliant | first = James S.
+ | authorlink = James S. Valliant
+ | title = The Passion of Ayn Rand's Critics
+ | location = Dallas
+ | publisher = Durban House
+ | year = 2005
+ | id = ISBN 1930754671 
+}}
+* {{cite book
+ | author = Thomas, William (editor)
+ | title = The Literary Art of Ayn Rand
+ | location = Poughkeepsie, New York
+ | publisher = The Objectivist Center
+ | year = 2005
+ | id = ISBN 1-57724-070-7
+}}
+* {{cite book
+ | author = [[Leonard Peikoff|Peikoff, Leonard]]
+ | title = Objectivism: The Philosophy of Ayn Rand
+ | location = New York
+ | publisher = Dutton
+ | year = 1991
+ | id = ISBN 0-452-01101-9
+ }}
+* {{cite book
+ | last = Walker | first = Jeff
+ | title = The Ayn Rand Cult
+ | location = Chicago
+ | publisher = Open Court
+ | year = 1999
+ | id = ISBN 0-8126-9390-6
+ }}
+</div>
+
+==External links==
+{{sisterlinks|Ayn Rand}}
+{{Spoken Wikipedia-2|2007-06-02|Ayn_Rand1.ogg|Ayn_Rand2.ogg|...}}
+
+===General information===
+* [http://www.noblesoul.com/orc/bio/biofaq.html Ayn Rand FAQ]
+* [http://wiki.objectivismonline.net/ The Objectivism Wiki]
+* [http://www.aynrand.org/site/PageServer?pagename=about_ayn_rand_faq_index2 Frequently Asked Questions on Ayn Rand]
+* [http://www.utm.edu/research/iep/r/rand.htm "Ayn Rand" entry from the Internet Encyclopedia of Philosophy]
+* [http://www.americanwriters.org/archives/player/rand.asp American Writers: Ayn Rand] [[C-SPAN]] 2002 [[Real Time Streaming Protocol|RTSP]] videos.
+* {{findagrave|851}}
+
+===Rand's writing and speeches===
+* [http://www.noblesoul.com/orc/texts/anthem/complete.html ''Anthem''] &mdash; The complete text of the novel, which has fallen into the public domain
+* [http://www.ayn-rand.com/ayn-rand-atlas-shrugged.asp ''Atlas Shrugged''] &mdash; Book outline
+* [http://www.ayn-rand.com/ayn-rand-fountainhead.asp ''The Fountainhead''] &mdash; Book outline
+* [http://www.ayn-rand.com/ayn-rand-we-the-living.asp ''We The Living''] &mdash; Book outline
+* [http://www.tracyfineart.com/usmc/philosophy_who_needs_it.htm "Philosophy: Who Needs It?"] &mdash; Address To The Graduating Class Of The United States Military Academy at West Point, New York - [[March 6]], [[1974]]
+* [http://www.noblesoul.com/orc/texts/huac.html Rand's HUAC testimony] &mdash; Transcript
+* [http://www.libertyhaven.org/bookstore/B00004LC7UAMUS169912.shtml ''We the Living''] &mdash; Video outline
+* {{gutenberg author| id=Ayn+Rand | name=Ayn Rand}}
+* [http://lcweb2.loc.gov/cgi-bin/faidfrquery/r?faid/faidfr:@field(SOURCE+@band(rand+ayn)) Rand's papers at The Library of Congress]
+
+===Films===
+*{{imdb name | id=0709446 | name=Ayn Rand}}
+
+===Organizations promoting Ayn Rand's philosophy===
+* [http://www.aynrand.org/ The Ayn Rand Institute] &mdash; Information on Ayn Rand and her philosophy. Founded by [[Leonard Peikoff]], Ayn Rand’s heir.
+* [http://www.capitalismcenter.org/ The Center for the Advancement of Capitalism]
+* [http://www.objectivistcenter.org/ The Atlas Society and The Objectivist Center]
+
+===Critical views===
+* [http://www.lewrockwell.com/rothbard/rothbard23.html The Sociology of the Ayn Rand Cult] by [[Murray N. Rothbard]]
+* [http://www.orthodoxytoday.org/articles2/ChambersAynRand.htm Big Sister is Watching You] by [[Whittaker Chambers]], originally from the [[National Review]]
+**[http://www.capmag.com/article.asp?id=4081 A Half-Century-Old Attack on Ayn Rand Reminds Us of the Dark Side of Conservatism] by [[Robert Tracinski]], rebutting Chambers's review
+* [http://www.tpe.org.tr/index.php?option=com_content&task=view&id=102&Itemid=107 The Concerned Novelist] by Alper Ecer, (originally published in the Turkish academic magazine "Liberal Thought" of Association of Liberal Thinking)
+*[http://www.nyu.edu/projects/sciabarra/essays/randt2.htm Professor Sciabarra's investigation into Ayn Rand's ties to N.O. Lossky first transcript]
+*[http://www.nyu.edu/projects/sciabarra/essays/randtransrev.pdf Professor Sciabarra's investigation into Ayn Rand's ties to her Professor N.O. Lossky second transcript]
+
+===Audio and video===
+* {{WiredForBooks|leonardpeikoff|1982, 1985 audio interviews with Leonard Peikoff about Ayn Rand|by [[Don Swaim]]}}
+*[http://www.americanwriters.org/archives/player/rand.asp 1961 interview with Ayn Rand]
+*[http://www.youtube.com/watch?v=FzGFytGBDN8  Ayn Rand Phil Donahue Interview Part 1 of 5 ]
+<!-- Metadata: see [[Wikipedia:Persondata]] -->
+
+{{Persondata
+|NAME= Rand, Ayn
+|ALTERNATIVE NAMES=Rosenbaum, Alisa Zinov'yevna; Алиса Зиновьевна Розенбаум (Russian)
+|SHORT DESCRIPTION=  novelist, philosopher, playwright, screenwriter 
+|DATE OF BIRTH= {{birth date|1905|2|2|mf=y}}
+|PLACE OF BIRTH= [[St. Petersburg, Russia]]
+|DATE OF DEATH= {{death date|1982|3|6|mf=y}}
+|PLACE OF DEATH= [[New York City]]
+}}
+{{DEFAULTSORT:Rand, Ayn}}
+[[Category:1905 births]]
+[[Category:1982 deaths]]
+[[Category:20th century philosophers]]
+[[Category:Alumni of St. Petersburg State University]]
+[[Category:American atheists]]
+[[Category:American anti-communists]]
+[[Category:American anti-Vietnam War activists]]
+[[Category:American dramatists and playwrights]]
+[[Category:American essayists]]
+[[Category:American novelists]]
+[[Category:American political writers]]
+[[Category:American philosophers]]
+[[Category:American screenwriters]]
+[[Category:Atheist thinkers and activists]]
+[[Category:Atheist philosophers]]
+[[Category:Deaths from cardiovascular disease]]
+[[Category:Epistemologists]]
+[[Category:Female philosophers]]
+[[Category:Moral philosophers]]
+[[Category:Naturalized citizens of the United States]]
+[[Category:Objectivists]]
+[[Category:People from Saint Petersburg]]
+[[Category:Political philosophers]]
+[[Category:Political theorists]]
+[[Category:Philosophical writers]]
+[[Category:Soviet dissidents]]
+
+{{Link FA|he}}
+[[af:Ayn Rand]]
+[[bg:Айн Ранд]]
+[[da:Ayn Rand]]
+[[de:Ayn Rand]]
+[[eo:Ayn Rand]]
+[[es:Ayn Rand]]
+[[fi:Ayn Rand]]
+[[fr:Ayn Rand]]
+[[gl:Ayn Rand]]
+[[he:איין ראנד]]
+[[hu:Ayn Rand]]
+[[id:Ayn Rand]]
+[[is:Ayn Rand]]
+[[it:Ayn Rand]]
+[[ja:アイン・ランド]]
+[[la:Ayn Rand]]
+[[mr:आयन रँड]]
+[[nl:Ayn Rand]]
+[[nn:Ayn Rand]]
+[[no:Ayn Rand]]
+[[nov:Ayn Rand]]
+[[pl:Ayn Rand]]
+[[pt:Ayn Rand]]
+[[ro:Ayn Rand]]
+[[ru:Рэнд, Айн]]
+[[simple:Ayn Rand]]
+[[sk:Ayn Randová]]
+[[sv:Ayn Rand]]
+[[tr:Ayn Rand]]
+[[vi:Ayn Rand]]
+[[zh:艾茵·兰德]]

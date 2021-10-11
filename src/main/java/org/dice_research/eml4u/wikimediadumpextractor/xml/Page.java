@@ -58,6 +58,10 @@ public class Page implements Callable<Page> {
 		return text.toString();
 	}
 
+	public Text getTextObject() {
+		return text;
+	}
+
 	/**
 	 * Returns true if text is available and is no redirect.
 	 */

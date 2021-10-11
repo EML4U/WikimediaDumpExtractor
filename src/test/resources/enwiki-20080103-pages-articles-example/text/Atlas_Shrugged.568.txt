@@ -1,0 +1,299 @@
+{{For|the film|Atlas Shrugged (film)}}
+{{Original research|article|date=September 2007}}
+{{Refimprove|article|date=September 2007}}
+
+{{infobox Book | <!-- See Wikipedia:WikiProject_Novels or Wikipedia:WikiProject_Books -->
+| name          = Atlas Shrugged
+| image         = [[Image:Atlas shrugged cover.jpg|200px|''Atlas Shrugged'' cover by [[Nick Gaetano]]]]
+| image_caption =
+| author        = [[Ayn Rand]]
+| cover_artist  = [[Nick Gaetano]]
+| country       = [[United States]]
+| language      = [[English language|English]]
+| genre         = [[Philosophical novel]]
+| publisher     = [[Random House]]
+| release_date  = [[10 October]] [[1957]]
+| media_type    = Print ([[Hardcover|Hardback]] & [[Paperback]])
+| pages         = 1168 (depending on edition)
+| isbn          = ISBN 0-394-41576-0 (hardback edition)
+}}
+{{Wikibooks|Atlas Shrugged}}
+''''' Atlas Shrugged ''''' is a long novel by [[Ayn Rand]], first published in 1957 in the [[United States]]. It was Rand's last work of fiction before concentrating her writings exclusively on philosophy, politics and cultural criticism. At over one thousand pages in length, she considered it her ''[[magnum opus]]''.<ref>Rand, Ayn. ''Journals of Ayn Rand'', edited by David Harriman. (1997) Dutton. ISBN 0525943706 p.704 Harriman quotes from a 1961 interview in which Rand says, "''Atlas Shrugged'' was the climax and completion of the goal I had set for myself at the age of nine. It expressed everything that I wanted of fiction writing."</ref> Also, at approximately 645,000 words, ''Atlas Shrugged'' is one of the longest novels ever written.  The book explores a number of philosophical themes that Rand would subsequently develop into the philosophy of [[Objectivism (Ayn Rand)|Objectivism]].
+
+==Philosophy and writing==
+{{POV|date=December 2007}}
+The theme of ''Atlas Shrugged'' is the role of the mind in man's existence and, consequently, presentation of the morality of rational self-interest.<ref>Rand, Ayn. ''Capitalism: The Unknown Ideal.'' (1986) Signet. ISBN 0451147952 p.150</ref>
+
+The main conflict of the book occurs as the "individuals of the mind" go on [[Strike action|strike]], refusing to contribute their inventions, art, business leadership, scientific research, or new ideas of any kind to the rest of the world. Society, they believe, hampers them by interfering with their work and underpays them by confiscating the profits and dignity they have rightfully earned. The peaceful cohesiveness of the world requires those individuals whose productive work comes from mental effort. But feeling they have no alternative, they eventually start disappearing from the communities of "looters" and "moochers" who bleed them dry. The strikers believe that they are crucial to a society that exploits them, and the near-total collapse of civilization triggered by their strike shows them to be correct.
+
+Like the Greek [[Titan (mythology)|Titan]] [[Atlas (mythology)|Atlas]], individuals rationally and circumspectly seeking their own long-term happiness believe that they hold the world on their shoulders. The novel's title is an allusion to the Titan, discussing what might happen if those supporting the world suddenly decided to stop doing so. In the novel, the allusion comes during a conversation between two protagonists, [[Francisco d'Anconia]] and [[Hank Rearden]], near the end of part two, chapter three, where Francisco tells Rearden that if he could suggest to Atlas that he do one thing, it would be to shrug.
+
+In the world of ''Atlas Shrugged'', society stagnated when independent productive achievers began to be socially demonized and even punished for their accomplishments, even though society had been far more healthy and prosperous by allowing, encouraging and rewarding self-reliance and individual achievement. Independence and personal happiness flourished to the extent that people were free, and achievement was rewarded to the extent that individual ownership of [[private property]] was strictly respected. The hero, [[John Galt (Atlas Shrugged)|John Galt]], lives a life of [[Laissez-faire|laissez-faire capitalism]] as the only way to live consistent with his beliefs.
+
+''Atlas Shrugged'' is a political book. It portrays [[fascism]], [[socialism]] and [[communism]] &ndash; any form of state intervention in society &ndash; as systemically and fatally flawed. However, Rand claimed that it is not a ''fundamentally'' political book, but that the politics portrayed in the novel are a result of her attempt to display her image of the ideal person and the individual mind's position and value in society.<ref>Peikoff, Leonard. "Introduction to the 35th Anniversary Edition," in Ayn Rand, ''Atlas Shrugged'' (1996/1957) Signet. ISBN 0-451-19114-5 p. 6-8.</ref>
+
+Rand argues that independence and individual achievement enable society to survive and thrive, and should be embraced. But this requires a "[[rationality|rational]]" [[moral code]]. She argues that, over time, coerced [[altruism|self-sacrifice]] causes any society to self-destruct.
+
+She is similarly dismissive of faith beyond empirical reason, in a [[divinity|god]] or higher being, or anything else as an authority over one's own mind. The book positions itself against [[religion]] specifically, often directly within the characters' dialogue.
+
+==Setting==
+Galt's Gulch was inspired by [[Ouray, Colorado|Ouray]], [[Colorado]].  It was here that Rand found inspiration to complete the novel, though she greatly expanded the small valley to include her many ideas for the story.
+
+Exactly when ''Atlas Shrugged'' is meant to take place is kept deliberately vague. In [[Wikibooks:Structure of Atlas Shrugged|section]] 152, the population of [[New York City]] is given as 7 million. The historical New York City reached 7 million people in the 1930s, which might place the novel sometime after that. There are many early 20th century technologies available, but the political situation is clearly different from actual history. One interpretation is that the novel takes place many years in the future, implying that since the world lapsed into its socialistic morass, a global stagnation has occurred in technological growth, population growth, and indeed growth of ''any'' kind; the wars, economic depressions, and other events of the 20th century would be a distant memory to all but [[scholar]]s and [[academician]]s. This would be in line with Rand's ideas and commentary on other novels depicting utopian and dystopian societies. Furthermore, this is also in line with an excerpt from a 1964 interview with ''[[Playboy]]'' magazine in which Rand states "What we have today is not a [[capitalist]] society, but a [[mixed economy]] &ndash; that is, a mixture of [[Freedom (political)|freedom]] and controls, which, by the presently dominant trend, is moving toward [[dictatorship]]. The action in ''Atlas Shrugged'' takes place at a time when society has reached the stage of dictatorship. When and if this happens, that will be the time to go on strike, but not until then," thus implying that her novel takes place at some point in the future. The concept of societal stagnation in the wake of collectivist systems is central to the plot of another of Rand's works, ''[[Anthem (novella)|Anthem]]''.
+
+In ''Atlas Shrugged,'' all countries outside the US have become, or become during the novel, "People's States". There are many examples of early 20th century [[Technology in Atlas Shrugged|technology]] in ''Atlas Shrugged'', but no post-war advances such as [[nuclear weapon]]s, [[helicopter]]s, or [[computer]]s. [[Jet plane]]s are mentioned briefly as being a relatively new technology. [[Television]] is a novelty that has yet to assume any cultural significance, while [[radio]] broadcasts are prominent (in fact, television only makes its first appearance later on in the book, reflecting the fact that television appeared in the fifties, i.e., during the ten years it took to write the book). Although Rand does not use many of the technological innovations available while she was writing in the book, she introduces some advanced, fictional inventions (e.g., [[Sonic weaponry|sonic-based weapons]] [[weapons of mass destruction|of mass destruction]], torture devices, as well as power plants and a highly advanced strong steel alloy).
+
+Most of the action in ''Atlas Shrugged'' occurs in the [[wikibooks:Transwiki:Places in Atlas Shrugged|United States]]. However, there are important events around the world, such as in the People's States of [[Mexico]], [[Chile]], and [[Argentina]], and [[piracy]] at sea.
+
+==Plot==
+The novel's plot is split into three parts. The first two parts, and to some extent the last, follow [[Dagny Taggart]], a no-nonsense railroad executive, and her attempt to keep the company alive despite repeated encroachments by a society moving toward [[collectivism]], [[altruism]], and [[statism]]. Throughout the novel people repeat a platitude Dagny greatly resents: "Who is John Galt?" It is a reflection of their helplessness, as the saying means "Don't ask important questions, because we don't have answers."
+
+The leaders and innovators of industry in the world seem to be disappearing, and the apparent decline of civilization is making it more and more difficult for her to sustain her life-long aspirations of running the trans-continental railroad, which has been in her family for several generations.  She deals with other characters who often personify archetypes of what Rand considers the various schools of philosophy for living and working in the world (though they are in most cases often unconscious of it).
+
+Some of these are: Hank Rearden, a self-made businessman of great integrity whose career is hindered by his feelings of obligation toward his wife. Francisco d'Anconia, Dagny's childhood friend, first love, and king of the copper industry, appears to have become a worthless playboy who is purposely destroying his business. Dagny's brother, president of the railroad, who seems peripherally aware of the troubles facing the company and the country in general, but who almost always makes the most short term and ultimately self-destructive choice.
+
+As the novel progresses, the myths about the real John Galt, as well as Francisco d'Anconia's actions, increasingly become a reflection of the state of the culture and seem to make more and more sense. Hank and Dagny begin to experience the futility of their attempts to survive in a society that hates them and those like them for their greatness.
+
+Dagny and Hank find the remnants of a motor that turns [[atmospheric electricity|atmospheric static electricity]] into [[kinetic energy]], an astounding feat; they also find evidence that the minds (the "Atlases") of the world are disappearing because of one particular "destroyer" taking them away. Dagny and Hank deal with the irrationalities and apparent contradictions of their atmosphere, and search for the creator of the motor as well as "the destroyer" who is draining the world of its prime movers, in an effort to secure their ability to live rational lives.
+
+The question "Who is John Galt?" is also answered towards the closing of the novel — John Galt is a man disgusted that non-productive members of society use laws and guilt to leech from the value created by productive members of society, and furthermore even exalt the qualities of the leeches over the workers and inventors. He made a pledge that he would never live his life for the sake of another man, nor ask another man to live for him, and founded an enclave, separate from the rest of the country, where he and other productive members of society have fled.
+
+===Galt's speech===
+John Galt's speech is the core of ''Atlas Shrugged''.  In it, Galt explains the philosophy of [[Objectivism (Ayn Rand)|Objectivism]].  The speech encompasses [[metaphysics|metaphysical]], [[epistemology|epistemological]], [[ethics|ethical]], and [[politics|political]] ideas.
+
+The speech is very long, spanning 56 pages in one paperback edition (the only interruption occurs after the first paragraph), and appears in the chapter "This is John Galt Speaking" in the third section of the book.<ref name=Rand>Atlas Shrugged, Centennial Edition, Signet, 1992.</ref>
+
+==Characters==
+{{main|Characters in Atlas Shrugged}}
+Protagonists:
+*Dagny Taggart - Operating Vice President of Taggart Transcontinental
+*Hank Rearden - Owner of Rearden Steel
+*John Galt
+*Francisco d'Anconia - Owner of d'Anconia Copper
+
+==Social concepts==
+===Looters and moochers===
+Rand's heroes must continually fight against the "looters" and "moochers" of the society surrounding them.
+
+The looters are those who confiscate others' earnings "at the point of a gun" (figuratively speaking) &mdash;often because they are government officials, and thus their demands are backed by the threat of force.  Some looters are following the policies of the government, such as the officials who confiscate one state's [[Seed saving|seed grain]] to feed the starving citizens of another state; others are exploiting those policies, such as the railroad regulator who illegally sells the railroad's supplies on the side.  The common factor is that both use force to take property from the people who produced or earned it, and both are ultimately destructive.
+
+The moochers are those who demand others' earnings because they claim to be needy and unable to earn themselves.  Even as they beg for their help, however, they curse the people who make that help possible, because they hate the talented for having the talent they don't possess.  Although the moochers seem benign at first glance, they are portrayed as more destructive than the looters&mdash;they destroy the productive through guilt and often motivate the legal looting performed by governments.
+
+Looting and mooching are seen at all levels of the world ''Atlas Shrugged'' portrays, from the looting officials Dagny Taggart must work around and the mooching brother Hank Rearden struggles with, to the looting of whole industries by companies like Associated Steel and the mooching demands for [[foreign aid]] by the starving countries of Europe.
+
+===Sanction of the victim===
+The ''Sanction of the victim'' is defined as "the willingness of the good to suffer at the hands of the [[evil]], to accept the role of sacrificial victim for the '[[sin]]' of creating values."
+
+The entire story of ''Atlas Shrugged'' can be seen as an answer to the question, what would happen if this sanction were revoked? When Atlas shrugs, relieving himself of the burden of carrying the world, he is revoking his sanction.
+
+The concept may be original in the thinking of Ayn Rand and is foundational to her moral theory. She holds that evil is a parasite on the good and can only exist if the good tolerates it. To quote from Galt's Speech: "Evil is impotent and has no power but that which we let it extort from us,"{{Fact|date=August 2007}} and, "I saw that evil was impotent...and the only weapon of its triumph was the willingness of the good to serve it."{{Fact|date=August 2007}} Morality requires that we do not sanction our own victimhood, Rand claims. In adhering to this concept, Rand assigns virtue to the trait of [[rational selfishness]]. However, Rand contends that moral selfishness does not mean a license to do whatever one pleases, guided by whims. It means the exacting discipline of defining and pursuing one's rational self-interest. A code of rational self-interest rejects every form of human sacrifice, whether of oneself to others or of others to oneself.
+
+Throughout ''Atlas Shrugged,'' numerous characters admit that there is something wrong with the world but they cannot put their finger on what it is. The concept they cannot grasp is the sanction of the victim. The first person to grasp the concept is [[John Galt (Atlas Shrugged)|John Galt]], who vows to stop the motor of the world by getting the creators of the world to withhold their sanction.
+
+We first glimpse the concept in [[Structure of Atlas Shrugged|section]] 121 when [[Hank Rearden]] feels he is duty-bound to support his family, despite their hostility towards him.
+
+In [[Structure of Atlas Shrugged|section]] 146 the principle is stated explicitly by [[Dan Conway]]: "I suppose somebody's got to be sacrificed. If it turned out to be me, I have no right to complain."{{Fact|date=August 2007}}
+
+===Social classes===
+''Atlas Shrugged'' endorses the belief that a society's best hope rests on its adopting a system of pure [[laissez-faire]]. John Galt says,"The political system we will build is contained in a single moral premise: no man may obtain any values from others by resorting to physical force," and claims, "no rights can exist without the right to translate one’s rights into reality—to think, to work and to keep the results—which means: the right of property." The characters are assessed negatively or positively based their productive effort, respect for rights, intellectual honesty, and moral integrity, and this does not necessarily reflect their class backgrounds. Different social classes are represented among both the heroes and the villains of ''Atlas Shrugged''. Among the heroes, [[John Galt (Atlas Shrugged)|John Galt]] and Hank Rearden are from working class backgrounds, while Dagny Taggart and Francisco d'Anconia are from wealthy families. Among the villains, [[Fred Kinnan]] is from a working class background, while James Taggart and Betty Pope are from wealthy families.
+
+Compare: [[Aristocracy]]
+
+===Theory of sex ===<!-- This section is linked from [[Characters in Atlas Shrugged]] -->
+In rejecting the traditional [[altruism|altruistic]] [[moral code]], Rand also rejects the sexual code that, in her view, is the [[logical implication]] of altruism.
+
+Rand introduces a theory of [[coitus|sex]] in ''Atlas Shrugged'' that is based in her broader ethical and psychological theories. Far from being a debasing animal [[instinct]], sex to Rand is the highest celebration of human [[Value (personal and cultural)|value]]s, a physical response to intellectual and spiritual values that gives concrete expression to what could otherwise only be experienced in the abstract.
+
+In ''Atlas Shrugged'', characters are sexually attracted to those who embody or seem to embody their values, be they higher or lower values by Rand's standards. Characters who lack clear purpose find sex devoid of meaning. This is illustrated in the contrasting relationships of [[Hank Rearden]] with [[Lillian Rearden]] and [[Dagny Taggart]], by the relationships of [[Characters in Atlas Shrugged#James Taggart|James Taggart]] with [[Characters in Atlas Shrugged#Cherryl Brooks|Cherryl Brooks]] and later with Lillian Rearden, and finally in the relationship between Dagny and [[John Galt (Atlas Shrugged)|John Galt]].
+
+Illustrations of this theory are found in:
+* [[Wikibooks:Synopsis of Atlas Shrugged, Chapters 1-5#CHAPTER FIVE: THE CLIMAX OF THE D.27ANCONIAS|Section 152]] &ndash; recounts Dagny's relationship with [[Francisco d'Anconia]].
+* [[Wikibooks:Synopsis of Atlas Shrugged, Chapters 6-10#CHAPTER SIX: THE NON-COMMERCIAL|Section 161]] &ndash; recounts Hank and Lillian Rearden's courtship, and Lillian's attitude towards sex.
+* [[Wikibooks:Synopsis of Atlas Shrugged, Section2#CHAPTER THREE: White Blackmail|Section 231]] &ndash; recounts the value for value basis of Dagny's seemingly unconditional love for Rearden
+
+==Companies==
+===Looter companies vs John Galt's Movement===
+The companies in ''Atlas Shrugged'' are generally divided into two groups: those that are operated by hard working characters who join in John Galt's Movement and those owned by looters and moochers. The first group are usually given the name of the owner, while companies operated by antagonist characters are given names like United Steel.
+
+For example, Hank Rearden's companies are all named after him; Wyatt Oil after Ellis Wyatt; and Taggart Transcontinental and d'Anconia Copper are named after their founders (and, being family-held, their present owners). Nielsen Motors, Hammond Cars and Ayers Music Publishing are also presented as competent. Those who use their own names to name their companies become [[Characters in Atlas Shrugged|Strikers]], with the minor exception of Mr. Ayers of the Ayers Music Publishing Company.
+
+On the other hand, Orren Boyle named his government-dependent, influence-peddling company Associated Steel. Another company in the novel is the Amalgamated Switch and Signal Company, Inc. The exceptions here are the Phoenix Durango Railroad, which was run by a competent entrepreneur who becomes a Striker in his own way without joining the actual Strikers in [[Galt's Gulch]], and the Twentieth Century Motor Company, originally run by Jed Starnes. The mismanagement of the Twentieth Century in the hands of Starnes' heirs first seeds the thoughts of a strike in John Galt's mind.
+
+===Comparison with real-life railways===
+[[James Jerome Hill]] (1838– 1916) was known as the '''Empire Builder''' and built the [[Great Northern Railway]] that is in many ways similar to [[Taggart Transcontinental]].
+
+It is commonly noted that in actuality there had never been a US railway company as the one described in the book, maintaining tracks of its own all the way from the [[Atlantic]] to the [[Pacific]]. Rather, in the United States, the term ''[[transcontinental railroad]]'' usually refers to a line over the [[Rocky Mountains]] between the [[Midwestern United States|Midwest]] and Pacific Ocean, and such companies tend to have the area of the [[Mississippi River]] as a transfer point with other companies active in the [[Eastern United States|East]].
+
+===Comparison with real life railway industry===
+Taggart Transcontinental in the later part of the book is driven to act in this manner and rely on other companies for the western part of its traffic; that is, however, an emergency measure which is part of the gradual collapse of the company (and the entire world) and Dagny is far from pleased with the need to resort to it.
+
+By 1957, the date of the book's publication, railways in the USA were facing a decline that had begun in the 1920s. Passengers were increasingly switching to road transport.  [[Aviation|Air transport]] was also growing quickly.{{Fact|date=September 2007}} (For details, see [[Amtrak]]; Passenger rail service before Amtrak.) Railroads are still the most efficient type of transportation through land.{{Fact|date=December 2007}}
+
+==Fictional technology==
+Because the book centers on industrial capitalism, Ayn Rand mentions many technologies throughout the book. In addition to normal technologies, she introduces several fictional inventions, including refractor rays (Gulch mirage), Rearden Metal, a sonic [[death ray]] ("Project X"), motors powered by [[static electricity]], and a sophisticated electrical [[torture]] device.
+
+===Rearden metal===
+Rearden metal is a fictitious metal alloy invented by [[Hank Rearden]]. It is lighter than traditional [[steel]] but stronger, and is to steel what steel was to [[iron]]. It is described as greenish-blue. Among its ingredients are iron and [[copper]], two metals seldom found together in real-world [[alloy]]s.
+
+Initially, no one is willing to use Rearden metal because no one wants to stick his neck out and be the first to try it. [[Dagny Taggart]] places an order for Rearden metal when she needs rails to rebuild the dying Rio Norte Line. Once the metal is proven, the "looters" seek both to place it on the market for everyone, and also to deny it to the industrialists who would make the most profitable use of it. Later, the formula for the metal itself is extorted from Rearden and dubbed "Miracle Metal."
+
+===Project X===
+Project X, a.k.a. Project [[Xylophone]], is an invention of the scientists at the State Science Institute, requiring tons of Rearden metal. It is a sonic weapon, capable of destroying everything in a 300-mile radius. The scientists claim that the project will be used to preserve peace and quash rebellion. The mechanism is destroyed towards the end of the book, and emits a sonic pulse that destroys everything in the surrounding area, including Cuffy Meigs and Dr. Stadler, as well as the Taggart Bridge.
+
+===Galt's motor===
+John Galt invented a new type of electrical apparatus described in the book as a [[Electric motor|motor]].  This motor is revolutionary because it uses static electricity from the atmosphere as its main source of energy, requiring only a small amount of conventional fuel to run the conversion mechanism. This approximates a [[perpetual motion]] machine of the second kind, a machine which spontaneously converts thermal energy into mechanical work (versus conventional [[heat engine]]s, which convert thermal energy into mechanical work by transferring thermal energy from one reservoir to another). The theory is that the power is drawn from the environment (possibly approximating the [[Casimir effect]], though that was extremely obscure and scientifically controversial at the time Atlas Shrugged was written).
+
+The book gives the source as [[static electricity]] from the air, and suggests that a new physics was necessary to tap it.  Additionally, the motor could be seen as a metaphor for a person who, like Reardon and Dagny, has the ability to convert dispersed energy and resources into useful materials.{{fact|date=December 2007}}
+
+Dagny discovers a discarded prototype of the motor, and it is superficially described in [[Structure of Atlas Shrugged|section]] Part 1, Chapter 9.  In Part 3, Chapter 1, Dagny learns that Galt is using a working version of the motor to generate electricity for Galt's Gulch.
+
+===Project F===
+A torture device invented by Dr. Floyd Ferris is introduced towards the end where John Galt is tortured. It consists of having the victim tied to a mattress with [[electrode]]s attached to the wrists, the ankles and the hips. Electricity is passed in various combinations (wrist-to-wrist, ankle-to-hip) to inflict pain on the victim. The electricity amount being passed through the victim is so calculated to cause maximum pain without inflicting any permanent physical damage to the victim. It is located in the Science Institute.
+
+===Other===
+Rand also mentioned technologies that were unavailable at the time, but which have since been invented.  Examples are [[Voice command device|voice activated]] door locks (Gulch power station), [[Fingerprint authentication|palm-activated]] door locks (Galt's NY lab), and [[Oil shale#Extraction|shale-oil drilling]].
+
+==Reception==
+{{Refimprove|section|date=October 2007}}
+{{POV-section|date=October 2007}}
+''Atlas Shrugged'' was generally disliked by critics, despite being a popular success.
+
+===Early Reception===
+It was reviewed shortly after its publication in 1957 by many major newspapers and magazines. The initial reviews were largely negative, criticizing both the book's literary qualities and its political vision.<ref>See http://www.noblesoul.com/orc/books/rand/atlas/, retrieved [[August 9]] [[2006]], for a list of reviews and bibliographical information.</ref>
+
+===Criticism===
+In the conservative magazine the ''[[National Review]]'', [[Whittaker Chambers]] wrote a critical review of the ''Atlas Shrugged'', in which he argues against, among other things, the novel's implicit endorsement of [[atheism]] whereby "Randian man, like [[Marx]]ian man is made the center of a godless world."<ref>Chambers, Whittaker. "[http://www.nationalreview.com/flashback/flashback200501050715.asp Big Sister Is Watching You]." ''[[National Review]]''. [[December 28]], [[1957]].</ref>
+
+Former Ayn Rand associate [[Nathaniel Branden]] argues that ''Atlas Shrugged'' "encourages emotional repression and self-disowning" and that it, along with Rand's other major Objectivist novel, ''The Fountainhead'', contains contradictory messages. Though he notes that the book shows that Rand understood the human need for social interaction, Branden claims that "rarely you find the heroes and heroine talking to each other on a simple, human level without launching into philosophical sermons," which he believes is used to increase the reader's self-alienation. He further questions the psychological impact of the novel, stating that John Galt's claim that contempt and moral condemnation are appropriate responses to wrongdoing clashes with the recommendations of psychologists, who say that this kind of behavior only causes the wrongdoing to repeat itself.<ref>Branden, Nathaniel. "[http://rous.redbarn.org/objectivism/Writing/NathanielBranden/BenefitsAndHazards.html The Benefits and Hazards of the Philosophy of Ayn Rand: A Personal Statement]". 1984.</ref>
+
+===Praise===
+On the other hand, Howard Dickman of ''[[Reader's Digest]]'' wrote that the novel had "turned millions of readers on to the ideas of liberty" and said that the book had the important message of the readers' "profound right to be happy."
+
+The [[libertarian]] [[Cato Institute]] held a joint conference with [[The Atlas Society]], an Objectivist organization, to celebrate the fortieth anniversary of the publication of ''Atlas Shrugged''.<ref>"[http://www.cato.org/pubs/policy_report/cpr-19n6-3.html Cato Events: Hundreds Gather to Celebrate Atlas Shrugged]". ''Cato Policy Report''. November/December 1997.</ref>
+
+Conservative [[Associate Justice of the Supreme Court]] [[Clarence Thomas]] cites ''Atlas Shrugged'' as among his favorite novels,<ref>Bidinotto, Robert James. "[http://www.atlassociety.org/rb_celebrity_ayn_rand_fans_clarence_thomas.asp Celebrity 'Rand Fans' &ndash; Clarence Thomas]". Retrieved [[May 26]] [[2006]].</ref> as does neolibertarian [[Larry Elder]].<ref>[http://larryelder.com/reading.html Larry Elder Recommended Books], Larry Elder.com, Retrieved [[June 13]] [[2007]]</ref>
+
+In an article titled "Celebrity Rand Fans" in the Objectivist magazine ''The New Individualist'', Robert James Bidinotto traces the novel's growing influence among major Hollywood stars, sports champions, and public figures.<ref name="fans">[http://www.objectivistcenter.org/ct-1697-CelebRandFans.aspx Celebrity Rand Fans], ''The New Individualist'', Retrieved [[June 13]] [[2007]]</ref>
+
+Chip Mellor of the libertarian [[Institute for Justice]] writes that "whether they have adopted her philosophy wholeheartedly or found her writings of more transitory interest, countless individuals working to secure liberty have found inspiration in the works of Ayn Rand. With her unique ability to depict heroism, idealism, and romance behind the creativity of the individual, Rand inspires readers to come to the defense of free minds and free markets."<ref>[http://www.ij.org/publications/liberty/2006/15_3_06_d.html Thinkers of Freedom and IJ], Institute for Justice, Retrieved [[June 13]] [[2007]]</ref>
+
+In a three-month online poll<ref>Subject of article: Headlam, Bruce. "[http://tech2.nytimes.com/mem/technology/techreview.html?_r=1&res=9B01E5DC1738F933A05754C0A96E958260&oref=login Forget Joyce; Bring on Ayn Rand]." ''The New York Times'' [[July 30]] [[1998]], G4 (Late Edition, East Coast).</ref><ref>Subject of article: Yardley, Jonathan. "The Voice of the People Speaks. Too Bad It Doesn't Have Much to Say." ''The Washington Post'' [[August 10]] [[1998]], D2 (Final Edition). Retrieved from ProQuest Historical Newspapers.</ref> of reader selections of the hundred best novels of the twentieth century, administered by publisher [[Modern Library]], ''Atlas Shrugged'' was voted number one, ahead of ''[[The Fountainhead]]'', ''[[Battlefield Earth (novel)|Battlefield Earth]]'', and ''[[The Lord of the Rings]]'', while the list chosen by the Modern Library panel of authors and scholars contains no works by Rand.<ref>"[http://www.randomhouse.com/modernlibrary/100bestnovels.html 100 Best Novels]". ''RandomHouse.com''. Retrieved [[June 20]] [[2006]].</ref> The Modern Library's lists, particularly the reader selections, however, have come under heavy scrutiny as so unscientific as to be highly dubious in their representation of actual opinion (see [[Modern Library]]).  Because ''Battlefield Earth'' and two other books by [[science fiction]] writer and [[Scientology]] founder [[L. Ron Hubbard]] were in the top ten, Pulitzer Prize-winning journalist [[Ray Jenkins]] compares Rand's popularity to that of Hubbard, calling her "a goddess of a great American cult."<ref>Jenkins, Ray. "Ayn Rand after a century: Who was she &ndash; and why?" ''[[Baltimore Sun]]'' [[February 16]], [[2003]]. Retrieved from http://www.rickross.com/reference/general/general531.html.</ref> He goes on to point out that her works were "ignored or deplored by the critics of the day."
+
+Literary critic [[Harold Bloom]] included her in a critical anthology he edited, ''American Women Fiction Writers, 1900-1960, Vol. Three'', (Chelsea House, 1998). The [[C-SPAN]] television series ''American Writers'' listed Rand as one of twenty-two surveyed figures of American literature, though primarily mentioning ''The Fountainhead'' rather than ''Atlas Shrugged''.<ref>[http://www.americanwriters.org/writers/rand.asp C-SPAN American Writers: Ayn Rand]</ref>
+
+==Film adaptation==
+{{main article|Atlas Shrugged (film)}}
+
+[[Film rights]] to the novel ''Atlas Shrugged'' were purchased by the Baldwin Entertainment Group in 2003. [[Lions Gate Entertainment]] has picked up worldwide distribution rights and screenwriter [[Randall Wallace]] has created a 127-page screenplay from the novel.<ref>Fleming, Michael. "[http://www.variety.com/article/VR1117971319.html?categoryid=13&cs=1 Vadim Perelman to direct 'Atlas']". ''[[Variety (magazine)|Variety]]''. [[September 4]] [[2007]] </ref> [[Angelina Jolie]] has been confirmed to play the role of Dagny Taggart<ref>McClintock, Pamela. "[http://www.variety.com/VR1117950446.html Jolie shoulders 'Atlas' : Thesp slated for Rand adaptation]". ''[[Variety (magazine)|Variety]]''. [[September 21]] [[2006]]</ref> and [[Brad Pitt]] is rumored to be cast as John Galt.<ref>McClintock, Pamela. "[http://www.variety.com/VR1117942127.html Lionsgate shrugging: 'Atlas' pic mapped]". ''[[Variety (magazine)|Variety]]''. [[April 26]] [[2006]]</ref> Both are fans of Rand's works.<ref name="fans"/>
+According to [[IMDb]], as of [[September 5]] [[2007]], the ''Atlas Shrugged'' project is "Back in development." <ref>[http://www.imdb.com/title/tt0480239/ Atlas Shrugged] at [[IMDb]].</ref> Lionsgate has hired director [[Vadim Perelman]] to direct the film. [http://www.allheadlinenews.com/articles/7008433844]
+
+==In popular culture==
+Ayn Rand's book influence has led it to be referenced in various ways.
+
+===Significant homages===
+Where a work has been in large part been influenced by Atlas Shrugged:
+
+"The Moon is a Harsh Mistress" by Robert A. Heinlein<ref> Another well-known science fiction writer, [[Robert A. Heinlein]], pays Rand's book an explicit tribute in his ''[[The Moon Is a Harsh Mistress]]'' - like the above Anderson book, dealing with a rebellion of space colonists (on the Moon in this case). In one passage of the book the rebels describe their leader, the sentient computer "Mike", as "Our John Galt." </ref>
+
+The video game [[BioShock]] pays many homages to Atlas Shrugged; the most obvious of which is the idea that intellectuals should be separated from society in order to free them from people who would inhibit their work. The game takes place in an underwater city called Rapture, where some of the smartest people on Earth moved to in order to live where (As the creator of Rapture, Andrew Ryan, stated) "The scientists would not be bound by petty moralities." One of the characters' names, Atlas, is a reference to the title of the book.
+
+===Side References===
+Atlas Shrugged has been referenced in Futurama,
+<ref> In the ''[[Futurama]]'' episode "[[I Second That Emotion (Futurama)|I Second That Emotion]]", the 'library' in the mutants' village is a lone bookshelf stocking literary items  flushed down toilets from above. When [[Bender]] takes a look on it, he finds ''Atlas Shrugged'' and says "Nothing but crumpled porno and Ayn Rand."</ref>
+South Park,
+<ref> In the ''[[South Park]]'' episode "[[Chicken Lover]]", [[Officer Barbrady]] reads ''Atlas Shrugged'' after overcoming his illiteracy. He later states to the town that he "read every last word of this piece of garbage" and because he did so "will never read anything ever again."</ref>
+[[X-Factor (comics)|X-Factor]],
+<ref> In the [[Marvel comic]] book ''[[X-Factor (comics)|X-Factor]]'', the mysterious, [[precognition|precognitive]] teenage character [[Layla Miller]] is seen reading ''Atlas Shrugged'', which makes the other characters slightly uneasy.</ref>
+[[Beverly Hills 90210]],
+<ref> In an episode of ''[[Beverly Hills 90210]]'', [[Kelly Taylor (90210)|Kelly Taylor]] can be seen reading a hard-cover version of ''Atlas Shrugged'', with the camera resting on the book for a lengthy period of time before moving off.</ref>
+[[Undeclared]],
+<ref> In ''[[Undeclared]]'' episode "[[Addicts (Undeclared episode)|Addicts]]", several of the main characters write a report on the novel. One of them declares it "not bad."</ref>
+works by [[Sean D'Anconia]],
+<ref> Fashion designer and visual artist Sean D'Anconia often slips in hidden references to ''Atlas Shrugged''{{Fact|date=November 2007}} in his designs and avante-guard advertisements, appearing regularly in ''[[Flaunt]]'' and ''YRB Magazine''. [http://majestysecret.com/galt_john.jpg  Flaunt Magazine Ad]</ref>
+in [[Mr. Murder]],
+<ref>In the [[Dean Koontz]] novel ''[[Mr. Murder]]'', two characters take on assumed names John and Ann Gault in order to hide from an evil secret government agency.</ref>
+[[Zits]],
+<ref>In the newspaper cartoon ''[[Zits]]'', Jeremy's friend Pierce declares ''Atlas Shrugged'' to be his favorite novel because it is thick enough to use as a pillow in the school library.</ref>
+[[The Simpsons]],
+<ref> In an episode of ''[[The Simpsons]]'' called "[[A Streetcar Named Marge]]", [[Maggie Simpson|Maggie]] attends the Ayn Rand School for Tots. A poster on the wall reads "A is A," the title of Part Three of ''Atlas Shrugged''.</ref>
+[[BioShock]],
+<ref> The video game ''[[BioShock]]'' is influenced by the works of Ayn Rand and ''Atlas Shrugged'' in particular. A character's name Andrew Ryan is a play on Ayn Rand.</ref>
+[[One Tree Hill (TV series)|One Tree Hill]],
+<ref> In the second episode of ''[[One Tree Hill (TV series)|One Tree Hill]]'', [[Lucas Scott]] is given a copy of ''Atlas Shrugged'' by fellow teammate [[Jake Jagielski]]. </ref>
+[[Sewer, Gas and Electric]],
+<ref> The book ''Sewer, Gas and Electric'' by [[Matt Ruff]] is a science fiction book largely critical of Ayn Rand and many specific concepts in ''Atlas Shrugged''.  </ref>
+[[Mad Men]],
+<ref>Episode of [[Mad Men]] on AMC. The senior partner of the ad agency where the show is set tells his protege, Don Draper, that he is motivated by "rational self interest" and the two are alike in that regard.  The boss points to the book "Atlas Shrugged" on his credenza and recommends it to Draper, then gives him a huge bonus, which leaves Draper, and possibly the viewer, somewhat puzzled.</ref>
+[[A Scanner Darkly (film)|A Scanner Darkly]],
+<ref>In the film adaptation of Philip K Dick's "A Scanner Darkly", character Charles Freck can be seen reading the novel.</ref>
+[[The Illuminatus! Trilogy]] and the
+<ref>[[The Illuminatus! Trilogy]] by [[Robert Shea]] and [[Robert Anton Wilson]] mentions Ayn Rand several times and refers a lot to ''Telemachus Sneezed'', a spoof of the work by character Atlanta Hope.</ref>
+[[The Colbert Report]]
+<ref>In the [[October 31]] [[2007]], episode of [[The Colbert Report]], Stephen suggested that instead of giving children free candy on Halloween, they should receive things such as bootstraps (to pull themselves up by), and a copy of ''Atlas Shrugged'' because "who would want a fun-size Snickers, when they could have the gift of rational self-interest as embodied by maverick railroad executive Dagny Taggart?"</ref>
+
+==See also==
+* [[James Clavell]]
+* [[Laissez-faire capitalism]]
+* [[Dystopia]]
+* [[Transcontinental railroad]]
+* [[Austrian School]]
+
+==Footnotes==
+<div class="references-small"><references /></div>
+
+==Further reading==
+===Publications===
+* ''Atlas Shrugged'', Ayn Rand; Signet; (September 1996) ISBN 0-451-19114-5
+* ''Atlas Shrugged (Cliffs Notes)'', Andrew Bernstein; [[CliffsNotes]]; ([[June 5]], [[2000]]) ISBN 0-7645-8556-8
+* ''The World of Atlas Shrugged'', Robert Bidinotto/The Objectivist Center; HighBridge Company; ([[April 19]], [[2001]]) ISBN 1-56511-471-X
+* ''Atlas Shrugged: Manifesto of the Mind (Twayne's Masterwork Studies, No. 174)'' Mimi Reisel Gladstein; Twayne Pub; (June 2000) ISBN 0-8057-1638-6
+* ''The Moral Revolution in Atlas Shrugged'', [[Nathaniel Branden]]; The Objectivist Center; (July 1999) ISBN 1-57724-033-2
+* ''Odysseus, Jesus, and Dagny'', Susan McCloskey; The Objectivist Center; ([[August 1]], [[1998]]) ISBN 1-57724-025-1
+
+===Foreign language translations===
+* [[Dutch language|Dutch]]: ''Atlas in Staking'', published by the "De Boekenmaker", www.boekenmaker.nl, tel: +31-75-61471772 (Krommenie, 2006).
+* [[French language|French]]: ''La révolte d'Atlas'', 2 vol. (Paris 1958 et 1959, Editions Jeheber)
+* [[German language|German]]: ''Wer ist John Galt?'' (Hamburg, Germany: GEWIS Verlag), ISBN 3-932564-03-0.
+* [[Italian language|Italian]]: ''La rivolta di Atlante'', 2 vol. (Milano, Garzanti, 1958), Out of print. Translator: Laura Grimaldi
+* [[Japanese language|Japanese]]: ''肩をすくめるアトラス'' 　(ビジネス社), ISBN 4-8284-1149-6. Translator: 脇坂 あゆみ.
+* [[Norwegian language|Norwegian]]: ''De som beveger verden''. (Kagge Forlag, 2000), ISBN 82-489-0083-5 (hardcover), ISBN 82-489-0169-6 (paperback). Translator: John Erik Bøe Lindgren.
+* [[Polish language|Polish]]: ''Atlas Zbuntowany'' (Zysk i S-ka, 2004), ISBN 83-7150-969-3 (hardcover). Translator: Iwona Michałowska.
+* [[Portuguese language|Portuguese]]: ''Quem é John Galt?'' (Editora Expressão e Cultura), ISBN 85-208-0248-6 (paperback). Translator: Paulo Henriques Britto.
+* [[Russian language|Russian]]: ''Атлант расправил плечи'' (Издательство Альпина Бизнес Букс, 2007 г.), ISBN 978-5-9614-0603-0. Translator: Ю.Соколов, В.Вебер, Д.Вознякевич.
+
+* [[Spanish language|Spanish]]: ''La rebelión de Atlas.'' (Editorial Grito Sagrado), ISBN 987-20951-0-8 (hardcover), ISBN 987-20951-1-6 (paperback).
+* [[Swedish language|Swedish]]: ''Och världen skälvde.'' ([http://www.timbro.se/rand/ Timbro Förlag], 2005), ISBN 91-7566-556-5. Translator: Maud Freccero.
+* [[Turkish language|Turkish]]: ''Atlas Vazgeçti.'' (Plato Yayınları, 2003), ISBN 975-96772-6-1. Translator: Belkıs Çorapçı.
+
+==External links==
+* [http://aynrandnovels.com/ Website dedicated to Ayn Rand's novels]
+* [http://www.objectivistcenter.org/cth-22-1710-AtlasShruggedTimeline.aspx Timeline of major events in the novel]
+* [http://www.objectivistcenter.org/cth-22-1708-AtlasShruggedCastOfCharacters.aspx Cast of characters in the novel]
+* [http://www.aynrand.org Excerpt from ''Atlas Shrugged''] at the [[Ayn Rand Institute|ARI]]
+
+===Reviews===
+* [http://www.nationalreview.com/flashback/flashback200501050715.asp A negative review] from the [[December 28]], [[1957]] issue of ''[[National Review]]'' by [[Whittaker Chambers]].
+
+
+{{AynRand}}
+
+[[Category:Atlas Shrugged| ]]
+[[Category:1957 novels]]
+[[Category:American novels]]
+[[Category:Novels by Ayn Rand]]
+[[Category:Philosophical novels]]
+[[Category:Dystopian novels]]
+[[Category:Capitalist books]]
+[[Category:Economics books]]
+[[Category:Books critical of religion]]
+[[Category:Fictional technology]]
+
+[[de:Atlas wirft die Welt ab]]
+[[es:La rebelión de Atlas]]
+[[fr:La Révolte d'Atlas]]
+[[he:מרד הנפילים]]
+[[la:Atlas Shrugged]]
+[[no:De som beveger verden]]
+[[simple:Atlas Shrugged]]
+[[sv:Och världen skälvde]]
+[[zh:阿特拉斯摆脱重负]]

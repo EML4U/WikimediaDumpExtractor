@@ -3,8 +3,10 @@ package org.dice_research.eml4u.wikimediadumpextractor.xml;
 import java.io.File;
 import java.io.IOException;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Map;
 import java.util.Map.Entry;
+import java.util.Set;
 import java.util.concurrent.CompletionService;
 import java.util.concurrent.ExecutorCompletionService;
 import java.util.concurrent.Executors;
@@ -12,8 +14,8 @@ import java.util.concurrent.ForkJoinPool;
 import java.util.concurrent.Future;
 
 import org.dice_research.eml4u.wikimediadumpextractor.Cfg;
-import org.dice_research.eml4u.wikimediadumpextractor.utils.Strings;
 import org.dice_research.eml4u.wikimediadumpextractor.utils.RegEx;
+import org.dice_research.eml4u.wikimediadumpextractor.utils.Strings;
 import org.dice_research.eml4u.wikimediadumpextractor.xml.XmlParser.MaxPagesException;
 import org.xml.sax.SAXParseException;
 
@@ -37,9 +39,12 @@ public class XmlExecutor {
 	private ForkJoinPool forkJoinPool;
 	private CompletionService<Page> completionService;
 
+	private boolean xmlParserRunning = true;
+	private Set<Future<Page>> futures = new HashSet<>();
+
 	private Index pageIndex;
-	Map<String, Index> categoryIndexes = new HashMap<>();
-	Map<String, Index> searchIndexes = new HashMap<>();
+	private Map<String, Index> categoryIndexes = new HashMap<>();
+	private Map<String, Index> searchIndexes = new HashMap<>();
 
 	/**
 	 * Code based on {@link Executors#newWorkStealingPool(int)}. Processors obtained
@@ -70,10 +75,14 @@ public class XmlExecutor {
 		return instance;
 	}
 
+	private synchronized Set<Future<Page>> getFutures() {
+		return futures;
+	}
+
 	public void execute(File file) {
 
 		// New thread to monitor finished pages
-		monitor();
+		Thread monitorThread = monitor();
 
 		// Start parsing
 		XmlParser xmlParser = new XmlParser();
@@ -94,14 +103,13 @@ public class XmlExecutor {
 		} catch (Exception e) {
 			System.err.println("Error on extraction: " + Strings.stackTraceToString(e));
 		}
+		xmlParserRunning = false;
 
-		// Wait for pool
-		while (forkJoinPool.hasQueuedSubmissions()) {
-			try {
-				Thread.sleep(100);
-			} catch (InterruptedException e) {
-				System.err.println("Error on waiting: " + Strings.stackTraceToString(e));
-			}
+		// Wait for monitor/index thread
+		try {
+			monitorThread.join(1000);
+		} catch (InterruptedException e) {
+			System.err.println("Error on waiting for monitor: " + Strings.stackTraceToString(e));
 		}
 
 		// Write index
@@ -122,11 +130,10 @@ public class XmlExecutor {
 		Cfg.INSTANCE.set(Cfg.INFO_XML_TIME_EXTRACT, xmlParser.getDurationHandling());
 		Cfg.INSTANCE.set(Cfg.INFO_XML_READ_PAGES, xmlParser.getNumberOfParsedPages());
 		Cfg.INSTANCE.set(Cfg.INFO_XML_INDEX_END, pageIndex.getNumberOfPages());
-
 	}
 
 	public void submit(Page page) {
-		completionService.submit(page);
+		getFutures().add(completionService.submit(page));
 	}
 
 	public boolean isIndexed(int pageId) {
@@ -134,13 +141,12 @@ public class XmlExecutor {
 	}
 
 	/**
-	 * Runs in endless loop and collects parsed pages, returned by
-	 * {@link Page#call()}.
+	 * Collects parsed pages, returned by {@link Page#call()}.
 	 */
-	private void monitor() {
-		new Thread(new Runnable() {
+	private Thread monitor() {
+		Thread thread = new Thread(new Runnable() {
 			public void run() {
-				while (true) {
+				while (xmlParserRunning || forkJoinPool.hasQueuedSubmissions() || !getFutures().isEmpty()) {
 					try {
 						Future<Page> pageFuture = XmlExecutor.getInstance().completionService.take();
 						Page page = pageFuture.get();
@@ -170,11 +176,16 @@ public class XmlExecutor {
 								categoryIndexes.get(cat).addPage(page);
 							}
 						}
+
+						getFutures().remove(pageFuture);
+
 					} catch (Exception e) {
 						System.err.println("Error on monitoring: " + Strings.stackTraceToString(e));
 					}
 				}
 			}
-		}).start();
+		});
+		thread.start();
+		return thread;
 	}
 }

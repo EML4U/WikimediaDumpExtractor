@@ -1,0 +1,12 @@
+Input file:           /tmp/src/test/resources/enwiki-20080103-pages-articles-example.xml
+Output directory:     /tmp/src/test/resources
+Categories:           Category:Social philosophy
+Search terms:         altruism
+Begin time:           2021-10-11 19:55:38
+End time:             2021-10-11 19:55:38
+Duration (sec):       0.308
+Reading XML (sec):    0.052
+Extracting XML (sec): 0.012
+Index size before:    0
+Index size:           4
+XML pages read:       4
