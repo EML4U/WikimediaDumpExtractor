@@ -14,7 +14,7 @@ import java.util.TreeSet;
  * 
  * Prints categories and related number of pages in CSV format.
  * 
- * Usage: {@link #printCategories(File, int)}.
+ * Usage: {@link #countCategories(File, int)}.
  *
  * @author Adrian Wilke
  */
@@ -49,13 +49,15 @@ public class CategoryParser {
 
 		@Override
 		public String toString() {
-			return pages + ",\"" + title + '"';
+			return pages + SEPARATOR + title;
 		}
 	}
 
 	private static final boolean LIMIT_TO_FIRST_LINE = false;
 	private static final String LINE_START = "INSERT INTO `category` VALUES (";
 	private static final String LINE_START_OLD = "INSERT INTO `categorylinks` VALUES ("; // e.g. enwiki-20080103
+
+	public static final String SEPARATOR = ";";
 
 	private int mode = -1;
 	private int mode_category_sql = 1;
@@ -71,7 +73,7 @@ public class CategoryParser {
 	 * @param inFile          enwiki-YYYYMMDD-category.sql like to be found in dumps
 	 * @param minCategorySize Minimum size of categories to print
 	 */
-	public void printCategories(File inFile, int minCategorySize) throws IOException {
+	public String countCategories(File inFile, int minCategorySize) throws IOException {
 		this.minCategorySize = minCategorySize;
 		readFile(inFile);
 
@@ -80,10 +82,14 @@ public class CategoryParser {
 			categories.addAll(categoriesMap.values());
 		}
 
-		System.out.println("Number of Pages, \"Wikipedia category title\"");
+		StringBuilder sb = new StringBuilder();
+		// System.out.println("Number of Pages, \"Wikipedia category title\"");
 		for (Element element : categories) {
-			System.out.println(element);
+			// System.out.println(element);
+			sb.append(element).append(System.lineSeparator());
 		}
+
+		return sb.toString();
 	}
 
 	/**

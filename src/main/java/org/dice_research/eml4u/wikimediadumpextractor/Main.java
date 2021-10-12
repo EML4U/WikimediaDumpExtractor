@@ -44,7 +44,7 @@ public class Main {
 
 		// Mode pages / search
 
-		if (mode.equals(Cfg.MODE_PAGES) && args.length > 4) {
+		if (mode.equals(Cfg.MODE_PAGES) && args.length >= 5) {
 
 			// IO
 			Cfg.INSTANCE.set(Cfg.INPUT_FILE, FileChecks.checkFileIn(args[1], 1));
@@ -81,18 +81,29 @@ public class Main {
 		}
 
 		// Mode categories
-		// TODO re-check; add aggs length
 
-		else if (mode.equals(Cfg.MODE_CATEGORIES)) {
+		else if (mode.equals(Cfg.MODE_CATEGORIES) && args.length >= 3) {
 			Cfg.INSTANCE.set(Cfg.MODE, Cfg.MODE_CATEGORIES);
 			Cfg.INSTANCE.set(Cfg.INPUT_FILE, FileChecks.checkFileIn(args[1], 1));
+			Cfg.INSTANCE.set(Cfg.OUTPUT_DIR, FileChecks.checkDirectoryOut(args[2], 1));
+
+			System.out.println(Cfg.INSTANCE);
 
 			int minCategorySize = DEFAULT_MIN_CATEGORY_SIZE;
-			if (args.length > 2) {
-				minCategorySize = Integer.parseInt(args[2]);
+			if (args.length >= 4) {
+				minCategorySize = Integer.parseInt(args[3]);
 			}
 
-			printCategories(Cfg.INSTANCE.getAsFile(Cfg.INPUT_FILE), minCategorySize);
+			File outFile = new File(Cfg.INSTANCE.getAsFile(Cfg.OUTPUT_DIR),
+					"categories-in-files." + minCategorySize + ".csv");
+
+			try {
+				Files.write(outFile.toPath(), new CategoryParser()
+						.countCategories(Cfg.INSTANCE.getAsFile(Cfg.INPUT_FILE), minCategorySize).getBytes());
+				System.out.println(outFile.getAbsolutePath());
+			} catch (IOException e) {
+				System.err.println("Error on counting categories: " + Strings.stackTraceToString(e));
+			}
 		}
 
 		else {
@@ -160,11 +171,10 @@ public class Main {
 		stringBuilder.append(Cfg.MODE_PAGES);
 		stringBuilder.append("      <input XML file> <output directory> <categories> <search terms>");
 
-		// TODO re-check
 		stringBuilder.append(System.lineSeparator());
 		stringBuilder.append(" ");
 		stringBuilder.append(Cfg.MODE_CATEGORIES);
-		stringBuilder.append(" <input SQL file> [minimum category size, default ");
+		stringBuilder.append(" <input SQL file> <output directory> [minimum category size, default ");
 		stringBuilder.append(DEFAULT_MIN_CATEGORY_SIZE);
 		stringBuilder.append("]");
 
@@ -174,13 +184,5 @@ public class Main {
 		stringBuilder.append(System.lineSeparator());
 		stringBuilder.append("Website: https://github.com/EML4U/WikimediaDumpExtractor");
 		System.out.println(stringBuilder.toString());
-	}
-
-	private static void printCategories(File inFile, int minCategorySize) {
-		try {
-			new CategoryParser().printCategories(inFile, minCategorySize);
-		} catch (Exception e) {
-			System.err.println("Error: " + Strings.stackTraceToString(e));
-		}
 	}
 }

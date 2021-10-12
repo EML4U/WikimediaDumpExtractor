@@ -32,7 +32,9 @@ public class CountCategoriesInTextfiles {
 	public static final int MAX_CATEGORY_LENGTH = 110;
 
 	// Config: Write file
-	public static final boolean WRITE_FILE = true;
+	public static final boolean WRITE_FILE = false;
+
+	public static final String FILENAME = "categories-in-textfiles.csv";
 
 	private String regexCategory = "\\[\\[" + "Category:" + "(.*)?" + "\\]\\]";
 	private String regexCategoryTitle = "(.*)?" + "\\|";
@@ -76,8 +78,7 @@ public class CountCategoriesInTextfiles {
 
 		// Output
 		if (WRITE_FILE) {
-			File outFile = new File(directory.getParentFile(),
-					CountCategoriesInTextfiles.class.getSimpleName() + ".csv");
+			File outFile = new File(directory.getParentFile(), FILENAME);
 			Files.writeString(outFile.toPath(), sb.toString());
 			System.out.println(outFile);
 		} else {
@@ -157,14 +158,15 @@ public class CountCategoriesInTextfiles {
 			}
 
 			if (category.length() <= MAX_CATEGORY_LENGTH) {
+				// TODO check why the strings are not shorter
 				categories.add(category);
 			} else {
 				// Long category names are typically WP internal notes
 				if (category.contains("Archive")) {
 					// An usual long category
-					System.err.println("Skipping: " + category + " | " + file.getName());
+					System.err.println("Skipping archive: " + category + " | " + file.getName());
 				} else {
-					// To examine
+					// TODO If it occurs: examine
 					System.out.println("Skipping: " + category + " | " + file.getName());
 				}
 			}
