@@ -32,7 +32,7 @@ public class CountCategoriesInTextfiles {
 	public static final int MAX_CATEGORY_LENGTH = 110;
 
 	// Config: Write file
-	public static final boolean WRITE_FILE = false;
+	public static final boolean WRITE_FILE = true;
 
 	public static final String FILENAME = "categories-in-textfiles.csv";
 

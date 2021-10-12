@@ -95,7 +95,7 @@ public class Main {
 			}
 
 			File outFile = new File(Cfg.INSTANCE.getAsFile(Cfg.OUTPUT_DIR),
-					"categories-in-files." + minCategorySize + ".csv");
+					"categories-in-sql." + minCategorySize + ".csv");
 
 			try {
 				Files.write(outFile.toPath(), new CategoryParser()
