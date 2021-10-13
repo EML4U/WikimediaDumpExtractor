@@ -8,8 +8,8 @@
 
 ```Shell
 Usage: java -jar WikimediaDumpExtractor.jar
- pages      <input XML file> <output directory> <categories> <search terms>
- categories <input SQL file> [minimum category size, default 10000]
+ pages      <input XML file> <output directory> <categories> <search terms> <ids>
+ categories <input SQL file> <output directory> [minimum category size, default 10000]
 The values <categories> and <search terms> can contain multiple entries separated by '|'
 Website: https://github.com/EML4U/WikimediaDumpExtractor
 ```
@@ -21,7 +21,7 @@ It contains 4 pages extracted from the enwiki 20080103 dump.
 Then run the following command:
 
 ```Shell
-java -jar WikimediaDumpExtractor.jar pages enwiki-20080103-pages-articles-example.xml ./ "Social philosophy" altruism
+java -jar WikimediaDumpExtractor.jar pages enwiki-20080103-pages-articles-example.xml ./ "Social philosophy" altruism ""
 ```
 
 Afterwards, files similar to [example result](src/test/resources/enwiki-20080103-pages-articles-example/) will be created.

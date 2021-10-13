@@ -72,7 +72,7 @@ public class CountCategoriesInTextfiles {
 		// Read files connected in input: Text file containing names of index files
 		else {
 			File jobDirectory = file.getParentFile();
-			File textDirectory = new File(jobDirectory, Cfg.DEFAULT_TEXT_DIRECTORY);
+			File textDirectory = new File(jobDirectory, Cfg.DEFAULT_TEXT_SUBDIRECTORY);
 			List<File> files = new LinkedList<>();
 			for (String indexFile : Files.readAllLines(file.toPath())) {
 				if (!indexFile.isBlank()) {

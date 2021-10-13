@@ -95,8 +95,13 @@ public class Page implements Callable<Page> {
 		// Just a note: to check, if different threads are used, use
 		// System.out.println(Thread.currentThread().getId());
 
+		boolean extract = false;
+		if (CfgUtils.getIds().contains(id.toString())) {
+			extract = true;
+		}
+
 		// Extract categories and search terms
-		if (!getExtractedCategories().isEmpty() || !getExtractedSearchTerms().isEmpty()) {
+		if (!getExtractedCategories().isEmpty() | !getExtractedSearchTerms().isEmpty() | extract) {
 
 			// Only write if page not in index
 			if (!XmlExecutor.getInstance().isIndexed(getId())) {

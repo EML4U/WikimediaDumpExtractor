@@ -20,8 +20,8 @@ public enum Cfg {
 	// https://www.journaldev.com/1377/java-singleton-design-pattern-best-practices-examples#enum-singleton
 	// https://dzone.com/articles/java-singletons-using-enum
 	INSTANCE;
-	
-	public static final String DEFAULT_TEXT_DIRECTORY = "text";
+
+	public static final String DEFAULT_TEXT_SUBDIRECTORY = "text";
 
 	public static final String MODE = "mode";
 	public static final String MODE_PAGES = "pages";
@@ -32,6 +32,7 @@ public enum Cfg {
 	public static final String INPUT_FILE = "input";
 	public static final String OUTPUT_DIR = "output";
 	public static final String SEARCH = "search";
+	public static final String IDS = "ids";
 
 	public static final String INFO_END_TIME = "end";
 	public static final String INFO_DURATION = "duration";
@@ -75,6 +76,7 @@ public enum Cfg {
 		map.put(MODE, "Mode");
 		map.put(CATEGORIES, "Categories");
 		map.put(SEARCH, "Search terms");
+		map.put(IDS, "IDs");
 		map.put(BEGIN_TIME, "Begin time");
 		map.put(INFO_END_TIME, "End time");
 		map.put(INFO_DURATION, "Duration (sec)");

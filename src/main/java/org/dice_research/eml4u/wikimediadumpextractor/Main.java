@@ -44,7 +44,7 @@ public class Main {
 
 		// Mode pages / search
 
-		if (mode.equals(Cfg.MODE_PAGES) && args.length >= 5) {
+		if (mode.equals(Cfg.MODE_PAGES) && args.length >= 6) {
 
 			// IO
 			Cfg.INSTANCE.set(Cfg.INPUT_FILE, FileChecks.checkFileIn(args[1], 1));
@@ -55,6 +55,7 @@ public class Main {
 			cleanCategories();
 			Cfg.INSTANCE.set(Cfg.SEARCH, args[4]);
 			cleanSearchTerms();
+			Cfg.INSTANCE.set(Cfg.IDS, args[5]);
 
 			// Print configuration overview
 			System.out.println(Cfg.INSTANCE);
@@ -169,7 +170,7 @@ public class Main {
 		stringBuilder.append(System.lineSeparator());
 		stringBuilder.append(" ");
 		stringBuilder.append(Cfg.MODE_PAGES);
-		stringBuilder.append("      <input XML file> <output directory> <categories> <search terms>");
+		stringBuilder.append("      <input XML file> <output directory> <categories> <search terms> <ids>");
 
 		stringBuilder.append(System.lineSeparator());
 		stringBuilder.append(" ");
