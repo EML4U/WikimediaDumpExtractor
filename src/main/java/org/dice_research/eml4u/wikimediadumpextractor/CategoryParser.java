@@ -156,20 +156,22 @@ public class CategoryParser {
 
 				String[] values = part.split(",");
 
-				if (values.length == 6) {
+				// Note: I am proud of this implementation
+				if (values.length == 10) {
+					values[1] = values[1] + values[2] + values[3] + values[4] + values[5] + values[6];
+					values[2] = values[7];
+				} else if (values.length == 9) {
+					values[1] = values[1] + values[2] + values[3] + values[4] + values[5];
+					values[2] = values[6];
+				} else if (values.length == 8) {
+					values[1] = values[1] + values[2] + values[3] + values[4];
+					values[2] = values[5];
+				} else if (values.length == 7) {
+					values[1] = values[1] + values[2] + values[3];
+					values[2] = values[4];
+				} else if (values.length == 6) {
 					values[1] = values[1] + values[2];
 					values[2] = values[3];
-					values[3] = values[4];
-					values[4] = values[5];
-					values[5] = "";
-				}
-
-				// TODO Re-check handling of "'", maybe handle like in old format
-
-				if (values.length > 5 && !values[5].isEmpty()) {
-					System.err.println(
-							"Too many elements, skipping line/part " + lineNumber + " " + partNumber + " " + part);
-					continue;
 				}
 
 				// SQL table category elements:
@@ -178,7 +180,14 @@ public class CategoryParser {
 				// `cat_pages` int(11)
 				// `cat_subcats` int(11)
 				// `cat_files` int(11)
-				Element element = new Element(values[1], Integer.parseInt(values[2]));
+				Element element = null;
+				try {
+					element = new Element(values[1], Integer.parseInt(values[2]));
+				} catch (NumberFormatException e) {
+					System.err.println(lineNumber + " " + partNumber + " " + part);
+					throw (e);
+				}
+
 				if (element.pages >= minCategorySize) {
 					categories.add(new Element(values[1].replace("\'", ""), Integer.parseInt(values[2])));
 				}

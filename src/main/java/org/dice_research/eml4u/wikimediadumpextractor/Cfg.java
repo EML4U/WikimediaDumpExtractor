@@ -20,6 +20,8 @@ public enum Cfg {
 	// https://www.journaldev.com/1377/java-singleton-design-pattern-best-practices-examples#enum-singleton
 	// https://dzone.com/articles/java-singletons-using-enum
 	INSTANCE;
+	
+	public static final String DEFAULT_TEXT_DIRECTORY = "text";
 
 	public static final String MODE = "mode";
 	public static final String MODE_PAGES = "pages";

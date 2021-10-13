@@ -41,7 +41,7 @@ public abstract class CfgUtils {
 	}
 
 	public static File getOutputDirectoryTexts() {
-		File directory = new File(getOutputDirectoryJob(), "text");
+		File directory = new File(getOutputDirectoryJob(), Cfg.DEFAULT_TEXT_DIRECTORY);
 		directory.mkdirs();
 		return directory;
 	}

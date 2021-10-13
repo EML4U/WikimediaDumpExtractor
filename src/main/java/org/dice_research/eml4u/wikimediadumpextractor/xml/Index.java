@@ -3,6 +3,8 @@ package org.dice_research.eml4u.wikimediadumpextractor.xml;
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
+import java.nio.file.Path;
+import java.util.Collection;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -16,29 +18,10 @@ import org.dice_research.eml4u.wikimediadumpextractor.utils.CfgUtils;
  */
 public class Index {
 
-	public class MetaPage {
-
-		public String filename;
-		public String title;
-		public Integer id;
-
-		public MetaPage(Page page) {
-			this.filename = page.getFilename();
-			this.title = page.getTitle();
-			this.id = page.getId();
-		}
-
-		public MetaPage(String filename, String title, Integer id) {
-			this.filename = filename;
-			this.title = title;
-			this.id = id;
-		}
-	}
-
 	public static final String FILENEAME = "index.txt";
 
 	private File file;
-	private Map<Integer, MetaPage> index = new HashMap<>();
+	private Map<Integer, IndexPage> index = new HashMap<>();
 
 	public Index() throws IOException {
 		this(FILENEAME);
@@ -52,12 +35,28 @@ public class Index {
 		}
 	}
 
+	public Index(File file) throws IOException {
+		this.file = file;
+		file.getParentFile().mkdirs();
+		if (file.exists()) {
+			read();
+		}
+	}
+
 	public void write() throws IOException {
 		Files.write(file.toPath(), toString().getBytes());
 	}
 
 	private void read() throws IOException {
-		List<String> lines = Files.readAllLines(file.toPath());
+		add(file.toPath());
+	}
+
+	public Collection<IndexPage> getIndexPages() {
+		return index.values();
+	}
+
+	public void add(Path path) throws IOException {
+		List<String> lines = Files.readAllLines(path);
 		String filename = null;
 		String title = null;
 		Integer id = null;
@@ -71,11 +70,12 @@ public class Index {
 				break;
 			case 2:
 				id = Integer.valueOf(lines.get(i));
-				index.put(id, new MetaPage(filename, title, id));
+				if (!index.containsKey(id)) {
+					index.put(id, new IndexPage(filename, title, id));
+				}
 				break;
 			default:
 				throw new IOException("Error in reading index.");
-			// break;
 			}
 		}
 	}
@@ -85,7 +85,7 @@ public class Index {
 	}
 
 	public void addPage(Page page) {
-		index.put(page.getId(), new MetaPage(page));
+		index.put(page.getId(), new IndexPage(page));
 	}
 
 	public int getNumberOfPages() {
@@ -95,13 +95,8 @@ public class Index {
 	@Override
 	public String toString() {
 		StringBuilder sb = new StringBuilder();
-		for (MetaPage metaPage : index.values()) {
-			sb.append(metaPage.filename);
-			sb.append(System.lineSeparator());
-			sb.append(metaPage.title);
-			sb.append(System.lineSeparator());
-			sb.append(metaPage.id);
-			sb.append(System.lineSeparator());
+		for (IndexPage metaPage : index.values()) {
+			sb.append(metaPage.toString());
 		}
 		return sb.toString();
 	}
