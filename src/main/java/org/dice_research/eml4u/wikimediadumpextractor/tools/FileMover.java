@@ -31,14 +31,27 @@ public class FileMover {
 		copyToDirA.mkdirs();
 		copyToDirB.mkdirs();
 
-		Map<Integer, File> idsToFilesA = getFilesForIds(textDirA, ids);
-		Map<Integer, File> idsToFilesB = getFilesForIds(textDirB, ids);
+//		Map<Integer, File> idsToFilesA = getFilesForIds(textDirA, ids);
+//		Map<Integer, File> idsToFilesB = getFilesForIds(textDirB, ids);
 
+//		for (Entry<Integer, File> a : idsToFilesA.entrySet()) {
+//			if (idsToFilesB.containsKey(a.getKey())) {
+//				Files.copy(a.getValue().toPath(), new File(copyToDirA, a.getValue().getName()).toPath());
+//				File fileB = idsToFilesB.get(a.getKey());
+//				Files.copy(fileB.toPath(), new File(copyToDirB, fileB.getName()).toPath());
+//			}
+//		}
+
+		// Direct directory, not subdir text
+		Map<Integer, File> idsToFilesA = getFilesForIds(sourceDirA, ids);
+		Map<Integer, File> idsToFilesB = getFilesForIds(sourceDirB, ids);
+		
+		// IDs instead of original file name
 		for (Entry<Integer, File> a : idsToFilesA.entrySet()) {
 			if (idsToFilesB.containsKey(a.getKey())) {
-				Files.copy(a.getValue().toPath(), new File(copyToDirA, a.getValue().getName()).toPath());
+				Files.copy(a.getValue().toPath(), new File(copyToDirA, a.getKey().toString() + ".txt").toPath());
 				File fileB = idsToFilesB.get(a.getKey());
-				Files.copy(fileB.toPath(), new File(copyToDirB, fileB.getName()).toPath());
+				Files.copy(fileB.toPath(), new File(copyToDirB, a.getKey().toString() + ".txt").toPath());
 			}
 		}
 	}
